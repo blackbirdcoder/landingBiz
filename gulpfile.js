@@ -1,4 +1,4 @@
-﻿//  gulp v.0.3.1 beta
+//  gulp v.0.4.1 beta (test)
 //  задачи для проекта "landing-business.hw", который выполняю в рамках курса ITVDN
 var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
@@ -14,10 +14,11 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps   = require('gulp-sourcemaps'),
     pug          = require('gulp-pug'),
-    spritesmith  = require('gulp.spritesmith');
+    spritesmith  = require('gulp.spritesmith'),
+    plumber      = require('gulp-plumber');
     
     
-	
+   
 gulp.task('sass', function() {
 	return gulp.src(['app/sass/**/*.scss', 'app/sass/**/*.sass' ])
         .pipe(sourcemaps.init())
@@ -55,9 +56,10 @@ gulp.task('browser-sync', function(){
 	});
 });
 
-//Делаю задачу PUG
+//Делаю задачу PUG (изменения в пути и добавленны исключения)
 gulp.task('pug-run', function buildHTML(){
-    return gulp.src('app/pug/**/*.jade')
+    return gulp.src(['!app/pug/section/**/*.pug', 'app/pug/*.pug'])
+            .pipe(plumber()) // plumber
             .pipe(pug({
                 pretty: true
             }))
@@ -80,7 +82,7 @@ gulp.task('sprite', function () {
     cssName: '_sprite.scss'
   }));
   return spriteData.img.pipe(gulp.dest('app/img')),
-         spriteData.css.pipe(gulp.dest('app/sass/'));        
+         spriteData.css.pipe(gulp.dest('app/sass/sprite/'));  //изменил путь      
 });
 
 //Провёл изменения добавил исключения
@@ -97,7 +99,7 @@ gulp.task('img', function(){
 
 gulp.task('watch', ['sprite', 'browser-sync', 'pug-run', 'sass', 'css-min', 'scripts-min'],function(){
     //наблюдаю за PUG и перезагружаю браузер 
-    gulp.watch('app/pug/**/*.jade', ['pug-run'], browserSync.reload);
+        gulp.watch('app/pug/**/*.pug', ['pug-run'], browserSync.reload);
 	gulp.watch(['app/sass/**/*.scss', 'app/sass/**/*.sass' ], ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
