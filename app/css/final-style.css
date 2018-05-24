@@ -30,6 +30,8 @@
 
 /*Header*/
 .header__contact-info {
+  padding: 7px 0 10px 0;
+  text-align: right;
   background-color: #f0f2f4;
   -webkit-box-shadow: 0px 2px 4px -2px #b9b9b9;
           box-shadow: 0px 2px 4px -2px #b9b9b9;
@@ -40,11 +42,12 @@
 }
 
 .header__ico-phone {
+  vertical-align: -3px;
   font-size: 24px;
 }
 
 .header__info-email {
-  padding: 0 0 0 40px;
+  padding: 0 0 0 30px;
   display: inline-block;
 }
 
@@ -55,7 +58,6 @@
 .header__link {
   padding: 0 12px 0 10px;
   text-decoration: none;
-  vertical-align: 1px;
   color: #424242;
   font-size: 15px;
   font-family: "HelveticaRegular";
@@ -92,7 +94,7 @@
 }
 
 .header__link-social-net:hover {
-  color: #ed8d8a;
+  color: #fbe29d;
 }
 
 /*-----------------------*/
