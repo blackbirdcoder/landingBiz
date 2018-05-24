@@ -1,1 +1,27 @@
+//Общие стили для landing-business.hw
 
+/* ----HTML----*/
+* { box-sizing: border-box;}
+
+/*----CLEARFIX----*/
+.clearfix::after {	
+    content: " ";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+/* ----BODY----*/
+.page {
+    padding: 0;
+    font-family: 16px;
+    font-family: $f-base;
+    color: $c-dark;
+    background-color: $c-light;
+}
+
+/* ----CONTAINER---*/
+.container {
+    max-width: 1024px;
+    margin: auto;
+}

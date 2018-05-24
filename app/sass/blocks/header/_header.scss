@@ -1,4 +1,46 @@
-//Header стили для сайта landing-busness.hw
+//Header стили для сайта landing-business.hw
 /*Header*/
+.header {
+    &__contact-info {
+    background-color: #f0f2f4;
+    box-shadow: 0px 2px 4px -2px #b9b9b9;  
+    }
+    &__info-phone { display: inline-block;}
+    &__ico-phone { font-size: 24px; }
+    &__info-email {
+        padding: 0 0 0 40px;
+        display: inline-block;
+    }
+    &__ico-email { font-size: 19px; }
+    &__link {
+        padding: 0 12px 0 10px;
+        text-decoration: none;
+        vertical-align: 1px;
+        color: $c-dark;
+        font-size: 15px;
+        font-family:  $f-normal;
+        transition: 0.5s;
+        
+        &:hover {color: $c-accent;}
+    }
+    &__info-social-net {
+        
+        display: inline-block;
+        border-radius: 12%;
+        background-color: #1287bf;
+    }
+    &__ico-social-net {font-size: 19px;}
+    &__link-social-net {
+        display: block;
+        padding: 4px 7px 4px 7px;
+        width: 26px;
+        height: 26px;
+        text-decoration: none;
+        color: $c-light;
+        transition: 0.5s;
+        
+        &:hover {color: lighten($c-accent, 23%);}
 
+    }
+}
 /*-----------------------*/
