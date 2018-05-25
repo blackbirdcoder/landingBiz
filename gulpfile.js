@@ -1,4 +1,4 @@
-//  gulp v.0.5.1 beta (test)
+//  gulp v.0.4.1 beta (test)
 //  задачи для проекта "landing-business.hw", который выполняю в рамках курса ITVDN
 var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
@@ -15,8 +15,7 @@ var gulp         = require('gulp'),
     sourcemaps   = require('gulp-sourcemaps'),
     pug          = require('gulp-pug'),
     spritesmith  = require('gulp.spritesmith'),
-    plumber      = require('gulp-plumber'),
-    htmlbeautify = require('gulp-html-beautify');
+    plumber      = require('gulp-plumber');
     
     
    
@@ -56,32 +55,15 @@ gulp.task('browser-sync', function(){
 		}, notify: false
 	});
 });
-//Задача для htmlbeautify (оформления html раметки после препроцессора)
-gulp.task('htmlbeautify', function() {
-  var options = { indentSize: 2,
-      unformatted: [
-            // https://www.w3.org/TR/html5/dom.html#phrasing-content
-            // удалённые из массива теги будут форматироваться как блочные
-            'abbr', 'area', 'b', 'bdi', 'bdo', 'br', 'cite',
-            'code', 'data', 'datalist', 'del', 'dfn', 'em', 'embed', 'i', 'ins',
-            'kbd', 'keygen', 'map', 'mark', 'math', 'meter', 'noscript',
-            'object', 'output', 'progress', 'q', 'ruby', 's', 'samp', 'small',
-            'strong', 'sub', 'sup', 'template', 'time', 'u', 'var', 'wbr', 'text',
-            'acronym', 'address', 'big', 'dt', 'ins', 'strike', 'tt','span', 'a'
-        ]
-    };
-  gulp.src('app/*.html')
-    .pipe(htmlbeautify(options))
-    .pipe(gulp.dest('app'));
-});
-  
+
 //Делаю задачу PUG (изменения в пути и добавленны исключения)
 gulp.task('pug-run', function buildHTML(){
     return gulp.src(['!app/pug/section/**/*.pug', 'app/pug/*.pug'])
             .pipe(plumber()) // plumber
-            .pipe(pug()) //Убрал указания pug "упорядочить" теги
-            .pipe(gulp.dest('app'))
-            .pipe(htmlbeautify()); //htmlbeautify
+            .pipe(pug({
+                pretty: true
+            }))
+            .pipe(gulp.dest('app'));
 });
 
 gulp.task('clear', function(){

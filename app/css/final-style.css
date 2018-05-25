@@ -28,9 +28,13 @@
   margin: auto;
 }
 
-/*Header*/
+/*----Header----*/
 .header__contact-info {
-  padding: 7px 0 10px 0;
+  /*Eсли не нужно использовать info-phone_decor-line_vertical*/
+  /*(вертикальную линию возле номера телефона)*/
+  /*Снять комментарий с padding */
+  /*и закомментировать селектор header__info-phone_decor-line_vertical*/
+  /*padding: 7px 0 10px 0;*/
   text-align: right;
   background-color: #f0f2f4;
   -webkit-box-shadow: 0px 2px 4px -2px #b9b9b9;
@@ -41,13 +45,19 @@
   display: inline-block;
 }
 
+.header__info-phone_decor-line_vertical {
+  border-right: 1px solid #d6d6d6;
+  height: 40px;
+  padding: 9px 9px 0 0;
+}
+
 .header__ico-phone {
   vertical-align: -3px;
   font-size: 24px;
 }
 
 .header__info-email {
-  padding: 0 0 0 30px;
+  padding: 0 3px 0 18px;
   display: inline-block;
 }
 
@@ -56,7 +66,7 @@
 }
 
 .header__link {
-  padding: 0 12px 0 10px;
+  padding: 0 7px 0 10px;
   text-decoration: none;
   color: #424242;
   font-size: 15px;
@@ -72,6 +82,7 @@
 
 .header__info-social-net {
   display: inline-block;
+  margin: 0 7px 0 0;
   -webkit-border-radius: 12%;
           border-radius: 12%;
   background-color: #1287bf;
@@ -95,6 +106,10 @@
 
 .header__link-social-net:hover {
   color: #fbe29d;
+}
+
+.header__control {
+  padding: 40px 0 40px 0;
 }
 
 /*-----------------------*/
