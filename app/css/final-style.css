@@ -112,6 +112,32 @@
   padding: 40px 0 40px 0;
 }
 
+.header .logo {
+  display: inline-block;
+  width: 250px;
+}
+
+.header .logo__ico {
+  margin: 0 5px 0 0;
+  position: relative;
+  left: -4px;
+  font-size: 57px;
+  color: #dd2a24;
+  float: left;
+}
+
+.header .logo__heading {
+  margin: 0;
+  font-size: 37px;
+  font-family: "HelveticaBold";
+}
+
+.header .logo__txt {
+  margin: 0;
+  font-size: 15px;
+  font-family: "HelveticaRegular";
+}
+
 /*-----------------------*/
 /*Шрифты для сайта*/
 @font-face {

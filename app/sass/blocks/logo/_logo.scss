@@ -1,0 +1,27 @@
+//Logo
+&__logo {}
+
+.logo {
+    display: inline-block;
+    width: 250px;
+    
+    &__ico {
+        margin: 0 5px 0 0;
+        position: relative;
+        left: -4px;
+        font-size: 57px; 
+        color: $c-accent;
+        float: left;
+    }
+    &__heading {
+        margin: 0;
+        font-size: 37px;
+        font-family: $f-bold;
+    }
+    &__txt {
+        margin: 0;
+        font-size: 15px;
+        font-family: $f-normal;
+    }
+}
+
