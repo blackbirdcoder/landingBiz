@@ -1,0 +1,16 @@
+//Кнопка для сайта landing-business.hw
+/*Button*/
+.btn{
+    display: inline-block;
+    padding: 10px 23px 10px 23px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: $f-bold;
+    font-size: 15px;
+    color: $c-light;
+    transition: 0.5s;
+    
+    &:hover{color: lighten(#f8cd53, 15%)};
+    &_theme_bright{background-color: $c-accent;};
+};

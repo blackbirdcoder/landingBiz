@@ -1,0 +1,30 @@
+//Меню для сайта landing-business.hw
+/*Menu*/
+.menu {
+    margin: 0;
+    padding: 0;
+    
+    &__item { 
+        list-style-type: none;
+        display: inline-block;
+        vertical-align: 21px;
+    };
+    &__link {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: $f-bold;
+        font-size: 15px;
+        color: $c-dark;
+        transition: 0.5s;
+        
+        &:hover {
+            color: $c-accent;
+        }
+    };
+    &__ico {
+        margin: 0 15px 0 15px;
+        font-size: 9px;
+    };
+    
+};
+

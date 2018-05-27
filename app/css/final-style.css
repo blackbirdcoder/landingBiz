@@ -32,7 +32,7 @@
 .header__contact-info {
   /*Eсли не нужно использовать info-phone_decor-line_vertical*/
   /*(вертикальную линию возле номера телефона)*/
-  /*Снять комментарий с padding */
+  /*Тогда снять комментарий с padding */
   /*и закомментировать селектор header__info-phone_decor-line_vertical*/
   /*padding: 7px 0 10px 0;*/
   text-align: right;
@@ -112,12 +112,13 @@
   padding: 40px 0 40px 0;
 }
 
-.header .logo {
+/*logo*/
+.logo {
   display: inline-block;
   width: 250px;
 }
 
-.header .logo__ico {
+.logo__ico {
   margin: 0 5px 0 0;
   position: relative;
   left: -4px;
@@ -126,16 +127,89 @@
   float: left;
 }
 
-.header .logo__heading {
+.logo__heading {
   margin: 0;
   font-size: 37px;
   font-family: "HelveticaBold";
 }
 
-.header .logo__txt {
+.logo__txt {
   margin: 0;
   font-size: 15px;
   font-family: "HelveticaRegular";
+}
+
+.container__navigation {
+  margin: 0 0 0 176px;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+/*Menu*/
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: 21px;
+}
+
+.menu__link {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "HelveticaBold";
+  font-size: 15px;
+  color: #424242;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__link:hover {
+  color: #dd2a24;
+}
+
+.menu__ico {
+  margin: 0 15px 0 15px;
+  font-size: 9px;
+}
+
+.container__box-button {
+  margin: 0 0 0 16px;
+}
+
+.box-button {
+  display: inline-block;
+  vertical-align: 20px;
+}
+
+/*Button*/
+.btn {
+  display: inline-block;
+  padding: 10px 23px 10px 23px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "HelveticaBold";
+  font-size: 15px;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: #fbe29d;
+}
+
+.btn_theme_bright {
+  background-color: #dd2a24;
 }
 
 /*-----------------------*/

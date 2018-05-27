@@ -4,7 +4,7 @@
     &__contact-info {
         /*Eсли не нужно использовать info-phone_decor-line_vertical*/
         /*(вертикальную линию возле номера телефона)*/
-        /*Снять комментарий с padding */
+        /*Тогда снять комментарий с padding */
         /*и закомментировать селектор header__info-phone_decor-line_vertical*/
         //&_decor-line_vertical
         /*padding: 7px 0 10px 0;*/
@@ -62,7 +62,17 @@
     
     //control
     &__control{padding: 40px 0 40px 0;}
-    //logo
-    @import "app/sass/blocks/logo/_logo.scss";
 }
+        //logo
+    @import "app/sass/blocks/logo/_logo.scss";
+        //Navigation
+    @import "app/sass/blocks/navigation/_navigation.scss";
+            //Menu
+    @import "app/sass/blocks/menu/_menu.scss";
+        //Box-button
+    @import "app/sass/blocks/box-button/_box-button.scss";
+            //Button
+    @import "app/sass/blocks/btn/_btn.scss";
+            
+    
 /*-----------------------*/
