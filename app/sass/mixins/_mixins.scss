@@ -1,0 +1,21 @@
+//Миксины  для сайта landing-business.hw
+//Для заголовков
+@mixin title {
+       margin: 0;
+       text-align: center;
+       font-family: $f-bold;
+       font-size: 36px;
+}
+//Для подзаголовок
+@mixin subtitle {
+       margin: 0 0 18px 0;
+       text-align: center;
+       font-family: $f-light;
+       font-size: 20px;
+}
+//Для линии
+@mixin line-bold {
+       width: 50px;
+       height: 6px;
+       background-color: $c-dark;
+}

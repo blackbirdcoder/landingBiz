@@ -1,7 +1,16 @@
 //Окончательные стили для сайта landing-business.hw
+//Миксины
+@import "app/sass/mixins/_mixins.scss";
+//Спрайты
+@import "app/sass/sprite/_sprite.scss";
+//Переменные
 @import "app/sass/variables/_variables.scss";
+//Общии
 @import "app/sass/blocks/_common.scss";
+//Секции
 @import "app/sass/blocks/header/_header.scss";
 @import "app/sass/blocks/hero/_hero.scss";
+@import "app/sass/blocks/about/_about.scss";
+//Шрифт
 @import "app/sass/fonts/_fonts.scss";
 

@@ -16,7 +16,7 @@
 /* ----BODY----*/
 .page {
   padding: 0;
-  font-family: 16px;
+  font-size: 16px;
   font-family: "OpenSansRegular";
   color: #424242;
   background-color: #ffffff;
@@ -270,6 +270,47 @@
 
 .btn-big_theme_bright:hover {
   background-color: #dd2a24;
+}
+
+/*----Section About----*/
+.about {
+  background-color: #ffffff;
+}
+
+.about__box-info {
+  padding: 100px 0 120px 0;
+}
+
+.about__heading {
+  margin: 0;
+  text-align: center;
+  font-family: "HelveticaBold";
+  font-size: 36px;
+}
+
+.about__txt {
+  margin: 0 0 18px 0;
+  text-align: center;
+  font-family: "HelveticaLight";
+  font-size: 20px;
+}
+
+.about__decor-line {
+  width: 50px;
+  height: 6px;
+  background-color: #424242;
+}
+
+/*list*/
+.list__item {
+  list-style-type: none;
+}
+
+.list__pic-like {
+  background-image: url(../img/sprite.png);
+  background-position: -84px 0px;
+  width: 83px;
+  height: 79px;
 }
 
 /*Шрифты для сайта*/

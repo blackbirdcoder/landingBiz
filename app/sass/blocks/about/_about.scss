@@ -1,0 +1,13 @@
+//About стили для сайта landing-business.hw
+/*----Section About----*/
+.about {
+   background-color: $c-light;
+   &__box-info { padding: 100px 0 120px 0;}   
+   &__heading {@include title;}
+   &__txt {@include subtitle;}  
+   &__decor-line{@include line-bold; }
+}
+//list
+@import "app/sass/blocks/list/_list.scss";
+     
+  

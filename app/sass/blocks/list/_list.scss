@@ -1,0 +1,10 @@
+//Список для сайта landing-business.hw
+/*list*/
+.about__list {}
+.list  {
+  &__item {list-style-type: none;}  
+  &__pic-like {@include sprite($like);}
+  &__title {}
+  &__txt {}
+}
+
