@@ -1,0 +1,33 @@
+//Section Hero для сайта landing-business.hw
+/*----Section Hero----*/
+.hero {
+    min-height: 590px;
+    background: #71796c url("../img/bg-hero.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    &__box-info{
+        padding: 164px 0 235px 0;
+        text-align: center;
+    }
+    &__heading {
+        margin: 0;
+        font-family: $f-bold;
+        font-size: 48px;
+        color: $c-light;
+    }
+    &__txt {
+        margin: 0;
+        font-family: $f-light;
+        font-weight: 300;
+        font-size: 30px;
+        color: $c-light;
+    }
+    &__box-button-big {
+    display: inline-block;
+    padding: 30px 0 0 0;
+    }
+}
+    //button-big
+@import "app/sass/blocks/btn-big/_btn-big.scss";

@@ -1,0 +1,19 @@
+//Большая кнопка для сайта landing-business.hw
+/*Button-Big*/
+.btn-big{
+    display: inline-block;
+    padding: 21px 36px 21px 36px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: $f-bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $c-light;
+    transition: 0.7s;
+    
+    &_theme_bright{
+        background-color: #f8cd53;
+        &:hover {background-color: $c-accent;}
+    }
+}
+
