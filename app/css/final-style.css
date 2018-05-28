@@ -358,6 +358,55 @@
   font-size: 14px;
 }
 
+/*----Section Out Approch----*/
+.approch {
+  background-color: #f3f3f3;
+}
+
+.approch__box-info {
+  padding: 100px 0 130px 0;
+}
+
+.approch__heading {
+  margin: 0;
+  text-align: center;
+  font-family: "HelveticaBold";
+  font-size: 36px;
+}
+
+.approch__txt {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-family: "HelveticaLight";
+  font-size: 20px;
+}
+
+.approch__decor-line {
+  width: 50px;
+  height: 6px;
+  background-color: #424242;
+}
+
+.approch__list-extended {
+  margin: 45px 0 0 0;
+}
+
+/*list-extended*/
+.list-extended__item {
+  list-style-type: none;
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.list-extended__box-img {
+  display: inline-block;
+}
+
+.list-extended__pic {
+  width: 340px;
+  height: 240px;
+}
+
 /*Шрифты для сайта*/
 @font-face {
   font-family: 'GeorgiaBold';

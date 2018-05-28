@@ -1,0 +1,12 @@
+////Out Approch стили для сайта landing-business.hw
+/*----Section Out Approch----*/
+.approch{
+   background-color: #f3f3f3;
+   &__box-info{padding: 100px 0 130px 0;}
+   &__heading {@include title;}
+   &__txt {@include subtitle;}  
+   &__decor-line{@include line-bold; }
+   &__list-extended {margin: 45px 0 0 0;}
+}
+//list-extended
+@import "app/sass/blocks/list-extended/_list-extended.scss";
