@@ -6,7 +6,9 @@
    &__heading {@include title;}
    &__txt {@include subtitle;}  
    &__decor-line{@include line-bold; }
+   &__list {margin: 45px 0px 0 0;}
 }
+
 //list
 @import "app/sass/blocks/list/_list.scss";
      
