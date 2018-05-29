@@ -1,0 +1,28 @@
+//Блок с большой цифрой. Стили для сайта landing-business.hw
+/*block-number*/
+.block-number {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 100px;
+    padding:4px 35px 20px 35px;
+    background-color: $c-accent;
+    border: 2px solid $c-light;
+    border-radius: 6px;
+    &__num {
+        text-align: center;
+        font-family: $f-num;
+        font-size: 60px;
+        color: $c-light;
+    } 
+    &__txt{
+        margin: 0;
+        text-align: center;
+        font-family: $f-bold;
+        font-size: 20px;
+        color: $c-light;
+        &_position{
+            position: relative;
+            bottom: 10px;
+        }
+    }
+}

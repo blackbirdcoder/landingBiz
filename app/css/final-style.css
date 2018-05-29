@@ -392,6 +392,10 @@
 }
 
 /*list-extended*/
+.list-extended {
+  padding: 0;
+}
+
 .list-extended__item {
   list-style-type: none;
   display: inline-block;
@@ -405,6 +409,61 @@
 .list-extended__pic {
   width: 340px;
   height: 240px;
+}
+
+.list-extended__block-number {
+  vertical-align: 100px;
+  position: relative;
+  right: 66px;
+}
+
+.list-extended__desc {
+  display: inline-block;
+  width: 520px;
+  vertical-align: 100px;
+}
+
+.list-extended__title {
+  margin: 0;
+  font-family: "HelveticaBold";
+  font-size: 18px;
+}
+
+.list-extended__txt {
+  margin: 15px 0 0 0;
+  font-size: 14px;
+}
+
+/*block-number*/
+.block-number {
+  display: inline-block;
+  min-width: 100px;
+  min-height: 100px;
+  padding: 4px 35px 20px 35px;
+  background-color: #dd2a24;
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.block-number__num {
+  text-align: center;
+  font-family: "GeorgiaBold";
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.block-number__txt {
+  margin: 0;
+  text-align: center;
+  font-family: "HelveticaBold";
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.block-number__txt_position {
+  position: relative;
+  bottom: 10px;
 }
 
 /*Шрифты для сайта*/

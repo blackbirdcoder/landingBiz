@@ -1,6 +1,7 @@
 //Список расширенный для сайта landing-business.hw
 /*list-extended*/
 .list-extended{
+    padding: 0;
    &__item {
        list-style-type: none;
        display: inline-block;
@@ -11,8 +12,28 @@
        width: 340px;
        height: 240px;
    }
-   &__block-number {}
+   
+   &__block-number {
+       //позиционирование block-number
+       vertical-align: 100px;
+       position: relative;
+       right: 66px;
+   }
+   &__desc {
+       display: inline-block;
+       width: 520px;
+       vertical-align: 100px;
+   }
+   &__title {
+       margin: 0;
+       font-family: $f-bold;
+       font-size: 18px;
+   }
+   &__txt {
+       margin: 15px 0 0 0;
+       font-size: 14px;
+    }
 }
-
-
+   //block-number
+@import "app/sass/blocks/block-number/_block-number.scss";
 
