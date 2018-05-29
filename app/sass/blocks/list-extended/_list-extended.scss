@@ -3,26 +3,40 @@
 .list-extended{
     padding: 0;
    &__item {
+       margin: 0 0 40px 0;
        list-style-type: none;
        display: inline-block;
+       box-shadow: 0px 0px 1px 0px;
+       border-radius: 2px;
        background-color: $c-light;
-   } 
+   }
+   &__item:last-child {margin: 0;} 
    &__box-img {display: inline-block;}
    &__pic {
-       width: 340px;
-       height: 240px;
+       width: 336px;
+       height: 236px;
+       vertical-align: bottom;
    }
    
    &__block-number {
        //позиционирование block-number
-       vertical-align: 100px;
+       vertical-align: 85px;
        position: relative;
-       right: 66px;
+       right: 62px;
    }
    &__desc {
        display: inline-block;
-       width: 520px;
-       vertical-align: 100px;
+       width: 557px;
+       vertical-align: 80px;
+       &_position_right{
+            position: relative;
+            right: 35px;    
+       }
+       &_position_left{
+            text-align: right;
+            position: relative;
+            left: 30px;
+       }
    }
    &__title {
        margin: 0;

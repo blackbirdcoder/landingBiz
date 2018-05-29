@@ -4,10 +4,14 @@
     display: inline-block;
     min-width: 100px;
     min-height: 100px;
-    padding:4px 35px 20px 35px;
+    padding:0px 31px 17px 36px;
     background-color: $c-accent;
     border: 2px solid $c-light;
     border-radius: 6px;
+    &_position_left {
+        position: relative;
+        left: 60px;
+    }
     &__num {
         text-align: center;
         font-family: $f-num;
