@@ -1,0 +1,19 @@
+////Work стили для сайта landing-business.hw
+/*----Section Work----*/
+.work{
+   background-color: $c-accent;
+   &__box-info{padding: 100px 0 130px 0;}
+   &__heading {
+       @include title;
+       @include bright-txt;
+   }
+   &__txt {
+       @include subtitle;
+       @include bright-txt;
+   }  
+   &__decor-line{
+       @include line-bold;
+       @include line-bright;
+   }
+   &__list-graphic {}
+}
