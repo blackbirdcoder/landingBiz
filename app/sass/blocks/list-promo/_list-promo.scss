@@ -1,0 +1,51 @@
+//Список промо для сайта landing-business.hw
+/*List-promo*/
+.list-promo {
+    padding: 0;
+    &__item{
+       background-color: #f35e59;
+       list-style-type: none;
+       display: inline-block;
+       //width: 250px;
+    }
+    &__item:nth-child(2) {
+        position: relative;
+        right: 5px;
+        bottom: 84px;
+    }
+    &__item:nth-child(3) {
+        position: relative;
+        right: 9px;
+    }
+    &__item:nth-child(4) {
+        position: relative;
+        bottom: 84px;
+        right: 13px;
+    }
+    &__ico{
+        font-size: 36px;
+        color: $c-light;
+        opacity: 0.5;
+    }
+    &__box-info-text{
+        margin: 85px 0 85px 0;
+        text-align: center;
+    }
+    &__title{
+        margin: 0;
+        font-family: $f-bold;
+        font-size: 26px;
+        color: $c-light;
+    }
+    &__txt {
+        margin: 0;
+        font-family: $f-bold;
+        font-size: 16px;
+        color: $c-light;
+    }
+    &__pic{
+        width: 251px;
+        height: 251px;
+        vertical-align: bottom;
+    }
+}

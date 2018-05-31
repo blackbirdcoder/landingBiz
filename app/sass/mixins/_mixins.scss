@@ -22,4 +22,7 @@
 //светлый стиль для заголовков и подзаголовка
 @mixin bright-txt {color: $c-light;}
 //светлый стиль для линии
-@mixin line-bright {background-color: $c-light;}
+@mixin line-bright {
+    background-color: $c-light;
+    border: 0;
+}

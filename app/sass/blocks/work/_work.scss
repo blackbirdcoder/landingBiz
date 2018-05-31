@@ -2,7 +2,7 @@
 /*----Section Work----*/
 .work{
    background-color: $c-accent;
-   &__box-info{padding: 100px 0 130px 0;}
+   &__box-info{padding: 105px 0 50px 0;}
    &__heading {
        @include title;
        @include bright-txt;
@@ -15,5 +15,7 @@
        @include line-bold;
        @include line-bright;
    }
-   &__list-graphic {}
+   &__list-promo {margin: 50px 0 0 0;}
 }
+   //list-promo
+@import "app/sass/blocks/list-promo/_list-promo.scss";
