@@ -23,6 +23,8 @@
         right: 13px;
     }
     &__ico{
+        position: relative;
+        bottom: 17px;
         font-size: 36px;
         color: $c-light;
         opacity: 0.5;
@@ -45,7 +47,7 @@
     }
     &__pic{
         width: 251px;
-        height: 251px;
+        height: 253px;
         vertical-align: bottom;
     }
 }

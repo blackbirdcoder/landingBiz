@@ -558,6 +558,8 @@
 }
 
 .list-promo__ico {
+  position: relative;
+  bottom: 17px;
   font-size: 36px;
   color: #ffffff;
   opacity: 0.5;
@@ -584,7 +586,7 @@
 
 .list-promo__pic {
   width: 251px;
-  height: 251px;
+  height: 253px;
   vertical-align: bottom;
 }
 
