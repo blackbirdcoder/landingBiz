@@ -590,6 +590,95 @@
   vertical-align: bottom;
 }
 
+/*----Section Application----*/
+.application {
+  background-color: #1287bf;
+}
+
+.application__box-info {
+  padding: 85px 0 100px 0;
+  text-align: center;
+}
+
+.application__heading {
+  margin: 0;
+  text-align: center;
+  font-family: "HelveticaBold";
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.application__txt {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-family: "HelveticaLight";
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.application__btn-open {
+  margin: 10px 0 20px 0;
+}
+
+.application__figure-triangle {
+  vertical-align: bottom;
+}
+
+.btn-open {
+  display: inline-block;
+  padding: 10px 16px 10px 16px;
+  border: 2.5px solid #ffffff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-open__ico {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.btn-open:hover {
+  background-color: #4CAF50;
+}
+
+.figure-triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 35px solid #ffffff;
+}
+
+.form {
+  margin: 0 170px 0 170px;
+  padding: 50px 50px 65px 50px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.form__btn-close {
+  display: inline-block;
+  padding: 1px 15px 7px 15px;
+  position: absolute;
+  text-decoration: none;
+  font-family: "HelveticaLight", sans-serif;
+  font-size: 32px;
+  background-color: #dd2a24;
+  color: #ffffff;
+  border: 2.5px solid #ffffff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.form__txt {
+  margin: 0 0 35px 0;
+  font-family: "HelveticaRegular";
+}
+
 /*Шрифты для сайта*/
 @font-face {
   font-family: 'GeorgiaBold';

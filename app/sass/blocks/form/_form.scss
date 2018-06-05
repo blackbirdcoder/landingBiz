@@ -1,0 +1,24 @@
+//Форма обратной связи для сайта landing-business.hw
+.form {
+    margin: 0 170px 0 170px;
+    padding: 50px 50px 65px 50px;
+    position: relative;
+    background-color: $c-light;
+    &__btn-close {
+        display: inline-block;
+        padding: 1px 15px 7px 15px;
+        position: absolute;
+        text-decoration: none;
+        font-family: $f-light, sans-serif;
+        font-size: 32px;
+        background-color: $c-accent;
+        color: $c-light;
+        border: 2.5px solid $c-light;
+        border-radius: 50%;
+    }
+    &__txt {
+        margin: 0 0 35px 0;
+        font-family: $f-normal;
+    }
+   
+}

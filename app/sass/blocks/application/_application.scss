@@ -1,0 +1,28 @@
+//Application стили для сайта landing-business.hw
+/*----Section Application----*/
+.application {
+    background-color: #1287bf;
+    &__box-info {
+        padding: 85px 0 100px 0;
+        text-align: center;
+    }
+    &__heading {
+       @include title;
+       @include bright-txt;
+    }
+    &__txt {
+       @include subtitle;
+       @include bright-txt;
+    }
+    &__btn-open {margin: 10px 0 20px 0;}
+    &__figure-triangle {
+        vertical-align: bottom;
+    }
+    &__form {}
+}
+    //btn-open
+@import "app/sass/blocks/btn-open/_btn-open.scss";
+    //figure-triangle
+@import "app/sass/blocks/figure-triangle/_figure-triangle.scss";
+    //form
+@import "app/sass/blocks/form/_form.scss";
