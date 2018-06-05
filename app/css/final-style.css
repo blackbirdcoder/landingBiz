@@ -596,7 +596,7 @@
 }
 
 .application__box-info {
-  padding: 85px 0 100px 0;
+  padding: 85px 0 115px 0;
   text-align: center;
 }
 
@@ -664,6 +664,8 @@
   display: inline-block;
   padding: 1px 15px 7px 15px;
   position: absolute;
+  top: -23px;
+  right: -20px;
   text-decoration: none;
   font-family: "HelveticaLight", sans-serif;
   font-size: 32px;
@@ -672,11 +674,60 @@
   border: 2.5px solid #ffffff;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.form__btn-close:hover {
+  background-color: #b7211c;
+  font-weight: 600;
 }
 
 .form__txt {
   margin: 0 0 35px 0;
   font-family: "HelveticaRegular";
+}
+
+.form__field:nth-of-type(2) {
+  margin: 10px 0 10px 0;
+}
+
+.form__field {
+  padding: 18px 25px 18px 25px;
+  width: 75%;
+  outline: 0;
+  font-size: 14px;
+  font-family: "HelveticaRegular", sans-serif;
+  border: 1px solid #b5b4b4;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.form__field:focus {
+  -webkit-box-shadow: 0px 0px 2px 1px #1287bf;
+          box-shadow: 0px 0px 2px 1px #1287bf;
+}
+
+.form__btn-submit {
+  margin: 32px 0 0 0;
+  padding: 15px 27px 15px 27px;
+  border: 0;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  letter-spacing: 0.5px;
+  font-family: "HelveticaBold";
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #dd2a24;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form__btn-submit:hover {
+  background-color: #4CAF50;
 }
 
 /*Шрифты для сайта*/
