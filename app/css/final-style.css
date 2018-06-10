@@ -1,4 +1,45 @@
 @charset "UTF-8";
+/*Шрифты для сайта*/
+@font-face {
+  font-family: 'GeorgiaBold';
+  src: url("../fonts/GeorgiaBold/GeorgiaBold.ttf");
+  src: url("../fonts/GeorgiaBold/GeorgiaBold.eot"), url("../fonts/GeorgiaBold/GeorgiaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GeorgiaBold/GeorgiaBold.woff2") format("woff2"), url("../fonts/GeorgiaBold/GeorgiaBold.woff") format("woff"), url("../fonts/GeorgiaBold/GeorgiaBold.svg#GeorgiaBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaBold';
+  src: url("../fonts/HelveticaBold/HelveticaBold.ttf");
+  src: url("../fonts/HelveticaBold/HelveticaBold.eot"), url("../fonts/HelveticaBold/HelveticaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaBold/HelveticaBold.woff2") format("woff2"), url("../fonts/HelveticaBold/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold/HelveticaBold.svg#HelveticaBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaLight';
+  src: url("../fonts/HelveticaLight/HelveticaLight.ttf");
+  src: url("../fonts/HelveticaLight/HelveticaLight.eot"), url("../fonts/HelveticaLight/HelveticaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaLight/HelveticaLight.woff2") format("woff2"), url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"), url("../fonts/HelveticaLight/HelveticaLight.svg#HelveticaLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaRegular';
+  src: url("../fonts/HelveticaRegular/HelveticaRegular.ttf");
+  src: url("../fonts/HelveticaRegular/HelveticaRegular.eot"), url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaRegular/HelveticaRegular.woff2") format("woff2"), url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"), url("../fonts/HelveticaRegular/HelveticaRegular.svg#HelveticaRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.ttf");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot"), url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.svg#OpenSansRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ----HTML----*/
 * {
   -webkit-box-sizing: border-box;
@@ -737,7 +778,7 @@
 }
 
 .contact__box-info {
-  padding: 90px 0 80px 0;
+  padding: 75px 0 80px 0;
   text-align: center;
 }
 
@@ -747,10 +788,15 @@
   font-family: "HelveticaBold";
   font-size: 36px;
   color: #ffffff;
+  font-size: 30px;
 }
 
 .contact__list-links {
   margin: 30px 0 0 0;
+}
+
+.contact__form-subscribe {
+  margin: 35px 0 0 0;
 }
 
 /*List-links*/
@@ -761,7 +807,7 @@
 .list-links__item {
   list-style-type: none;
   display: inline-block;
-  margin: 0 20px 0 0;
+  margin: 0 15px 0 0;
 }
 
 .list-links__item:last-child {
@@ -793,50 +839,65 @@
 
 /*form-subscribe*/
 .form-subscribe__txt {
+  margin: 0;
   color: #ffffff;
   font-size: 15px;
   font-family: "HelveticaRegular";
 }
 
-/*Шрифты для сайта*/
-@font-face {
-  font-family: 'GeorgiaBold';
-  src: url("../fonts/GeorgiaBold/GeorgiaBold.ttf");
-  src: url("../fonts/GeorgiaBold/GeorgiaBold.eot"), url("../fonts/GeorgiaBold/GeorgiaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GeorgiaBold/GeorgiaBold.woff2") format("woff2"), url("../fonts/GeorgiaBold/GeorgiaBold.woff") format("woff"), url("../fonts/GeorgiaBold/GeorgiaBold.svg#GeorgiaBold") format("svg");
-  font-weight: normal;
-  font-style: normal;
+.form-subscribe__field {
+  margin: 25px 0 0 0;
+  padding: 20px 20px 20px 20px;
+  border: 0;
+  outline: 0;
+  width: 66%;
+  background-color: #424242;
+  color: #ffffff;
+  font-size: 17px;
 }
 
-@font-face {
-  font-family: 'HelveticaBold';
-  src: url("../fonts/HelveticaBold/HelveticaBold.ttf");
-  src: url("../fonts/HelveticaBold/HelveticaBold.eot"), url("../fonts/HelveticaBold/HelveticaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaBold/HelveticaBold.woff2") format("woff2"), url("../fonts/HelveticaBold/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold/HelveticaBold.svg#HelveticaBold") format("svg");
-  font-weight: normal;
-  font-style: normal;
+.form-subscribe ::-webkit-input-placeholder {
+  color: #979797;
+  font-size: 14px;
 }
 
-@font-face {
-  font-family: 'HelveticaLight';
-  src: url("../fonts/HelveticaLight/HelveticaLight.ttf");
-  src: url("../fonts/HelveticaLight/HelveticaLight.eot"), url("../fonts/HelveticaLight/HelveticaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaLight/HelveticaLight.woff2") format("woff2"), url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"), url("../fonts/HelveticaLight/HelveticaLight.svg#HelveticaLight") format("svg");
-  font-weight: normal;
-  font-style: normal;
+.form-subscribe ::-moz-placeholder {
+  color: #979797;
+  font-size: 14px;
 }
 
-@font-face {
-  font-family: 'HelveticaRegular';
-  src: url("../fonts/HelveticaRegular/HelveticaRegular.ttf");
-  src: url("../fonts/HelveticaRegular/HelveticaRegular.eot"), url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaRegular/HelveticaRegular.woff2") format("woff2"), url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"), url("../fonts/HelveticaRegular/HelveticaRegular.svg#HelveticaRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+.form-subscribe :-ms-input-placeholder {
+  color: #979797;
+  font-size: 14px;
 }
 
-@font-face {
-  font-family: 'OpenSansRegular';
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.ttf");
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot"), url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.svg#OpenSansRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+.form-subscribe ::-ms-input-placeholder {
+  color: #979797;
+  font-size: 14px;
+}
+
+.form-subscribe ::placeholder {
+  color: #979797;
+  font-size: 14px;
+}
+
+.form-subscribe__btn-subscribe {
+  margin: 20px 0 0 0;
+  padding: 18px 34px 18px 34px;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: "HelveticaBold";
+  background-color: #2a2a2a;
+  border: 2px solid #424242;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form-subscribe__btn-subscribe:hover {
+  border: 2px solid #dd2a24;
 }
 
 /*# sourceMappingURL=final-style.css.map */

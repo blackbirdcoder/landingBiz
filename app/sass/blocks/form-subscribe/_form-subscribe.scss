@@ -1,14 +1,55 @@
-//Форма подписки связи для сайта landing-business.hw
+//Форма подписки для сайта landing-business.hw
 /*form-subscribe*/
 .form-subscribe {
-    &__txt {
-        color: $c-light;
-        font-size: 15px;
-        font-family: $f-normal;
-    }
-   &__field {//Остоновился
+   &__txt {
+       margin: 0;
+       color: $c-light;
+       font-size: 15px;
+       font-family: $f-normal;
    }
-   &__btn-subscribe {}
+   &__field {
+       margin: 25px 0 0 0;
+       padding: 20px 20px 20px 20px;
+       border: 0;
+       outline: 0;
+       width: 66%;
+       background-color: $c-dark;
+       color: $c-light;
+       font-size: 17px;   
+   }
+::-webkit-input-placeholder {
+    color:#979797;
+    font-size: 14px;
+}
+::-moz-placeholder {
+    color:#979797;
+    font-size: 14px;
+}
+:-moz-placeholder {
+    color:#979797;
+    font-size: 14px;
+}
+:-ms-input-placeholder {
+    color:#979797;
+    font-size: 14px;
+}
+::placeholder {
+    color:#979797;
+    font-size: 14px;
+}
+&__btn-subscribe {
+    margin: 20px 0 0 0;
+    padding: 18px 34px 18px 34px;
+    font-size: 17px;
+    color: $c-light;
+    font-family: $f-bold;
+    background-color: #2a2a2a;
+    border: 2px solid $c-dark;
+    border-radius: 4px;
+    transition: 0.5s;
+    
+    &:hover {border: 2px solid $c-accent;}
+}
    
 }
 
