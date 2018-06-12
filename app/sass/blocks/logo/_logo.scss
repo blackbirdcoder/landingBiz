@@ -17,12 +17,12 @@
     &__heading {
         margin: 0;
         font-size: 37px;
-        font-family: $f-bold;
+        font-family: $f-bold, sans-serif;
     }
     &__txt {
         margin: 0;
         font-size: 15px;
-        font-family: $f-normal;
+        font-family: $f-normal, sans-serif;
     }
 }
 

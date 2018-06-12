@@ -14,14 +14,14 @@
     }
     &__num {
         text-align: center;
-        font-family: $f-num;
+        font-family: $f-num, sans-serif;
         font-size: 60px;
         color: $c-light;
     } 
     &__txt{
         margin: 0;
         text-align: center;
-        font-family: $f-bold;
+        font-family: $f-bold, sans-serif;
         font-size: 20px;
         color: $c-light;
         &_position{

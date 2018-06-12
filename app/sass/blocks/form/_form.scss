@@ -27,7 +27,7 @@
     }
     &__txt {
         margin: 0 0 35px 0;
-        font-family: $f-normal;
+        font-family: $f-normal, sans-serif;
     }
     &__field:nth-of-type(2) {margin: 10px 0 10px 0;}
     &__field {
@@ -46,7 +46,7 @@
         border: 0;
         border-radius: 5px;
         letter-spacing: 0.5px;
-        font-family: $f-bold;
+        font-family: $f-bold, sans-serif;
         font-size: 15px;
         text-transform: uppercase;
         color: $c-light;

@@ -3,14 +3,14 @@
 @mixin title {
        margin: 0;
        text-align: center;
-       font-family: $f-bold;
+       font-family: $f-bold, sans-serif;
        font-size: 36px;
 }
 //Для подзаголовок
 @mixin subtitle {
        margin: 0 0 10px 0;
        text-align: center;
-       font-family: $f-light;
+       font-family: $f-light, sans-serif;
        font-size: 20px;
 }
 //Для линии

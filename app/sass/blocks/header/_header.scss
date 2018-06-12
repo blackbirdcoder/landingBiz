@@ -34,7 +34,7 @@
         text-decoration: none;
         color: $c-dark;
         font-size: 15px;
-        font-family:  $f-normal;
+        font-family:  $f-normal, sans-serif;
         transition: 0.5s;
         
         &:hover {color: $c-accent;}

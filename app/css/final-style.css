@@ -58,7 +58,7 @@
 .page {
   padding: 0;
   font-size: 16px;
-  font-family: "OpenSansRegular";
+  font-family: "OpenSansRegular", sans-serif;
   color: #424242;
   background-color: #ffffff;
 }
@@ -111,7 +111,7 @@
   text-decoration: none;
   color: #424242;
   font-size: 15px;
-  font-family: "HelveticaRegular";
+  font-family: "HelveticaRegular", sans-serif;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -171,13 +171,13 @@
 .logo__heading {
   margin: 0;
   font-size: 37px;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
 }
 
 .logo__txt {
   margin: 0;
   font-size: 15px;
-  font-family: "HelveticaRegular";
+  font-family: "HelveticaRegular", sans-serif;
 }
 
 .container__navigation {
@@ -203,7 +203,7 @@
 .menu__link {
   text-decoration: none;
   text-transform: capitalize;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 15px;
   color: #424242;
   -webkit-transition: 0.5s;
@@ -237,7 +237,7 @@
           border-radius: 5px;
   text-decoration: none;
   text-transform: capitalize;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 15px;
   color: #ffffff;
   -webkit-transition: 0.5s;
@@ -271,14 +271,14 @@
 
 .hero__heading {
   margin: 0;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 48px;
   color: #ffffff;
 }
 
 .hero__txt {
   margin: 0;
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", sans-serif;
   font-weight: 300;
   font-size: 30px;
   color: #ffffff;
@@ -296,7 +296,7 @@
   -webkit-border-radius: 7px;
           border-radius: 7px;
   text-decoration: none;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   color: #ffffff;
@@ -325,14 +325,14 @@
 .about__heading {
   margin: 0;
   text-align: center;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
 }
 
 .about__txt {
   margin: 0 0 10px 0;
   text-align: center;
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", sans-serif;
   font-size: 20px;
 }
 
@@ -389,7 +389,7 @@
 
 .list__title {
   margin: 20px 0 17px 0;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 22px;
 }
 
@@ -411,14 +411,14 @@
 .approch__heading {
   margin: 0;
   text-align: center;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
 }
 
 .approch__txt {
   margin: 0 0 10px 0;
   text-align: center;
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", sans-serif;
   font-size: 20px;
 }
 
@@ -487,7 +487,7 @@
 
 .list-extended__title {
   margin: 0;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 18px;
 }
 
@@ -515,7 +515,7 @@
 
 .block-number__num {
   text-align: center;
-  font-family: "GeorgiaBold";
+  font-family: "GeorgiaBold", sans-serif;
   font-size: 60px;
   color: #ffffff;
 }
@@ -523,7 +523,7 @@
 .block-number__txt {
   margin: 0;
   text-align: center;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 20px;
   color: #ffffff;
 }
@@ -545,7 +545,7 @@
 .work__heading {
   margin: 0;
   text-align: center;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
   color: #ffffff;
 }
@@ -553,7 +553,7 @@
 .work__txt {
   margin: 0 0 10px 0;
   text-align: center;
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", sans-serif;
   font-size: 20px;
   color: #ffffff;
 }
@@ -613,14 +613,14 @@
 
 .list-promo__title {
   margin: 0;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 26px;
   color: #ffffff;
 }
 
 .list-promo__txt {
   margin: 0;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 16px;
   color: #ffffff;
 }
@@ -644,7 +644,7 @@
 .application__heading {
   margin: 0;
   text-align: center;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
   color: #ffffff;
 }
@@ -652,7 +652,7 @@
 .application__txt {
   margin: 0 0 10px 0;
   text-align: center;
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", sans-serif;
   font-size: 20px;
   color: #ffffff;
 }
@@ -728,7 +728,7 @@
 
 .form__txt {
   margin: 0 0 35px 0;
-  font-family: "HelveticaRegular";
+  font-family: "HelveticaRegular", sans-serif;
 }
 
 .form__field:nth-of-type(2) {
@@ -758,7 +758,7 @@
   -webkit-border-radius: 5px;
           border-radius: 5px;
   letter-spacing: 0.5px;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 15px;
   text-transform: uppercase;
   color: #ffffff;
@@ -785,7 +785,7 @@
 .contact__heading {
   margin: 0;
   text-align: center;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
   color: #ffffff;
   font-size: 30px;
@@ -886,7 +886,7 @@
   padding: 18px 34px 18px 34px;
   font-size: 17px;
   color: #ffffff;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", sans-serif;
   background-color: #2a2a2a;
   border: 2px solid #424242;
   -webkit-border-radius: 4px;
