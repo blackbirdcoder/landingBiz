@@ -4,8 +4,12 @@
 
 .logo {
     display: inline-block;
-    width: 250px;
-    
+    width: 24%;
+    //медиа-запрос для 4k экранов
+    //также позволяет в шапке избежать переход логотипа, меню и кнопки на
+    //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
+    @media (min-width: 3840px ) {width: 26%;}
+     
     &__ico {
         margin: 0 5px 0 0;
         position: relative;

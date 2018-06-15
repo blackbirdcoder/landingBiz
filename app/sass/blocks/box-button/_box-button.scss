@@ -1,5 +1,14 @@
 //Обертка для кнопки
-.container__box-button {margin: 0 0 0 16px;}
+.container__box-button {
+    margin: 0 0 0 16px;
+    //медиа-запрос для 4k экранов
+    //также позволяет в шапке избежать переход логотипа, меню и кнопки на
+    //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
+    @media (min-width: 3840px ) {
+        float: right;
+        margin: 12px 0 0 0;
+    }
+}
 .box-button {
     display: inline-block;
     vertical-align: 20px;

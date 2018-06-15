@@ -11,6 +11,11 @@
     color: $c-light;
     transition: 0.5s;
     
-    &:hover{color: lighten(#f8cd53, 15%)};
-    &_theme_bright{background-color: $c-accent;};
+    &:hover{color: lighten(#f8cd53, 15%)}
+    &_theme_bright{background-color: $c-accent;}
+    
+    //медиа-запрос для 4k экранов
+    //также позволяет в шапке избежать переход логотипа, меню и кнопки на
+    //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
+    @media (min-width: 3840px ) {padding: 10px 23px 13px 23px;}
 };

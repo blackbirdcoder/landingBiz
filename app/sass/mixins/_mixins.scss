@@ -18,6 +18,7 @@
        width: 50px;
        height: 6px;
        background-color: $c-dark;
+       border: 0;
 }
 //светлый стиль для заголовков и подзаголовка
 @mixin bright-txt {color: $c-light;}

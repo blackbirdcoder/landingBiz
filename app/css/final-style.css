@@ -97,6 +97,12 @@
   font-size: 24px;
 }
 
+@media (min-width: 3840px) {
+  .header__ico-phone {
+    vertical-align: baseline;
+  }
+}
+
 .header__info-email {
   padding: 0 3px 0 18px;
   display: inline-block;
@@ -153,10 +159,22 @@
   padding: 40px 0 40px 0;
 }
 
+@media (min-width: 3840px) {
+  .header__control {
+    text-align: center;
+  }
+}
+
 /*logo*/
 .logo {
   display: inline-block;
-  width: 250px;
+  width: 24%;
+}
+
+@media (min-width: 3840px) {
+  .logo {
+    width: 26%;
+  }
 }
 
 .logo__ico {
@@ -182,6 +200,12 @@
 
 .container__navigation {
   margin: 0 0 0 176px;
+}
+
+@media (min-width: 3840px) {
+  .container__navigation {
+    margin: 0 0 0 25px;
+  }
 }
 
 .navigation {
@@ -220,8 +244,21 @@
   font-size: 9px;
 }
 
+@media (min-width: 3840px) {
+  .menu__ico {
+    display: none;
+  }
+}
+
 .container__box-button {
   margin: 0 0 0 16px;
+}
+
+@media (min-width: 3840px) {
+  .container__box-button {
+    float: right;
+    margin: 12px 0 0 0;
+  }
 }
 
 .box-button {
@@ -251,6 +288,12 @@
 
 .btn_theme_bright {
   background-color: #dd2a24;
+}
+
+@media (min-width: 3840px) {
+  .btn {
+    padding: 10px 23px 13px 23px;
+  }
 }
 
 /*-----------------------*/
@@ -340,6 +383,7 @@
   width: 50px;
   height: 6px;
   background-color: #424242;
+  border: 0;
 }
 
 .about__list {
@@ -426,6 +470,7 @@
   width: 50px;
   height: 6px;
   background-color: #424242;
+  border: 0;
 }
 
 .approch__list-extended {
@@ -562,6 +607,7 @@
   width: 50px;
   height: 6px;
   background-color: #424242;
+  border: 0;
   background-color: #ffffff;
   border: 0;
 }
@@ -778,7 +824,7 @@
 }
 
 .contact__box-info {
-  padding: 75px 0 80px 0;
+  padding: 80px 0 80px 0;
   text-align: center;
 }
 

@@ -23,6 +23,8 @@
     &__ico-phone { 
         vertical-align: -3px;
         font-size: 24px;
+        //медиа-запрос для 4k экранов
+        @media (min-width: 3840px ) { vertical-align: baseline;}
     }
     &__info-email {
         padding: 0 3px 0 18px;
@@ -61,7 +63,14 @@
     }
     
     //control
-    &__control{padding: 40px 0 40px 0;}
+    &__control{
+        padding: 40px 0 40px 0; 
+        //медиа-запрос для 4k экранов
+        //также позволяет в шапке избежать переход логотипа, меню и кнопки на
+        //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
+        @media (min-width: 3840px ) {text-align: center;}
+    }
+ 
 }
         //logo
     @import "app/sass/blocks/logo/_logo.scss";
