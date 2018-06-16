@@ -1,4 +1,4 @@
-//  gulp v.0.4.1 beta (test)
+//  gulp v.0.4.2 beta (test) (Убрал из watch утилиту sprite (spritesmith) )
 //  задачи для проекта "landing-business.hw", который выполняю в рамках курса ITVDN
 var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
@@ -97,7 +97,7 @@ gulp.task('img', function(){
             .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('watch', ['sprite', 'browser-sync', 'pug-run', 'sass', 'css-min', 'scripts-min'],function(){
+gulp.task('watch', ['browser-sync', 'pug-run', 'sass', 'css-min', 'scripts-min'],function(){
     //наблюдаю за PUG и перезагружаю браузер 
         gulp.watch('app/pug/**/*.pug', ['pug-run'], browserSync.reload);
 	gulp.watch(['app/sass/**/*.scss', 'app/sass/**/*.sass' ], ['sass']);
