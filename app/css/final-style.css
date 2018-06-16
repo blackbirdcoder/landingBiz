@@ -400,6 +400,7 @@
   list-style-type: none;
   display: inline-block;
   width: 30%;
+  vertical-align: top;
 }
 
 .list__item:nth-of-type(2) {
@@ -515,7 +516,7 @@
 
 .list-extended__desc {
   display: inline-block;
-  width: 557px;
+  width: 554px;
   vertical-align: 80px;
 }
 
@@ -528,6 +529,12 @@
   text-align: right;
   position: relative;
   left: 30px;
+}
+
+@media (min-width: 5120px) {
+  .list-extended__desc {
+    vertical-align: 0;
+  }
 }
 
 .list-extended__title {

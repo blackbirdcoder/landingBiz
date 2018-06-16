@@ -26,7 +26,7 @@
    }
    &__desc {
        display: inline-block;
-       width: 557px;
+       width: 554px;
        vertical-align: 80px;
        &_position_right{
             position: relative;
@@ -37,6 +37,11 @@
             position: relative;
             left: 30px;
        }
+    //медиа-запрос для 5k экранов
+    //также позволяет в браузерах Chrome, Opera хорошо отображаться
+    //содержимому списка при зуме 33% , 25% (Ctrl -) 
+    @media (min-width: 5120px ) {vertical-align: 0; }
+       
    }
    &__title {
        margin: 0;
