@@ -537,6 +537,12 @@
   }
 }
 
+@media (min-width: 5900px) {
+  .list-extended__desc {
+    vertical-align: 0;
+  }
+}
+
 .list-extended__title {
   margin: 0;
   font-family: "HelveticaBold", sans-serif;
