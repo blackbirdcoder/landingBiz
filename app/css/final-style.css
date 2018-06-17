@@ -508,6 +508,12 @@
   vertical-align: bottom;
 }
 
+@media (min-width: 5120px) {
+  .list-extended__pic {
+    height: 278px;
+  }
+}
+
 .list-extended__block-number {
   vertical-align: 85px;
   position: relative;
