@@ -34,12 +34,20 @@
        vertical-align: 80px;
        &_position_right{
             position: relative;
-            right: 35px;    
+            right: 35px;
+        //медиа-запрос для UHD экранов
+        //также позволяет в браузерах Chrome, Opera хорошо отображаться
+        //содержимому списка при зуме 33% , 25% (Ctrl -) 
+        @media (min-width: 5120px ) {top: 35px; }
        }
        &_position_left{
             text-align: right;
             position: relative;
             left: 30px;
+        //медиа-запрос для UHD экранов
+        //также позволяет в браузерах Chrome, Opera хорошо отображаться
+        //содержимому списка при зуме 33% , 25% (Ctrl -) 
+        @media (min-width: 5120px ) {top: 35px; }
        }
    }
    &__title {

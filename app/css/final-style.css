@@ -531,10 +531,22 @@
   right: 35px;
 }
 
+@media (min-width: 5120px) {
+  .list-extended__desc_position_right {
+    top: 35px;
+  }
+}
+
 .list-extended__desc_position_left {
   text-align: right;
   position: relative;
   left: 30px;
+}
+
+@media (min-width: 5120px) {
+  .list-extended__desc_position_left {
+    top: 35px;
+  }
 }
 
 .list-extended__title {
