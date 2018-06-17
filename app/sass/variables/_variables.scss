@@ -11,3 +11,13 @@ $f-bold: 'HelveticaBold';
 $f-light: 'HelveticaLight';
 $f-num: 'GeorgiaBold';
 $f-normal:'HelveticaRegular';
+
+//Медиа-запрос. Точки перехода
+$bp-ultra: 5120px;
+$bp-4k: 3840px;
+$bp-laptop: 1045px;
+$bp-tablet: 836px;
+$bp-tablet-sm: 836px;
+$bp-smartphone: 596px;
+$bp-smartphone-sm: 275px;
+$bp-screen-sm: 195px;

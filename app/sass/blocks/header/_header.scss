@@ -24,7 +24,7 @@
         vertical-align: -3px;
         font-size: 24px;
         //медиа-запрос для 4k экранов
-        @media (min-width: 3840px ) { vertical-align: baseline;}
+        @media (min-width: $bp-4k ) { vertical-align: baseline;}
     }
     &__info-email {
         padding: 0 3px 0 18px;
@@ -68,7 +68,7 @@
         //медиа-запрос для 4k экранов
         //также позволяет в шапке избежать переход логотипа, меню и кнопки на
         //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-        @media (min-width: 3840px ) {text-align: center;}
+        @media (min-width: $bp-4k ) {text-align: center;}
     }
  
 }

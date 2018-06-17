@@ -20,15 +20,20 @@
         &:hover {
             color: $c-accent;
         }
-    };
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {font-size: 0.9rem;}
+    }
     &__ico {
         margin: 0 15px 0 15px;
         font-size: 9px;
         //медиа-запрос для 4k экранов
         //также позволяет в шапке избежать перехода логотипа, меню и кнопки на
         //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-        @media (min-width: 3840px ) {display: none;}
-            
+        @media (min-width: $bp-4k) {display: none;}
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) { margin: 0 3px 0 7px;}   
     };
     
 };

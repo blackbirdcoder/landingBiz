@@ -8,8 +8,14 @@
     //медиа-запрос для 4k экранов
     //также позволяет в шапке избежать переход логотипа, меню и кнопки на
     //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-    @media (min-width: 3840px ) {width: 26%;}
-     
+    @media (min-width: $bp-4k ) {width: 26%;}
+    
+    //медиа-запрос ноутбуки
+    @media (max-width: $bp-laptop ) {
+        margin: 0 0 0 1.5%;
+        width: 28%;  
+    }
+    
     &__ico {
         margin: 0 5px 0 0;
         position: relative;
@@ -17,16 +23,25 @@
         font-size: 57px; 
         color: $c-accent;
         float: left;
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {font-size: 3.4rem;}
     }
     &__heading {
         margin: 0;
         font-size: 37px;
         font-family: $f-bold, sans-serif;
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {font-size: 2rem;}
     }
     &__txt {
         margin: 0;
         font-size: 15px;
         font-family: $f-normal, sans-serif;
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {font-size: 1rem;}
     }
 }
 
