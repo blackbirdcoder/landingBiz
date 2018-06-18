@@ -40,6 +40,8 @@
         transition: 0.5s;
         
         &:hover {color: $c-accent;}
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) { font-size: 0.87rem;}
     }
     &__info-social-net {
         
@@ -48,7 +50,7 @@
         border-radius: 12%;
         background-color: #1287bf;
     }
-    &__ico-social-net {font-size: 19px;}
+    &__ico-social-net {font-size: 19px;}        
     &__link-social-net {
         display: block;
         padding: 4px 7px 4px 7px;
@@ -59,7 +61,7 @@
         transition: 0.5s;
         
         &:hover {color: lighten(#f8cd53, 15%);}
-
+        
     }
     
     //control

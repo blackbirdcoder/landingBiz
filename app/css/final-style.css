@@ -127,6 +127,12 @@
   color: #dd2a24;
 }
 
+@media (max-width: 1045px) {
+  .header__link {
+    font-size: 0.87rem;
+  }
+}
+
 .header__info-social-net {
   display: inline-block;
   margin: 0 7px 0 0;
