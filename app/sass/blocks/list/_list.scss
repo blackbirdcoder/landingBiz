@@ -9,7 +9,12 @@
       width: 30%;
       vertical-align: top;
   } 
-  &__item:nth-of-type(2) { margin: 0 31px 0 31px;}
+  &__item:nth-of-type(2) { 
+      margin: 0 31px 0 31px;
+      
+      //медиа-запрос ноутбуки
+      @media (max-width: $bp-laptop ) {margin: 0 1% 0 1%;}
+  }
   &__pic {
       display: inline-block;
       &_like {@include sprite($like)}
@@ -20,11 +25,17 @@
       margin: 20px 0 17px 0;
       font-family: $f-bold, sans-serif;
       font-size: 22px;
+      
+      //медиа-запрос ноутбуки
+      @media (max-width: $bp-laptop ) {font-size: 1.1rem;}
   }
   &__txt {
       margin: 0;
       padding: 0 20px 0 20px;
       font-size: 14px;
+      
+      //медиа-запрос ноутбуки
+      @media (max-width: $bp-laptop ) {font-size: 0.83rem;}
   }
 }
 
