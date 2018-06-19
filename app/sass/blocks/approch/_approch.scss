@@ -3,9 +3,25 @@
 .approch{
    background-color: #f3f3f3;
    &__box-info{padding: 90px 0 130px 0;}
-   &__heading {@include title;}
-   &__txt {@include subtitle;}  
-   &__decor-line{@include line-bold; }
+   &__heading {
+       @include title;
+       
+       //медиа-запрос ноутбуки
+       @media (max-width: $bp-laptop ) {font-size: 2rem;}
+   }
+   &__txt {
+       @include subtitle;
+   
+       //медиа-запрос ноутбуки
+       @media (max-width: $bp-laptop ) {font-size: 1.07rem;}
+   }  
+   &__decor-line{
+       @include line-bold; 
+       
+       //медиа-запрос ноутбуки
+       @media (max-width: $bp-laptop ) { height: 5px;}
+   
+   }
    &__list-extended {margin: 43px 0 0 0;}
 }
 //list-extended

@@ -11,12 +11,21 @@
     &_position_left {
         position: relative;
         left: 60px;
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {
+            position: static;
+            left: 0;
+        }
     }
     &__num {
         text-align: center;
         font-family: $f-num, sans-serif;
         font-size: 60px;
         color: $c-light;
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {font-size: 3.4rem;}
     } 
     &__txt{
         margin: 0;
@@ -28,5 +37,11 @@
             position: relative;
             bottom: 10px;
         }
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {font-size: 1rem;}
     }
+    
+    //медиа-запрос ноутбуки
+    @media (max-width: $bp-laptop ) {margin: 2% 0 0 6%;}
 }
