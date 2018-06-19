@@ -381,12 +381,24 @@
   color: #ffffff;
 }
 
+@media (max-width: 1045px) {
+  .hero__heading {
+    font-size: 2.7rem;
+  }
+}
+
 .hero__txt {
   margin: 0;
   font-family: "HelveticaLight", sans-serif;
   font-weight: 300;
   font-size: 30px;
   color: #ffffff;
+}
+
+@media (max-width: 1045px) {
+  .hero__txt {
+    font-size: 1.6rem;
+  }
 }
 
 .hero__box-button-big {
@@ -416,6 +428,12 @@
 
 .btn-big_theme_bright:hover {
   background-color: #dd2a24;
+}
+
+@media (max-width: 1045px) {
+  .btn-big {
+    font-size: 1.25rem;
+  }
 }
 
 /*----Section About----*/

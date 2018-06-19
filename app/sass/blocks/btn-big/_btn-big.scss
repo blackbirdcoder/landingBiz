@@ -15,5 +15,8 @@
         background-color: #f8cd53;
         &:hover {background-color: $c-accent;}
     }
+    
+    //медиа-запрос ноутбуки
+    @media (max-width: $bp-laptop ) {font-size: 1.25rem;} 
 }
 

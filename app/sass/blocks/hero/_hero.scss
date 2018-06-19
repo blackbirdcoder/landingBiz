@@ -16,6 +16,9 @@
         font-family: $f-bold, sans-serif;
         font-size: 48px;
         color: $c-light;
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {font-size: 2.7rem;} 
     }
     &__txt {
         margin: 0;
@@ -23,6 +26,9 @@
         font-weight: 300;
         font-size: 30px;
         color: $c-light;
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {font-size: 1.6rem;} 
     }
     &__box-button-big {
     display: inline-block;
