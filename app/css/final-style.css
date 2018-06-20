@@ -857,12 +857,24 @@
   color: #ffffff;
 }
 
+@media (max-width: 1045px) {
+  .work__heading {
+    font-size: 2rem;
+  }
+}
+
 .work__txt {
   margin: 0 0 10px 0;
   text-align: center;
   font-family: "HelveticaLight", sans-serif;
   font-size: 20px;
   color: #ffffff;
+}
+
+@media (max-width: 1045px) {
+  .work__txt {
+    font-size: 1.07rem;
+  }
 }
 
 .work__decor-line {
@@ -872,6 +884,12 @@
   border: 0;
   background-color: #ffffff;
   border: 0;
+}
+
+@media (max-width: 1045px) {
+  .work__decor-line {
+    height: 5px;
+  }
 }
 
 .work__list-promo {
@@ -887,6 +905,12 @@
   background-color: #f35e59;
   list-style-type: none;
   display: inline-block;
+}
+
+@media (max-width: 1045px) {
+  .list-promo__item {
+    display: table-row;
+  }
 }
 
 .list-promo__item:nth-child(2) {
@@ -914,9 +938,21 @@
   opacity: 0.5;
 }
 
+@media (max-width: 1045px) {
+  .list-promo__ico {
+    font-size: 2.12rem;
+  }
+}
+
 .list-promo__box-info-text {
   margin: 85px 0 85px 0;
   text-align: center;
+}
+
+@media (max-width: 1045px) {
+  .list-promo__box-info-text {
+    margin: 85px 0 50px 0;
+  }
 }
 
 .list-promo__title {
@@ -926,6 +962,12 @@
   color: #ffffff;
 }
 
+@media (max-width: 1045px) {
+  .list-promo__title {
+    font-size: 1.5rem;
+  }
+}
+
 .list-promo__txt {
   margin: 0;
   font-family: "HelveticaBold", sans-serif;
@@ -933,10 +975,36 @@
   color: #ffffff;
 }
 
+@media (max-width: 1045px) {
+  .list-promo__txt {
+    font-size: 0.87rem;
+  }
+}
+
 .list-promo__pic {
   width: 251px;
   height: 253px;
   vertical-align: bottom;
+}
+
+@media (max-width: 1045px) {
+  .list-promo__pic {
+    width: 310px;
+    height: auto;
+  }
+  .list-promo__pic_position_bottom {
+    margin: 0 0 70px 0;
+  }
+}
+
+@media (max-width: 1045px) {
+  .list-promo {
+    margin: auto;
+    display: table;
+    width: 475px;
+    border-spacing: 0 20px;
+    text-align: center;
+  }
 }
 
 /*----Section Application----*/

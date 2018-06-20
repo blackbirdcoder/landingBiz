@@ -7,6 +7,9 @@
        list-style-type: none;
        display: inline-block;
        //width: 250px;
+       
+       //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) { display: table-row;}
     }
     &__item:nth-child(2) {
         position: relative;
@@ -28,26 +31,55 @@
         font-size: 36px;
         color: $c-light;
         opacity: 0.5;
+        
+       //медиа-запрос ноутбуки
+       @media (max-width: $bp-laptop ) { font-size: 2.12rem;}
     }
     &__box-info-text{
         margin: 85px 0 85px 0;
         text-align: center;
+        
+       //медиа-запрос ноутбуки
+       @media (max-width: $bp-laptop ) { margin: 85px 0 50px 0;}
     }
     &__title{
         margin: 0;
         font-family: $f-bold, sans-serif;
         font-size: 26px;
         color: $c-light;
+        
+       //медиа-запрос ноутбуки
+       @media (max-width: $bp-laptop ) { font-size: 1.5rem;}
     }
     &__txt {
         margin: 0;
         font-family: $f-bold, sans-serif;
         font-size: 16px;
         color: $c-light;
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) { font-size: 0.87rem;}
     }
     &__pic{
         width: 251px;
         height: 253px;
         vertical-align: bottom;
+        
+        //медиа-запрос ноутбуки
+        @media (max-width: $bp-laptop ) {
+            width: 310px;
+            height: auto;
+            
+            &_position_bottom {margin: 0 0 70px 0;}
+        }
+    }
+    
+    //медиа-запрос ноутбуки
+    @media (max-width: $bp-laptop ) { 
+        margin: auto;
+        display: table;
+        width: 475px;
+        border-spacing: 0 20px;
+        text-align: center;
     }
 }
