@@ -13,10 +13,7 @@
         left: 60px;
         
         //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) {
-            position: static;
-            left: 0;
-        }
+        @media (max-width: $bp-laptop ) {left: 0;}
     }
     &__num {
         text-align: center;
@@ -43,5 +40,12 @@
     }
     
     //медиа-запрос ноутбуки
-    @media (max-width: $bp-laptop ) {margin: 2% 0 0 6%;}
+    @media (max-width: $bp-laptop ) {
+        position: relative;
+        z-index: 1000;
+        
+        &_position_bottom {bottom: 55px;}
+        &_position_top {top: 63px;}
+
+    }
 }
