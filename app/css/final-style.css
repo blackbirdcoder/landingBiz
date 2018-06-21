@@ -910,6 +910,9 @@
 @media (max-width: 1045px) {
   .list-promo__item {
     display: table-row;
+    min-width: 475px;
+    -webkit-box-shadow: 0px 0px 4px 0px #000000;
+            box-shadow: 0px 0px 4px 0px #000000;
   }
 }
 
@@ -994,6 +997,9 @@
   }
   .list-promo__pic_position_bottom {
     margin: 0 0 70px 0;
+  }
+  .list-promo__pic_position_top {
+    margin: 70px 0 0 0;
   }
 }
 
