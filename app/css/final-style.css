@@ -979,7 +979,8 @@
 
 @media (max-width: 1045px) {
   .list-promo__box-info-text {
-    margin: 85px 0 50px 0;
+    margin: 0;
+    padding: 85px 0 50px 0;
   }
 }
 
@@ -1041,10 +1042,10 @@
     height: auto;
   }
   .list-promo__pic_position_bottom {
-    margin: 0 0 70px 0;
+    padding: 0 0 70px 0;
   }
   .list-promo__pic_position_top {
-    margin: 70px 0 0 0;
+    padding: 70px 0 0 0;
   }
 }
 
@@ -1052,7 +1053,7 @@
   .list-promo {
     margin: auto;
     display: table;
-    width: 475px;
+    width: 400px;
     border-spacing: 0 20px;
     text-align: center;
   }

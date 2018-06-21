@@ -56,7 +56,10 @@
         text-align: center;
         
        //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) { margin: 85px 0 50px 0;}
+       @media (max-width: $bp-laptop ) { 
+           margin: 0;
+           padding: 85px 0 50px 0;
+       }
     }
     &__title{
         margin: 0;
@@ -95,8 +98,14 @@
             width: 310px;
             height: auto;
             
-            &_position_bottom {margin: 0 0 70px 0;}
-            &_position_top {margin: 70px 0 0 0;}
+            &_position_bottom {
+                
+                padding: 0 0 70px 0;
+            }
+            &_position_top {
+                
+                padding: 70px 0 0 0;
+            }
         }
     }
     
@@ -104,7 +113,7 @@
     @media (max-width: $bp-laptop ) { 
         margin: auto;
         display: table;
-        width: 475px;
+        width: 400px;
         border-spacing: 0 20px;
         text-align: center;
     }
