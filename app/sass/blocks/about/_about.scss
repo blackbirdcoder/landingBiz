@@ -2,6 +2,12 @@
 /*----Section About----*/
 .about {
    background-color: $c-light;
+   
+   &:hover .list__title {
+       color:$c-accent;
+       text-shadow: 0px 1px 0px #000000db;
+   }
+   
    &__box-info { padding: 90px 0 120px 0;}   
    &__heading {
        @include title;

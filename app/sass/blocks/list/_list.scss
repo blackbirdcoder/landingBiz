@@ -25,6 +25,8 @@
       margin: 20px 0 17px 0;
       font-family: $f-bold, sans-serif;
       font-size: 22px;
+      transition: 0.5s;
+      transition-property: color, text-shadow;
       
       //медиа-запрос нетбуки
       @media (max-width: $bp-netbook ) {font-size: 1.1rem;}
