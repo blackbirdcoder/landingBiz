@@ -17,12 +17,12 @@
         &:hover .list-promo__txt {text-shadow: 0px 4px 1px #424242db;}
         &:hover .list-promo__pic {filter: saturate(200%);}
         
-       //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) { 
+       //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) { 
             display: table-row;
             min-width: 475px;
             box-shadow: 0px 0px 4px 0px #000000;
-        }
+        } 
     }
     &__item:nth-child(2) {
         position: relative;
@@ -45,18 +45,18 @@
         color: $c-light;
         opacity: 0.5;
         transition: 0.5s;
-        transition-property: text-shadow, color;
+        transition-property: text-shadow, color,  opacity;
         
         
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) { font-size: 2.12rem;}
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) { font-size: 2.12rem;}
     }
     &__box-info-text{
         margin: 85px 0 85px 0;
         text-align: center;
         
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) { 
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) { 
            margin: 0;
            padding: 85px 0 50px 0;
        }
@@ -70,8 +70,8 @@
         transition-property: text-shadow;
        
     
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) { font-size: 1.5rem;}
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) { font-size: 1.5rem;}
     }
     &__txt {
         margin: 0;
@@ -82,8 +82,8 @@
         transition-property: text-shadow;
         
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) { font-size: 0.87rem;}
+        //медиа-запрос нетбуки
+        @media (max-width: $bp-netbook ) { font-size: 0.87rem;}
 
     }
     &__pic{
@@ -93,8 +93,8 @@
         transition: 0.5s;
         transition-property: filter;
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) {
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) {
             width: 310px;
             height: auto;
             
@@ -109,8 +109,8 @@
         }
     }
     
-    //медиа-запрос ноутбуки
-    @media (max-width: $bp-laptop ) { 
+    //медиа-запрос нeтбуки
+    @media (max-width: $bp-netbook ) { 
         margin: auto;
         display: table;
         width: 400px;

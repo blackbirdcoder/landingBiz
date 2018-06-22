@@ -961,9 +961,9 @@
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transition-property: text-shadow, color;
-  -o-transition-property: text-shadow, color;
-  transition-property: text-shadow, color;
+  -webkit-transition-property: text-shadow, color,  opacity;
+  -o-transition-property: text-shadow, color,  opacity;
+  transition-property: text-shadow, color,  opacity;
 }
 
 @media (max-width: 1045px) {

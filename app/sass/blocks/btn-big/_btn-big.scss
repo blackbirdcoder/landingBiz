@@ -16,7 +16,7 @@
         &:hover {background-color: $c-accent;}
     }
     
-    //медиа-запрос ноутбуки
-    @media (max-width: $bp-laptop ) {font-size: 1.25rem;} 
+    //медиа-запрос нeтбуки
+    @media (max-width: $bp-netbook ) {font-size: 1.25rem;} 
 }
 

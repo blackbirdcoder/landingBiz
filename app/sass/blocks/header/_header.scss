@@ -40,8 +40,8 @@
         transition: 0.5s;
         
         &:hover {color: $c-accent;}
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) { font-size: 0.87rem;}
+        //медиа-запрос нетбуки
+        @media (max-width: $bp-netbook ) { font-size: 0.87rem;}
     }
     &__info-social-net {
         

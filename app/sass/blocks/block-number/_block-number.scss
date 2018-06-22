@@ -12,8 +12,8 @@
         position: relative;
         left: 60px;
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) {left: 0;}
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) {left: 0;}
     }
     &__num {
         text-align: center;
@@ -21,8 +21,8 @@
         font-size: 60px;
         color: $c-light;
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) {font-size: 3.4rem;}
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) {font-size: 3.4rem;}
     } 
     &__txt{
         margin: 0;
@@ -35,12 +35,12 @@
             bottom: 10px;
         }
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) {font-size: 1rem;}
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) {font-size: 1rem;}
     }
     
-    //медиа-запрос ноутбуки
-    @media (max-width: $bp-laptop ) {
+    //медиа-запрос нeтбуки
+    @media (max-width: $bp-netbook ) {
         position: relative;
         z-index: 1000;
         

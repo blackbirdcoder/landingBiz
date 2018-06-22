@@ -7,22 +7,22 @@
        @include title;
        @include bright-txt;
        
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) {font-size: 2rem;}
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) {font-size: 2rem;}
    }
    &__txt {
        @include subtitle;
        @include bright-txt;
        
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) {font-size: 1.07rem;}
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
    }  
    &__decor-line{
        @include line-bold;
        @include line-bright;
-       
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) { height: 5px;}
+        
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) { height: 5px;}
    }
    &__list-promo {margin: 50px 0 0 0;}
 }

@@ -10,8 +10,8 @@
     //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
     @media (min-width: $bp-4k ) {width: 26%;}
     
-    //медиа-запрос ноутбуки
-    @media (max-width: $bp-laptop ) {
+    //медиа-запрос нетбуки
+    @media (max-width: $bp-netbook ) {
         margin: 0 0 0 1.5%;
         width: 28%;  
     }
@@ -24,24 +24,24 @@
         color: $c-accent;
         float: left;
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) {font-size: 3.4rem;}
+        //медиа-запрос нетбуки
+        @media (max-width: $bp-netbook ) {font-size: 3.4rem;}
     }
     &__heading {
         margin: 0;
         font-size: 37px;
         font-family: $f-bold, sans-serif;
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) {font-size: 2rem;}
+        //медиа-запрос нетбуки
+        @media (max-width: $bp-netbook ) {font-size: 2rem;}
     }
     &__txt {
         margin: 0;
         font-size: 15px;
         font-family: $f-normal, sans-serif;
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) {font-size: 1rem;}
+        //медиа-запрос нетбуки
+        @media (max-width: $bp-netbook ) {font-size: 1rem;}
     }
 }
 

@@ -10,8 +10,8 @@
         margin: 12px 0 0 0;
     }
     
-    //медиа-запрос ноутбуки
-    @media (max-width: $bp-laptop ) {
+    //медиа-запрос нeтбуки
+    @media (max-width: $bp-netbook ) {
         float: right;
         margin: 0.5% 0.7% 0 0;
     }

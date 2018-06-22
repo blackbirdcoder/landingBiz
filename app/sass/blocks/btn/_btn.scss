@@ -19,6 +19,6 @@
     //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
     @media (min-width: $bp-4k ) {padding: 10px 23px 13px 23px;}
     
-    //медиа-запрос ноутбуки
-    @media (max-width: $bp-laptop ) {font-size: 0.9rem;}   
+    //медиа-запрос нeтбуки
+    @media (max-width: $bp-netbook ) {font-size: 0.9rem;}   
 }

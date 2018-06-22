@@ -21,8 +21,8 @@
             color: $c-accent;
         }
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) {font-size: 0.9rem;}
+        //медиа-запрос нетбуки
+        @media (max-width: $bp-netbook ) {font-size: 0.9rem;}
     }
     &__ico {
         margin: 0 15px 0 15px;
@@ -32,8 +32,8 @@
         //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
         @media (min-width: $bp-4k) {display: none;}
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) { margin: 0 3px 0 7px;}   
+        //медиа-запрос нетбуки
+        @media (max-width: $bp-netbook ) { margin: 0 3px 0 7px;}   
     };
     
 };

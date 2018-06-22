@@ -11,19 +11,19 @@
        border-radius: 2px;
        background-color: $c-light;
        
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) {padding: 3% 3% 3% 3%;}
+       //медиа-запрос нетбуки
+       @media (max-width: $bp-netbook ) {padding: 3% 3% 3% 3%;}
    }
    &__item:last-child {margin: 0;} 
    &__box-img {
        display: inline-block;
        
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) {display: block;}
+       //медиа-запрос нетбуки
+       @media (max-width: $bp-netbook ) {display: block;}
        
        &_position {
-            //медиа-запрос ноутбуки
-            @media (max-width: $bp-laptop ) {
+            //медиа-запрос нетбуки
+            @media (max-width: $bp-netbook ) {
                 margin: 15px 0 0 0;
                 position: relative;
                 bottom: 40px;
@@ -39,8 +39,8 @@
     //содержимому списка при зуме 33% , 25% (Ctrl -) 
     @media (min-width: $bp-ultra ) {height: 278px; }
     
-    //медиа-запрос ноутбуки
-    @media (max-width: $bp-laptop ) {vertical-align: baseline;}
+    //медиа-запрос нетбуки
+    @media (max-width: $bp-netbook ) {vertical-align: baseline;}
    }
    
    &__block-number {
@@ -49,8 +49,8 @@
        position: relative;
        right: 62px;
        
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) {
+       //медиа-запрос нетбуки
+       @media (max-width: $bp-netbook ) {
            vertical-align: 60px;
            position: static;
            right: 0;  
@@ -68,12 +68,12 @@
             //содержимому списка при зуме 33% , 25% (Ctrl -) 
             @media (min-width: 5120px ) {top: 35px; }
         
-            //медиа-запрос ноутбуки
-            @media (max-width: $bp-laptop ) { right: 0;} 
+            //медиа-запрос нетбуки
+            @media (max-width: $bp-netbook ) { right: 0;} 
        }
        &_position_bottom{
-            //медиа-запрос ноутбуки
-            @media (max-width: $bp-laptop ) { bottom: 30px;}
+            //медиа-запрос нетбуки
+            @media (max-width: $bp-netbook ) { bottom: 30px;}
        }
        &_position_left{
             text-align: right;
@@ -84,13 +84,13 @@
         //содержимому списка при зуме 33% , 25% (Ctrl -) 
         @media (min-width: $bp-ultra ) {top: 35px; }
         
-        //медиа-запрос ноутбуки
-        @media (max-width: $bp-laptop ) { left: 0;}
+        //медиа-запрос нетбуки
+        @media (max-width: $bp-netbook ) { left: 0;}
   
        }
        
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) {
+       //медиа-запрос нетбуки
+       @media (max-width: $bp-netbook ) {
             display: block;
             text-align: center;
        }
@@ -100,19 +100,19 @@
        font-family: $f-bold, sans-serif;
        font-size: 18px;
        
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) {font-size: 1.05rem;}
+       //медиа-запрос нетбуки
+       @media (max-width: $bp-netbook ) {font-size: 1.05rem;}
    }
    &__txt {
        margin: 15px 0 0 0;
        font-size: 14px;
        
-       //медиа-запрос ноутбуки
-       @media (max-width: $bp-laptop ) {font-size: 0.83rem;}
+       //медиа-запрос нетбуки
+       @media (max-width: $bp-netbook ) {font-size: 0.83rem;}
     }
     
-    //медиа-запрос ноутбуки
-    @media (max-width: $bp-laptop ) {
+    //медиа-запрос нетбуки
+    @media (max-width: $bp-netbook ) {
         padding: 10px 10px 10px 10px;
         text-align: center;
     }
