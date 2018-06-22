@@ -8,6 +8,8 @@
     background-color: $c-accent;
     border: 2px solid $c-light;
     border-radius: 6px;
+    transition: 0.3s;
+    transition-property: background-color;
     &_position_left {
         position: relative;
         left: 60px;

@@ -11,6 +11,9 @@
        border-radius: 2px;
        background-color: $c-light;
        
+       //Эффект для list-extended
+       &:hover .block-number  {background-color: #4CAF50;}
+       
        //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {padding: 3% 3% 3% 3%;}
    }
