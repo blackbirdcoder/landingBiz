@@ -8,8 +8,14 @@
     &__ico { 
         font-size: 36px;
         color: $c-light;
+        
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) {font-size: 2.12rem;}
     }
     
     &:hover {background-color: #4CAF50}
+    
+    //медиа-запрос нeтбуки
+    @media (max-width: $bp-netbook ) { padding: 8px 14px 8px 14px;}
 }
 

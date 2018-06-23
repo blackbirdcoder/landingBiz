@@ -9,10 +9,16 @@
     &__heading {
        @include title;
        @include bright-txt;
+       
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) {font-size: 2rem;}
     }
     &__txt {
        @include subtitle;
        @include bright-txt;
+       
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
     }
     &__btn-open {margin: 10px 0 20px 0;}
     &__figure-triangle {

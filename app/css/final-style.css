@@ -1087,12 +1087,24 @@
   color: #ffffff;
 }
 
+@media (max-width: 1045px) {
+  .application__heading {
+    font-size: 2rem;
+  }
+}
+
 .application__txt {
   margin: 0 0 10px 0;
   text-align: center;
   font-family: "HelveticaLight", sans-serif;
   font-size: 20px;
   color: #ffffff;
+}
+
+@media (max-width: 1045px) {
+  .application__txt {
+    font-size: 1.07rem;
+  }
 }
 
 .application__btn-open {
@@ -1119,8 +1131,20 @@
   color: #ffffff;
 }
 
+@media (max-width: 1045px) {
+  .btn-open__ico {
+    font-size: 2.12rem;
+  }
+}
+
 .btn-open:hover {
   background-color: #4CAF50;
+}
+
+@media (max-width: 1045px) {
+  .btn-open {
+    padding: 8px 14px 8px 14px;
+  }
 }
 
 .figure-triangle {
@@ -1130,6 +1154,14 @@
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
   border-bottom: 35px solid #ffffff;
+}
+
+@media (max-width: 1045px) {
+  .figure-triangle {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #ffffff;
+  }
 }
 
 /*form*/
@@ -1164,9 +1196,21 @@
   font-weight: 600;
 }
 
+@media (max-width: 1045px) {
+  .form__btn-close {
+    font-size: 1.87rem;
+  }
+}
+
 .form__txt {
   margin: 0 0 35px 0;
   font-family: "HelveticaRegular", sans-serif;
+}
+
+@media (max-width: 1045px) {
+  .form__txt {
+    font-size: 0.93rem;
+  }
 }
 
 .form__field:nth-of-type(2) {
@@ -1189,6 +1233,13 @@
           box-shadow: 0px 0px 2px 1px #1287bf;
 }
 
+@media (max-width: 1045px) {
+  .form__field {
+    padding: 15px 23px 15px 23px;
+    width: 70%;
+  }
+}
+
 .form__btn-submit {
   margin: 32px 0 0 0;
   padding: 15px 27px 15px 27px;
@@ -1208,6 +1259,20 @@
 
 .form__btn-submit:hover {
   background-color: #4CAF50;
+}
+
+@media (max-width: 1045px) {
+  .form__btn-submit {
+    font-size: 0.87rem;
+  }
+}
+
+@media (max-width: 1045px) {
+  .form {
+    margin: auto;
+    padding: 3% 3% 4% 3%;
+    width: 500px;
+  }
 }
 
 /*----Section Contact----*/
