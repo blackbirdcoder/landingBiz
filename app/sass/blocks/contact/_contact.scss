@@ -10,6 +10,9 @@
        @include title;
        @include bright-txt;
        font-size: 30px;
+       
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) {font-size: 1.75rem;}
    }
    &__list-links {margin: 30px 0 0 0;}
    &__form-subscribe {margin: 35px 0 0 0;}

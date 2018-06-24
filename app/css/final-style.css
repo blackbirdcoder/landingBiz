@@ -1271,7 +1271,7 @@
   .form {
     margin: auto;
     padding: 3% 3% 4% 3%;
-    width: 500px;
+    width: 31.25rem;
   }
 }
 
@@ -1292,6 +1292,12 @@
   font-size: 36px;
   color: #ffffff;
   font-size: 30px;
+}
+
+@media (max-width: 1045px) {
+  .contact__heading {
+    font-size: 1.75rem;
+  }
 }
 
 .contact__list-links {
@@ -1334,10 +1340,23 @@
   border: 2px solid #dd2a24;
 }
 
+@media (max-width: 1045px) {
+  .list-links__link {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 .list-links__ico {
   font-size: 23px;
   vertical-align: -15px;
   color: #ffffff;
+}
+
+@media (max-width: 1045px) {
+  .list-links__ico {
+    font-size: 1.31rem;
+  }
 }
 
 /*form-subscribe*/
@@ -1346,6 +1365,12 @@
   color: #ffffff;
   font-size: 15px;
   font-family: "HelveticaRegular";
+}
+
+@media (max-width: 1045px) {
+  .form-subscribe__txt {
+    font-size: 0.87rem;
+  }
 }
 
 .form-subscribe__field {
@@ -1357,6 +1382,58 @@
   background-color: #424242;
   color: #ffffff;
   font-size: 17px;
+}
+
+@media (max-width: 1045px) {
+  .form-subscribe__field {
+    padding: 18px 18px 18px 18px;
+    width: 31.25rem;
+    font-size: 0.87rem;
+  }
+}
+
+.form-subscribe ::-webkit-input-placeholder {
+  color: #979797;
+  font-size: 14px;
+}
+
+@media (max-width: 1045px) {
+  .form-subscribe ::-webkit-input-placeholder {
+    font-size: 0.81rem;
+  }
+}
+
+.form-subscribe ::-moz-placeholder {
+  color: #979797;
+  font-size: 14px;
+}
+
+@media (max-width: 1045px) {
+  .form-subscribe ::-moz-placeholder {
+    font-size: 0.81rem;
+  }
+}
+
+.form-subscribe :-moz-placeholder {
+  color: #979797;
+  font-size: 14px;
+}
+
+@media (max-width: 1045px) {
+  .form-subscribe :-moz-placeholder {
+    font-size: 0.81rem;
+  }
+}
+
+.form-subscribe :-ms-input-placeholder {
+  color: #979797;
+  font-size: 14px;
+}
+
+@media (max-width: 1045px) {
+  .form-subscribe :-ms-input-placeholder {
+    font-size: 0.81rem;
+  }
 }
 
 .form-subscribe ::-webkit-input-placeholder {
@@ -1384,6 +1461,24 @@
   font-size: 14px;
 }
 
+@media (max-width: 1045px) {
+  .form-subscribe ::-webkit-input-placeholder {
+    font-size: 0.81rem;
+  }
+  .form-subscribe ::-moz-placeholder {
+    font-size: 0.81rem;
+  }
+  .form-subscribe :-ms-input-placeholder {
+    font-size: 0.81rem;
+  }
+  .form-subscribe ::-ms-input-placeholder {
+    font-size: 0.81rem;
+  }
+  .form-subscribe ::placeholder {
+    font-size: 0.81rem;
+  }
+}
+
 .form-subscribe__btn-subscribe {
   margin: 20px 0 0 0;
   padding: 18px 34px 18px 34px;
@@ -1401,6 +1496,12 @@
 
 .form-subscribe__btn-subscribe:hover {
   border: 2px solid #dd2a24;
+}
+
+@media (max-width: 1045px) {
+  .form-subscribe__btn-subscribe {
+    font-size: 0.93rem;
+  }
 }
 
 /*----Footer----*/

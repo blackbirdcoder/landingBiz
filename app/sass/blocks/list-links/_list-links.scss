@@ -19,12 +19,21 @@
         transition: 0.5s;
         
         &:hover {border: 2px solid $c-accent;}
+        
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) {
+           width: 48px;
+           height: 48px;
+       }
     }
    
     &__ico {
         font-size: 23px;
         vertical-align: -15px;
         color: $c-light;
+        
+       //медиа-запрос нeтбуки
+       @media (max-width: $bp-netbook ) {font-size: 1.31rem;}
         
     }
     
