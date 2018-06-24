@@ -1271,7 +1271,7 @@
   .form {
     margin: auto;
     padding: 3% 3% 4% 3%;
-    width: 31.25rem;
+    width: 500px;
   }
 }
 
@@ -1387,7 +1387,7 @@
 @media (max-width: 1045px) {
   .form-subscribe__field {
     padding: 18px 18px 18px 18px;
-    width: 31.25rem;
+    width: 500px;
     font-size: 0.87rem;
   }
 }
