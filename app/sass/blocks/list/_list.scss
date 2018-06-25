@@ -9,12 +9,23 @@
       width: 30%;
       vertical-align: top;
       
+      //медиа-запрос планшет
+      @media (max-width: $bp-tablet ) {
+            padding: 0 15% 0 15%;
+            display: block;
+            width: 100%;
+            vertical-align: 0;
+      }
+      
   }  
   &__item:nth-of-type(2) { 
       margin: 0 31px 0 31px;
       
       //медиа-запрос нетбуки
       @media (max-width: $bp-netbook ) {margin: 0 1% 0 1%;}
+      
+      //медиа-запрос планшет
+      @media (max-width: $bp-tablet ) {margin: 5% 0% 5% 0%;}
   }
   &__pic {
       display: inline-block;
