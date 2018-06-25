@@ -19,4 +19,7 @@
 .box-button {
     display: inline-block;
     vertical-align: 20px;
+    
+    //медиа-запрос планшет
+    @media (max-width: $bp-tablet ) {display: none;}
 }

@@ -16,6 +16,13 @@
         width: 28%;  
     }
     
+    //медиа-запрос планшет
+    @media (max-width: $bp-tablet ) {
+        display: block;
+        margin: 0 auto 3% auto;
+        text-align: center
+    }
+    
     &__ico {
         margin: 0 5px 0 0;
         position: relative;
@@ -26,6 +33,14 @@
         
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {font-size: 3.4rem;}
+        
+        //медиа-запрос планшет
+        @media (max-width: $bp-tablet ) {
+            float: none;
+            margin: 0;
+            position: static;
+            left: 0;
+        }
     }
     &__heading {
         margin: 0;
@@ -34,6 +49,9 @@
         
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {font-size: 2rem;}
+        
+        //медиа-запрос планшет
+        @media (max-width: $bp-tablet ) {letter-spacing: 2px;}
     }
     &__txt {
         margin: 0;
@@ -42,6 +60,9 @@
         
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {font-size: 1rem;}
+        
+        //медиа-запрос планшет
+        @media (max-width: $bp-tablet ) {letter-spacing: 1px;}
     }
 }
 

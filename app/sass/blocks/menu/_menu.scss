@@ -8,7 +8,10 @@
         list-style-type: none;
         display: inline-block;
         vertical-align: 21px;
-    };
+
+        //медиа-запрос планшет
+        @media (max-width: $bp-tablet ) {vertical-align: 0;}
+    }
     &__link {
         text-decoration: none;
         text-transform: capitalize;
@@ -23,6 +26,9 @@
         
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {font-size: 0.9rem;}
+        
+        //медиа-запрос планшет
+        @media (max-width: $bp-tablet ) {text-transform: uppercase;}
     }
     &__ico {
         margin: 0 15px 0 15px;
@@ -33,8 +39,13 @@
         @media (min-width: $bp-4k) {display: none;}
         
         //медиа-запрос нетбуки
-        @media (max-width: $bp-netbook ) { margin: 0 3px 0 7px;}   
+        @media (max-width: $bp-netbook ) { margin: 0 3px 0 7px;}
+        
+        //медиа-запрос планшет
+        @media (max-width: $bp-tablet ) {margin: 0 8px 0 12px;}
     };
     
+    //медиа-запрос планшет
+    @media (max-width: $bp-tablet ) {margin: auto;}
 };
 
