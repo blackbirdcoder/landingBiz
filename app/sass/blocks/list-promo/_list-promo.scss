@@ -22,7 +22,10 @@
             display: table-row;
             min-width: 475px;
             box-shadow: 0px 0px 4px 0px #000000;
-        } 
+        }
+        
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){width: 100%;}
     }
     &__item:nth-child(2) {
         position: relative;
@@ -50,6 +53,9 @@
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) { font-size: 2.12rem;}
+       
+       //медиа-запрос смартфон
+       @media (max-width: $bp-smartphone ){font-size: 1.8rem;}
     }
     &__box-info-text{
         margin: 85px 0 85px 0;
@@ -60,6 +66,9 @@
            margin: 0;
            padding: 85px 0 50px 0;
        }
+       
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){padding: 15% 0 10% 0;}
     }
     &__title{
         margin: 0;
@@ -72,6 +81,9 @@
     
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) { font-size: 1.5rem;}
+       
+       //медиа-запрос смартфон
+       @media (max-width: $bp-smartphone ){font-size: 1.4rem;}
     }
     &__txt {
         margin: 0;
@@ -84,6 +96,9 @@
         
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) { font-size: 0.87rem;}
+        
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){font-size: 0.84rem;}
 
     }
     &__pic{
@@ -107,6 +122,20 @@
                 padding: 70px 0 0 0;
             }
         }
+        
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){
+            width: 70%;
+            
+            &_position_bottom {
+                
+                padding: 0 0 15% 0;
+            }
+            &_position_top {
+                
+                padding: 15% 0 0 0;
+            }
+        }
     }
     
     //медиа-запрос нeтбуки
@@ -117,4 +146,7 @@
         border-spacing: 0 20px;
         text-align: center;
     }
+    
+    //медиа-запрос смартфон
+    @media (max-width: $bp-smartphone ){width: 68%;}
 }
