@@ -1373,6 +1373,12 @@
   }
 }
 
+@media (max-width: 596px) {
+  .btn-open {
+    padding: 5px 10px 5px 10px;
+  }
+}
+
 .figure-triangle {
   display: inline-block;
   width: 0;
@@ -1387,6 +1393,14 @@
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-bottom: 30px solid #ffffff;
+  }
+}
+
+@media (max-width: 596px) {
+  .figure-triangle {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #ffffff;
   }
 }
 
@@ -1428,6 +1442,15 @@
   }
 }
 
+@media (max-width: 596px) {
+  .form__btn-close {
+    padding: 3px 12px 7px 12px;
+    top: -19px;
+    right: -18px;
+    font-size: 1.2rem;
+  }
+}
+
 .form__txt {
   margin: 0 0 35px 0;
   font-family: "HelveticaRegular", sans-serif;
@@ -1466,6 +1489,13 @@
   }
 }
 
+@media (max-width: 596px) {
+  .form__field {
+    padding: 12px 21px 12px 21px;
+    width: 75%;
+  }
+}
+
 .form__btn-submit {
   margin: 32px 0 0 0;
   padding: 15px 27px 15px 27px;
@@ -1493,11 +1523,26 @@
   }
 }
 
+@media (max-width: 596px) {
+  .form__btn-submit {
+    margin: 9% 0 0 0;
+    padding: 13px 25px 13px 25px;
+    font-size: 0.77rem;
+  }
+}
+
 @media (max-width: 1045px) {
   .form {
     margin: auto;
     padding: 3% 3% 4% 3%;
     width: 500px;
+  }
+}
+
+@media (max-width: 596px) {
+  .form {
+    padding: 3% 2% 3% 2%;
+    width: 80%;
   }
 }
 

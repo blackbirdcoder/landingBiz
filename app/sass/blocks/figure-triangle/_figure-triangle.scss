@@ -13,5 +13,13 @@
         border-right: 30px solid transparent;
         border-bottom: 30px solid $c-light;
     }
+    
+    //медиа-запрос смартфон
+    @media (max-width: $bp-smartphone ){
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid $c-light;
+    
+    }
 }
 

@@ -17,5 +17,8 @@
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) { padding: 8px 14px 8px 14px;}
+    
+    //медиа-запрос смартфон
+    @media (max-width: $bp-smartphone ){padding: 5px 10px 5px 10px;}
 }
 

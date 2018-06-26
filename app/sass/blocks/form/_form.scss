@@ -27,6 +27,14 @@
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 1.87rem;}
+       
+       //медиа-запрос смартфон
+       @media (max-width: $bp-smartphone ){
+           padding: 3px 12px 7px 12px;
+           top: -19px;
+           right: -18px;
+           font-size: 1.2rem;
+       }
     }
     &__txt {
         margin: 0 0 35px 0;
@@ -50,8 +58,15 @@
         @media (max-width: $bp-netbook ) {
             padding: 15px 23px 15px 23px;
             width: 70%;
+            }
+        
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){
+            padding: 12px 21px 12px 21px;
+            width: 75%;
+            }
         }
-    }
+    
     &__btn-submit {
         margin: 32px 0 0 0;
         padding: 15px 27px 15px 27px;
@@ -69,7 +84,17 @@
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 0.87rem;}
+       
+       //медиа-запрос смартфон
+       @media (max-width: $bp-smartphone ){
+            margin: 9% 0 0 0;
+            padding: 13px 25px 13px 25px; 
+            font-size: 0.77rem; 
+       }
+        
+         
     }
+    
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {
@@ -77,5 +102,12 @@
         padding: 3% 3% 4% 3%;
         width: 500px;
     }
-   
+    
+    //медиа-запрос смартфон
+    @media (max-width: $bp-smartphone ){
+        padding: 3% 2% 3% 2%;
+        width: 80%;
+    }
 }
+        
+           
