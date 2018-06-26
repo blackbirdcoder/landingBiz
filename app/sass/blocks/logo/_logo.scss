@@ -20,7 +20,8 @@
     @media (max-width: $bp-tablet ) {
         display: block;
         margin: 0 auto 3% auto;
-        text-align: center
+        text-align: center;
+        width: 100%;
     }
     
     &__ico {
@@ -52,6 +53,9 @@
         
         //медиа-запрос планшет
         @media (max-width: $bp-tablet ) {letter-spacing: 2px;}
+        
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){letter-spacing: 0;}
     }
     &__txt {
         margin: 0;
@@ -63,6 +67,9 @@
         
         //медиа-запрос планшет
         @media (max-width: $bp-tablet ) {letter-spacing: 1px;}
+        
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){letter-spacing: 0;}
     }
 }
 

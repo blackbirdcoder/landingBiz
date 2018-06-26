@@ -11,6 +11,15 @@
 
         //медиа-запрос планшет
         @media (max-width: $bp-tablet ) {vertical-align: 0;}
+        
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){
+            display: block;
+            margin: auto;
+            padding: 0.7% 0 0.7% 0;
+            width: 200px;
+            border-bottom: 2px solid rgba(66, 66, 66, 0.50);
+        }
     }
     &__link {
         text-decoration: none;
@@ -43,9 +52,12 @@
         
         //медиа-запрос планшет
         @media (max-width: $bp-tablet ) {margin: 0 8px 0 12px;}
-    };
+        
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){display: none;}
+    }
     
     //медиа-запрос планшет
     @media (max-width: $bp-tablet ) {margin: auto;}
-};
+}
 
