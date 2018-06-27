@@ -8,6 +8,9 @@
        margin: 0 15px 0 0;
     
        &:last-child {margin: 0;}
+       
+    //медиа-запрос смартфон
+    @media (max-width: $bp-smartphone ){margin: 0 1.7% 0 0;}
     }
     &__link {
         display: inline-block;
@@ -25,6 +28,12 @@
            width: 48px;
            height: 48px;
        }
+       
+       //медиа-запрос смартфон
+       @media (max-width: $bp-smartphone ){
+           width: 42px;
+           height: 42px;
+       }
     }
    
     &__ico {
@@ -34,6 +43,12 @@
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 1.31rem;}
+       
+       //медиа-запрос смартфон
+       @media (max-width: $bp-smartphone ){
+           font-size: 1.3rem;
+           vertical-align: -13px;
+       }
         
     }
     

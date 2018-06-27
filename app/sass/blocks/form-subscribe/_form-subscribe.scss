@@ -26,6 +26,12 @@
            width: 500px;
            font-size: 0.87rem;
        }
+       
+       //медиа-запрос смартфон
+       @media (max-width: $bp-smartphone ){
+           padding: 16px 16px 16px 16px;
+           width: 75%;
+       }
    }
 ::-webkit-input-placeholder {
     color:#979797;
@@ -75,8 +81,11 @@
     
     &:hover {border: 2px solid $c-accent;}
     
-     //медиа-запрос нeтбуки
+    //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {font-size: 0.93rem;}
+    
+    //медиа-запрос смартфон
+    @media (max-width: $bp-smartphone ){padding: 15px 31px 15px 31px;}  
 }
    
 }
