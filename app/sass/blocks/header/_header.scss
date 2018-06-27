@@ -36,6 +36,9 @@
         font-size: 24px;
         //медиа-запрос для 4k экранов
         @media (min-width: $bp-4k ) { vertical-align: baseline;}
+        
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {font-size: 8vw;}
     }
     &__info-email {
         padding: 0 3px 0 18px;
@@ -56,6 +59,10 @@
         &:hover {color: $c-accent;}
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) { font-size: 0.87rem;}
+        
+               
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
     }
     &__info-social-net {
         
@@ -79,6 +86,9 @@
         transition: 0.5s;
         
         &:hover {color: lighten(#f8cd53, 15%);}
+        
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {display: none;}
         
     }
     

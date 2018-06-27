@@ -13,9 +13,23 @@
        
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 1.75rem;}
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {font-size: 9vw;}
    }
-   &__list-links {margin: 30px 0 0 0;}
-   &__form-subscribe {margin: 35px 0 0 0;}
+   &__list-links {
+       margin: 30px 0 0 0;
+       
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {margin: 5% 0 0 0;}
+   }
+   &__form-subscribe {
+       margin: 35px 0 0 0;
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {margin: 10% 0 0 0;}
+   }
 }
     //list-links
 @import "app/sass/blocks/list-links/_list-links.scss";

@@ -10,6 +10,15 @@
     border-radius: 6px;
     transition: 0.3s;
     transition-property: background-color;
+    
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {
+        margin: 0 0 23% 0;
+        padding: 0px 3% 7% 3%;
+        min-width: 30vw;
+        min-height: auto;
+    }
+    
     &_position_left {
         position: relative;
         left: 60px;
@@ -25,6 +34,9 @@
         
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {font-size: 3.4rem;}
+        
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {font-size: 20vw;}
     } 
     &__txt{
         margin: 0;
@@ -39,6 +51,9 @@
         
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {font-size: 1rem;}
+        
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {display: none;}
     }
     
     //медиа-запрос нeтбуки
@@ -46,12 +61,22 @@
         position: relative;
         z-index: 1000;
         
-        &_position_bottom {bottom: 55px;}
+        &_position_bottom {
+            bottom: 55px;
+            
+            //медиа-запрос смартфон маленький экран
+            @media (max-width: $bp-smartphone-sm ) {bottom: 0;}
+            
+        }
         &_position_top {
             top: 63px;
             
             //медиа-запрос смартфон
             @media (max-width: $bp-smartphone ){top: 67px;}
+             
+            //медиа-запрос смартфон маленький экран
+            @media (max-width: $bp-smartphone-sm ) {top: 20px;}
+           
         }
 
     }

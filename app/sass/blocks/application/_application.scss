@@ -12,6 +12,9 @@
        
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 2rem;}
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {font-size: 12vw;}
     }
     &__txt {
        @include subtitle;
@@ -19,6 +22,9 @@
        
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
     }
     &__btn-open {margin: 10px 0 20px 0;}
     &__figure-triangle {

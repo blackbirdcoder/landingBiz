@@ -11,6 +11,10 @@
         
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) { font-size: 0.81rem;}
+        
+        
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
     }
     &__ico-copyright {}
     

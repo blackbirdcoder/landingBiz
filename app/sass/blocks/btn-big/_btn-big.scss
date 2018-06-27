@@ -19,13 +19,18 @@
     }
     
     //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) {font-size: 1.25rem;} 
+    @media (max-width: $bp-netbook ) {
+        padding: 24px 36px 21px 36px;
+        font-size: 1.25rem;
+    } 
     
     //медиа-запрос смартфон
     @media (max-width: $bp-smartphone ){
-        padding: 4% 4% 4% 4%;
+        padding: 6% 4% 4% 4%;
         font-size: 1.22rem;
         
     }
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {font-size: 6vw;}
 }
 

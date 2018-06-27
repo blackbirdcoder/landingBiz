@@ -9,18 +9,27 @@
        
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 2rem;}
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {font-size: 12vw;}
    }
    &__txt {
        @include subtitle;
        
        //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
+       
+        //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
    }  
    &__decor-line{
        @include line-bold; 
        
        //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) { height: 5px;}
+       
+       //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {display: none;}
    }
    &__list {margin: 45px 0px 0 0;}
 }

@@ -20,6 +20,15 @@
             width: 200px;
             border-bottom: 2px solid rgba(66, 66, 66, 0.50);
         }
+        
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {
+            width: 100%;
+            border-bottom: 0;
+           
+        }
+        
+        
     }
     &__link {
         text-decoration: none;
@@ -38,6 +47,9 @@
         
         //медиа-запрос планшет
         @media (max-width: $bp-tablet ) {text-transform: uppercase;}
+        
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {font-size: 5.5vw;}
     }
     &__ico {
         margin: 0 15px 0 15px;

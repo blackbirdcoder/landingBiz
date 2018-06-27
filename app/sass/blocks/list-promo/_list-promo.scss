@@ -56,6 +56,12 @@
        
        //медиа-запрос смартфон
        @media (max-width: $bp-smartphone ){font-size: 1.8rem;}
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {
+           font-size: 9vw;
+           bottom: 6px;
+       }
     }
     &__box-info-text{
         margin: 85px 0 85px 0;
@@ -84,6 +90,9 @@
        
        //медиа-запрос смартфон
        @media (max-width: $bp-smartphone ){font-size: 1.4rem;}
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
     }
     &__txt {
         margin: 0;
@@ -99,6 +108,9 @@
         
         //медиа-запрос смартфон
         @media (max-width: $bp-smartphone ){font-size: 0.84rem;}
+        
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
 
     }
     &__pic{

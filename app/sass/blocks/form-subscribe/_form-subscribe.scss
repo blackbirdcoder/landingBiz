@@ -9,6 +9,9 @@
        
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 0.87rem;}
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {font-size: 5.2vw;}
    }
    &__field {
        margin: 25px 0 0 0;
@@ -32,6 +35,14 @@
            padding: 16px 16px 16px 16px;
            width: 75%;
        }
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {
+           margin: 10% 0 0 0;
+           padding: 5vw 5vw 5vw 5vw;
+           width: 80%;
+           font-size: 5vw;
+       }
    }
 ::-webkit-input-placeholder {
     color:#979797;
@@ -39,6 +50,10 @@
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
+    
+    
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
 }
 ::-moz-placeholder {
     color:#979797;
@@ -46,6 +61,9 @@
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
+    
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
 }
 :-moz-placeholder {
     color:#979797;
@@ -53,6 +71,9 @@
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
+    
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
 }
 :-ms-input-placeholder {
     color:#979797;
@@ -60,6 +81,9 @@
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
+    
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
 }
 ::placeholder {
     color:#979797;
@@ -67,6 +91,9 @@
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
+    
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
 }
 &__btn-subscribe {
     margin: 20px 0 0 0;
@@ -85,7 +112,15 @@
     @media (max-width: $bp-netbook ) {font-size: 0.93rem;}
     
     //медиа-запрос смартфон
-    @media (max-width: $bp-smartphone ){padding: 15px 31px 15px 31px;}  
+    @media (max-width: $bp-smartphone ){padding: 15px 31px 15px 31px;}
+    
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {
+        margin: 10% 0 0 0;
+        padding: 5% 10% 5% 10%;
+        font-size: 5.5vw;
+        
+    }
 }
    
 }

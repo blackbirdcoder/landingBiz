@@ -19,6 +19,9 @@
         
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {font-size: 2.7rem;} 
+        
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {font-size: 13vw;}
     }
     &__txt {
         margin: 0;
@@ -28,7 +31,10 @@
         color: $c-light;
         
         //медиа-запрос нетбуки
-        @media (max-width: $bp-netbook ) {font-size: 1.6rem;} 
+        @media (max-width: $bp-netbook ) {font-size: 1.6rem;}
+        
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
     }
     &__box-button-big {
     display: inline-block;

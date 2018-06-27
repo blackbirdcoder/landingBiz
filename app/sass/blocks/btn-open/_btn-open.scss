@@ -11,6 +11,9 @@
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 2.12rem;}
+       
+       //медиа-запрос смартфон маленький экран
+       @media (max-width: $bp-smartphone-sm ) {font-size: 12vw;}
     }
     
     &:hover {background-color: #4CAF50}
@@ -20,5 +23,11 @@
     
     //медиа-запрос смартфон
     @media (max-width: $bp-smartphone ){padding: 5px 10px 5px 10px;}
+    
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {
+        padding: 1% 3% 1% 3%;
+        border: 1.7px solid $c-light;
+    }
 }
 
