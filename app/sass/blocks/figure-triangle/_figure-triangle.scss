@@ -11,15 +11,13 @@
     @media (max-width: $bp-netbook ) {
         border-left: 30px solid transparent;
         border-right: 30px solid transparent;
-        border-bottom: 30px solid $c-light;
+        border-bottom: 30px solid $c-light;    
+        position: relative;
+        top: 1.5px;
     }
     
     //медиа-запрос смартфон
-    @media (max-width: $bp-smartphone ){
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-bottom: 20px solid $c-light;
-    
-    }
+    @media (max-width: $bp-smartphone ){display: none;}
+
 }
 

@@ -9,12 +9,12 @@
        
        //Эффекты для List-promo
        &:hover .list-promo__ico {
-            text-shadow: 0px 4px 1px #424242db;
+            text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);
             opacity: 1;
             color: #f7d50b;
         }
-        &:hover .list-promo__title {text-shadow: 0px 4px 1px #424242db;}
-        &:hover .list-promo__txt {text-shadow: 0px 4px 1px #424242db;}
+        &:hover .list-promo__title {text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);}
+        &:hover .list-promo__txt {text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);}
         &:hover .list-promo__pic {filter: saturate(200%);}
         
        //медиа-запрос нeтбуки

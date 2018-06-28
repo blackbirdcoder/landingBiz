@@ -51,7 +51,7 @@
    
     &__ico {
         font-size: 23px;
-        vertical-align: -15px;
+        vertical-align: -16px;
         color: $c-light;
         
        //медиа-запрос нeтбуки
@@ -60,7 +60,7 @@
        //медиа-запрос смартфон
        @media (max-width: $bp-smartphone ){
            font-size: 1.3rem;
-           vertical-align: -13px;
+           vertical-align: -11px;
        }
        //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {
