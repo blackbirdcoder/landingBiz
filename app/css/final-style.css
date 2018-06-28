@@ -2215,7 +2215,7 @@
 
 /*----Footer----*/
 .footer {
-  padding: 30px 0 30px 0;
+  padding: 30px 0 25px 0;
   background-color: #424242;
 }
 
@@ -2275,6 +2275,17 @@
 
 .author__link:hover {
   color: rgba(80, 255, 0, 0.5);
+}
+
+.w3c-mark {
+  margin: 2.5% 0 0 0;
+  text-align: center;
+}
+
+@media (max-width: 288px) {
+  .w3c-mark {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=final-style.css.map */

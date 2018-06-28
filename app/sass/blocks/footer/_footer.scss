@@ -1,7 +1,7 @@
 //Footer для сайта landing-business.hw
 /*----Footer----*/
 .footer {
-    padding: 30px 0 30px 0;
+    padding: 30px 0 25px 0;
     background-color: $c-dark;
     &__box-info {text-align: center;}
     &__txt {
@@ -23,3 +23,5 @@
 }
   //author
 @import "app/sass/blocks/author/_author.scss";
+ //w3c mark
+@import "app/sass/blocks/w3c-mark/_w3c-mark.scss";
