@@ -6,18 +6,5 @@
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     border-bottom: 35px solid $c-light;
-    
-    //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) {
-        border-left: 30px solid transparent;
-        border-right: 30px solid transparent;
-        border-bottom: 30px solid $c-light;    
-        position: relative;
-        top: 1.5px;
-    }
-    
-    //медиа-запрос смартфон
-    @media (max-width: $bp-smartphone ){display: none;}
-
 }
 

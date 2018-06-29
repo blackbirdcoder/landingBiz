@@ -1,10 +1,23 @@
 //Форма обратной связи для сайта landing-business.hw
 /*form*/
 .form {
-    margin: 0 170px 0 170px;
+    margin: 35px 170px 0 170px;
     padding: 50px 50px 65px 50px;
     position: relative;
     background-color: $c-light;
+    &__figure-triangle {
+        vertical-align: bottom;
+        position: absolute;
+        bottom: 441px;
+        left: 307px;
+        
+        //медиа-запрос для 4k экранов
+        @media (min-width: $bp-4k) {display: none;}
+        
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook  ){display: none;}
+        
+        }
     &__btn-close {
         display: inline-block;
         padding: 1px 15px 7px 15px;

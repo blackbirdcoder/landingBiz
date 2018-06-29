@@ -1580,10 +1580,6 @@
   margin: 10px 0 20px 0;
 }
 
-.application__figure-triangle {
-  vertical-align: bottom;
-}
-
 .btn-open {
   display: inline-block;
   padding: 10px 16px 10px 16px;
@@ -1644,28 +1640,31 @@
   border-bottom: 35px solid #ffffff;
 }
 
-@media (max-width: 1045px) {
-  .figure-triangle {
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid #ffffff;
-    position: relative;
-    top: 1.5px;
-  }
+/*form*/
+.form {
+  margin: 35px 170px 0 170px;
+  padding: 50px 50px 65px 50px;
+  position: relative;
+  background-color: #ffffff;
 }
 
-@media (max-width: 596px) {
-  .figure-triangle {
+.form__figure-triangle {
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 441px;
+  left: 307px;
+}
+
+@media (min-width: 3840px) {
+  .form__figure-triangle {
     display: none;
   }
 }
 
-/*form*/
-.form {
-  margin: 0 170px 0 170px;
-  padding: 50px 50px 65px 50px;
-  position: relative;
-  background-color: #ffffff;
+@media (max-width: 1045px) {
+  .form__figure-triangle {
+    display: none;
+  }
 }
 
 .form__btn-close {
