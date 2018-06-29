@@ -1589,6 +1589,7 @@
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .btn-open__ico {
@@ -1646,6 +1647,7 @@
   padding: 50px 50px 65px 50px;
   position: relative;
   background-color: #ffffff;
+  display: none;
 }
 
 .form__figure-triangle {
@@ -1681,6 +1683,7 @@
   border: 2.5px solid #ffffff;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+  cursor: pointer;
   -webkit-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s;

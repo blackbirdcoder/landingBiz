@@ -5,6 +5,7 @@
     padding: 50px 50px 65px 50px;
     position: relative;
     background-color: $c-light;
+    display: none;
     &__figure-triangle {
         vertical-align: bottom;
         position: absolute;
@@ -31,6 +32,7 @@
         color: $c-light;
         border: 2.5px solid $c-light;
         border-radius: 50%;
+        cursor: pointer;
         transition: 0.1s;
         
         &:hover {
