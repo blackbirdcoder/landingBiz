@@ -56,7 +56,12 @@
         font-family:  $f-normal, sans-serif;
         transition: 0.5s;
         
-        &:hover {color: $c-accent;}
+        &:hover {
+            color: $c-accent;
+            //Убираю цвет выделения, который появляется при нажатии 
+            //вокруг кнопки при просмотре сайта через мобильное устройство
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) { font-size: 0.87rem;}
         
@@ -85,7 +90,12 @@
         color: $c-light;
         transition: 0.5s;
         
-        &:hover {color: lighten(#f8cd53, 15%);}
+        &:hover {
+            color: lighten(#f8cd53, 15%);
+            //Убираю цвет выделения, который появляется при нажатии 
+            //вокруг кнопки при просмотре сайта через мобильное устройство
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
         
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {display: none;}

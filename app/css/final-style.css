@@ -151,6 +151,7 @@
 
 .header__link:hover {
   color: #dd2a24;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 1045px) {
@@ -197,6 +198,7 @@
 
 .header__link-social-net:hover {
   color: #fbe29d;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 288px) {
@@ -427,6 +429,7 @@
 
 .menu__link:hover {
   color: #dd2a24;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 1045px) {
@@ -529,6 +532,7 @@
 
 .btn:hover {
   color: #fbe29d;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .btn_theme_bright {
@@ -632,6 +636,7 @@
 
 .btn-big_theme_bright:hover {
   background-color: #dd2a24;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 1045px) {
@@ -1611,6 +1616,7 @@
 
 .btn-open:hover {
   background-color: #4CAF50;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 1045px) {
@@ -1692,11 +1698,12 @@
 .form__btn-close:hover {
   background-color: #b7211c;
   font-weight: 600;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 1045px) {
   .form__btn-close {
-    padding: 5px 15px 7px 15px;
+    padding: 4px 15px 7px 15px;
     font-size: 1.87rem;
   }
 }
@@ -1925,6 +1932,7 @@
 
 .list-links__link:hover {
   border: 2px solid #dd2a24;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 288px) {
@@ -2193,6 +2201,7 @@
 
 .form-subscribe__btn-subscribe:hover {
   border: 2px solid #dd2a24;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 1045px) {
@@ -2277,6 +2286,7 @@
 
 .author__link:hover {
   color: rgba(80, 255, 0, 0.5);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .w3c-mark {

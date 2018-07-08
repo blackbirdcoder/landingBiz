@@ -11,7 +11,12 @@
     color: $c-light;
     transition: 0.5s;
     
-    &:hover{color: lighten(#f8cd53, 15%)}
+    &:hover{
+        color: lighten(#f8cd53, 15%);
+        //Убираю цвет выделения, который появляется при нажатии 
+        //вокруг кнопки при просмотре сайта через мобильное устройство
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);    
+    }
     &_theme_bright{background-color: $c-accent;}
     
     //медиа-запрос для 4k экранов
