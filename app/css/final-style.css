@@ -1595,6 +1595,14 @@
   -o-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .btn-open__ico {
@@ -1615,8 +1623,57 @@
 }
 
 .btn-open:hover {
-  background-color: #4CAF50;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    background-color: rgba(76, 175, 80, 0.4);
+  }
+  25% {
+    background-color: rgba(76, 175, 80, 0.6);
+  }
+  50% {
+    background-color: rgba(76, 175, 80, 0.9);
+  }
+  75% {
+    background-color: rgba(5, 103, 150, 0.7);
+  }
+  85% {
+    background-color: rgba(5, 103, 150, 0.6);
+  }
+  90% {
+    background-color: rgba(5, 103, 150, 0.4);
+  }
+  100% {
+    background-color: rgba(76, 175, 80, 0.3);
+  }
+}
+
+@keyframes spin {
+  0% {
+    background-color: rgba(76, 175, 80, 0.4);
+  }
+  25% {
+    background-color: rgba(76, 175, 80, 0.6);
+  }
+  50% {
+    background-color: rgba(76, 175, 80, 0.9);
+  }
+  75% {
+    background-color: rgba(5, 103, 150, 0.7);
+  }
+  85% {
+    background-color: rgba(5, 103, 150, 0.6);
+  }
+  90% {
+    background-color: rgba(5, 103, 150, 0.4);
+  }
+  100% {
+    background-color: rgba(76, 175, 80, 0.3);
+  }
 }
 
 @media (max-width: 1045px) {
