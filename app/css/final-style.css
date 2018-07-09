@@ -1629,6 +1629,7 @@
 }
 
 @-webkit-keyframes spin {
+  /*Анимация для кнопки "open" */
   0% {
     background-color: rgba(76, 175, 80, 0.4);
   }
@@ -1653,6 +1654,7 @@
 }
 
 @keyframes spin {
+  /*Анимация для кнопки "open" */
   0% {
     background-color: rgba(76, 175, 80, 0.4);
   }
@@ -1678,13 +1680,13 @@
 
 @media (max-width: 1045px) {
   .btn-open {
-    padding: 8px 14px 8px 14px;
+    padding: 10px 16px 8px 16px;
   }
 }
 
 @media (max-width: 596px) {
   .btn-open {
-    padding: 5px 10px 5px 10px;
+    padding: 6px 10px 5px 10px;
   }
 }
 
@@ -1760,7 +1762,7 @@
 
 @media (max-width: 1045px) {
   .form__btn-close {
-    padding: 4px 15px 7px 15px;
+    padding: 6px 15px 7px 15px;
     font-size: 1.87rem;
   }
 }

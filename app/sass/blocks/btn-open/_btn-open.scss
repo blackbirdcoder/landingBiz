@@ -29,8 +29,9 @@
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
     
-    //Анимация для кнопки
+   
     @keyframes spin {
+        /*Анимация для кнопки "open" */
         //зелёный
         0% { background-color: rgba(76, 175, 80, 0.4);}
         //зелёный
@@ -48,10 +49,10 @@
 
     }
     //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) { padding: 8px 14px 8px 14px;}
+    @media (max-width: $bp-netbook ) { padding: 10px 16px 8px 16px;}
     
     //медиа-запрос смартфон
-    @media (max-width: $bp-smartphone ){padding: 5px 10px 5px 10px;}
+    @media (max-width: $bp-smartphone ){padding: 6px 10px 5px 10px;}
     
     //медиа-запрос смартфон маленький экран
     @media (max-width: $bp-smartphone-sm ) {
