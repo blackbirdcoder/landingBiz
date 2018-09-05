@@ -11,10 +11,10 @@ section.application
                 div.form__figure-triangle.figure-triangle
                 div#btn-close.form__btn-close x
                 p.form__txt Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
-                input.form__field(placeholder="Your Name" name="name" maxlength="20" type="text" value="")
+                input.form__field(type="text" name="name" placeholder="Your Name *" minlength="2" maxlength="40" pattern!="(?![\\s'-]*$)[^0-9}{!><*@#№$%^&=:;,.~+?)(|\\[\\]\\\\\\/&quot;]*" title="Example: Alexander" required)
                 br
-                input.form__field(placeholder="Contact Number" name="phone" maxlength="20" type="tel" value="")
+                input.form__field(type="tel" name="phone" placeholder="Contact Number *" minlength="12" maxlength="24" pattern!="^\\+\\s{0,1}\\d{0,1}[-]{0,1}\\d{1,3}\\s{0,1}[\\(]{0,1}\\d{1,4}[\\)]{0,1}\\s{0,1}\\d{3}[-]{0,1}\\s{0,1}\\d{2}[-]{0,1}\\s{0,1}\\d{2}" title="Example: +7 (351) 240-04-40" required)
                 br
-                input.form__field(placeholder="Company Name" name="company" maxlength="20" type="text" value="")
+                input.form__field(type="text" name="company" placeholder="Company Name" minlength="2" maxlength="40" pattern!="(?![\\s'-]*$)[^0-9}{!><*@#№$%^&=:;,.~+?)(|\\[\\]\\\\\\/&quot;]*" title="Example: Successful Company")
                 br
                 button.form__btn-submit(name="send" type="submit") SUBMIT NOW
