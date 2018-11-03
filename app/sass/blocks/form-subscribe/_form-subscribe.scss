@@ -1,6 +1,10 @@
 //Форма подписки для сайта landing-business.hw
+//form-subscribe присутствует tooltip (окно с подсказкой), но я его не импортирую
+//поскольку оно импортировано выше в application (form),
+// а также чтобы не было переопределения уже заданных стилей в выше стоящей секции.
 /*form-subscribe*/
 .form-subscribe {
+   position: relative;
    &__txt {
        margin: 0;
        color: $c-light;
@@ -22,80 +26,75 @@
        background-color: $c-dark;
        color: $c-light;
        font-size: 17px;
-       
+       &::placeholder {
+            color:#979797;
+            font-size: 14px;
+    
+            //медиа-запрос нeтбуки
+            @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
+    
+            //медиа-запрос смартфон маленький экран
+            @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
+        }
+        //Взаимодействия пользователя с полям ввода (email)
+        //Показываю и прячу подсказку (tooltip)
+        &_active:focus  {  + .tooltip {display: block;} }
+        &_active:focus:valid  { + .tooltip {display: none;} }
+        &_active:invalid  {color: #ff4545;}
+        
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {
            padding: 18px 18px 18px 18px;
-           width: 500px;
+           width: 60%;
            font-size: 0.87rem;
        }
        
        //медиа-запрос смартфон
        @media (max-width: $bp-smartphone ){
            padding: 16px 16px 16px 16px;
-           width: 75%;
+           width: 65%;
        }
        
        //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {
            margin: 10% 0 0 0;
            padding: 5vw 5vw 5vw 5vw;
-           width: 80%;
+           width: 75%;
            font-size: 5vw;
        }
    }
-::-webkit-input-placeholder {
-    color:#979797;
-    font-size: 14px;
-    
-    //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
-    
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
-}
-::-moz-placeholder {
-    color:#979797;
-    font-size: 14px;
-    
-    //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
-}
-:-moz-placeholder {
-    color:#979797;
-    font-size: 14px;
-    
-    //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
-}
-:-ms-input-placeholder {
-    color:#979797;
-    font-size: 14px;
-    
-    //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
-}
-::placeholder {
-    color:#979797;
-    font-size: 14px;
-    
-    //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
-}
-&__btn-subscribe {
+   
+       //позиционирование подсказки для (email) формы 
+    &__tooltip {
+        position: absolute;
+        bottom: 150px;
+        left: 285px;
+        
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) {
+            width: 49%;
+            padding: 1%;
+            bottom: 83%;
+            left: 25%;
+            font-size: 0.87rem;
+            }
+
+        //медиа-запрос смартфон    
+        @media (max-width: $bp-smartphone)  {
+            font-size: 0.72rem;
+            bottom: 80%;
+        }
+
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {
+            width: 70%;
+            bottom: 75%;
+            left: 13%;
+            font-size: 5vw;
+        }
+    }
+
+    &__btn-subscribe {
     margin: 20px 0 0 0;
     padding: 18px 34px 18px 34px;
     font-size: 17px;

@@ -188,7 +188,7 @@
           <div class="application__btn-open btn-open" id="btn-open"><span class="fa fa-angle-down btn-open__ico"></span></div><br>
           <form class="form application__form" id="form" action="#" method="POST" name="applicationForm">
             <div class="form__figure-triangle figure-triangle"></div>
-            <div class="form__btn-close" id="btn-close">x</div>
+            <div class="form__btn-close" id="btn-close"><span class="form__btn-close-ico"></span></div>
             <p class="form__txt">Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more</p>
             <input class="form__field form__field_active" type="text" name="name" placeholder="Your Name *" minlength="2" maxlength="40" pattern="(?![\s'-]*$)[^0-9}{!><*@#№$%^&=:;,.~+?)(|\[\]\\\/&quot;]*" title="Example: Alexander" required>
             <div class="tooltip form__tooltip">
@@ -220,7 +220,10 @@
           </ul>
           <form class="form-subscribe contact__form-subscribe" action="#" method="POST" name="subscribeForm">
             <p class="form-subscribe__txt">Subscribe to our newsletter to stay update with what is new</p>
-            <input class="form-subscribe__field" placeholder="Email Address" name="email" maxlength="25" type="text" value=""><br>
+            <input class="form-subscribe__field form-subscribe__field_active" type="email" name="email" placeholder="Email Address" maxlength="319" pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]{1,64}@[a-zA-Z0-9-]{1,64}[\.][a-zA-z]{2,}[\.]{0,1}[a-zA-z]{0,}$" title="Example: username@example.com" required>
+            <div class="tooltip form-subscribe__tooltip">
+              <p class="tooltip__txt">Please enter your email correctly. <br> Example: <i>username@example.com</i></p>
+            </div><br>
             <button class="form-subscribe__btn-subscribe" name="send-email" type="submit">Subscribe</button>
           </form>
         </div>

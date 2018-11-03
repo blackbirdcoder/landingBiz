@@ -1,4 +1,4 @@
-//  gulp v.0.4.2 beta (test) (Убрал из watch утилиту sprite (spritesmith) )
+//  gulp v.1.0.0 beta (browser-sync добавил новые опции)
 //  задачи для проекта "landing-business.hw", который выполняю в рамках курса ITVDN
 var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
@@ -50,13 +50,15 @@ gulp.task('css-min', function(){
 
 gulp.task('browser-sync', function(){
 	browserSync({
+        open: false,
 		server: { 
-			baseDir: 'app'
+            baseDir: 'app',
+            routes: {"/node_modules": "node_modules"},
 		}, notify: false
 	});
 });
 
-//Делаю задачу PUG (изменения в пути и добавленны исключения)
+//Делаю задачу PUG (изменения в пути и добавлены исключения)
 gulp.task('pug-run', function buildHTML(){
     return gulp.src(['!app/pug/section/**/*.pug', 'app/pug/*.pug'])
             .pipe(plumber()) // plumber

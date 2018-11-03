@@ -18,6 +18,9 @@ section.contact
                        span.fa.fa-linkedin.list-links__ico 
             form.form-subscribe.contact__form-subscribe(action="#" method="POST" name="subscribeForm")
                 p.form-subscribe__txt Subscribe to our newsletter to stay update with what is new
-                input.form-subscribe__field(placeholder="Email Address" name="email" maxlength="25" type="text" value="")
+                input.form-subscribe__field.form-subscribe__field_active(type="email" name="email" placeholder="Email Address"  maxlength="319"  pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]{1,64}@[a-zA-Z0-9-]{1,64}[\\.][a-zA-z]{2,}[\\.]{0,1}[a-zA-z]{0,}$" title="Example: username@example.com" required)
+                div.tooltip.form-subscribe__tooltip
+                    p.tooltip__txt Please enter your email correctly. <br> Example: 
+                        i username@example.com
                 br
                 button.form-subscribe__btn-subscribe(name="send-email" type="submit") Subscribe

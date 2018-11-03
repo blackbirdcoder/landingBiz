@@ -1,5 +1,11 @@
 //Форма обратной связи для сайта landing-business.hw
-/*form*/
+
+//Специально импортирую tooltip (окно с подсказкой) вверху перед формой
+//для того чтобы можно было беспроблемно переопределять свойства окна tooltip
+    //tooltip
+    @import "app/sass/blocks/tooltip/_tooltip.scss";  
+
+/*form*/  
 .form {
     margin: 35px 170px 0 170px;
     padding: 50px 50px 65px 50px;
@@ -9,7 +15,7 @@
     &__figure-triangle {
         vertical-align: bottom;
         position: absolute;
-        bottom: 441px;
+        bottom: 433px;
         left: 307px;
         
         //медиа-запрос для 4k экранов
@@ -21,13 +27,12 @@
         }
     &__btn-close {
         display: inline-block;
-        padding: 1px 15px 7px 15px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: -23px;
         right: -20px;
         text-decoration: none;
-        font-family: $f-light, sans-serif;
-        font-size: 32px;
         background-color: $c-accent;
         color: $c-light;
         border: 2.5px solid $c-light;
@@ -37,7 +42,6 @@
         
         &:hover {
             background-color: darken($c-accent, 9%);
-            font-weight: 600;
             //Убираю цвет выделения, который появляется при нажатии 
             //вокруг кнопки при просмотре сайта через мобильное устройство
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -45,26 +49,91 @@
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {
-           padding: 6px 15px 7px 15px;
-           font-size: 1.87rem;
+            width: 45px;
+            height: 45px;
        }
        
        //медиа-запрос смартфон
        @media (max-width: $bp-smartphone ){
-           padding: 6px 12px 7px 12px;
-           top: -19px;
-           right: -18px;
-           font-weight: 600;
-           font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            top: -19px;
        }
        
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {
-            padding: 0% 3% 0% 3%;
-            top: -4vw;
-            right: -4vw;
-            font-size: 7vw;
-            border: 1.7px solid $c-light;
+            border: 1.5px solid $c-light;
+            width: 25px; 
+            height: 25px; 
+            top: -4%;
+            right: -4%;
+        }
+
+        @media (max-width: $bp-screen-small ) {
+            display: none;
+        }
+    }
+    &__btn-close-ico {
+        display: inline-block;
+        background: $c-light;
+        height: 21px;
+        width: 2px;
+        position: inherit;
+        top: 10px;
+        left: 22px;
+        transform: rotate(-35deg);
+
+        &:after {
+            display: inherit;
+            background: $c-light;
+            content: "";
+            height: 2px;
+            left: -9px;
+            position: inherit;
+            top: 10px;
+            width: 20px;
+            transform: rotate(-20deg);
+
+            //медиа-запрос нeтбуки
+            @media (max-width: $bp-netbook ) {
+                width: 19px;    
+                top: 9px;
+                left: -8px;
+            }
+
+            //медиа-запрос смартфон
+            @media (max-width: $bp-smartphone ) {
+                width: 18px;    
+                top: 8px;
+            }
+
+            //медиа-запрос смартфон маленький экран
+            @media (max-width: $bp-smartphone-sm ) {
+                width: 15px;
+                top: 7px;
+                left: -7px;
+            }
+
+        }
+
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) {
+            height: 19px;
+            left: 19px; 
+        }
+
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){
+            height: 18px;
+            left: 17px;
+            top: 8px;
+        }
+
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) {
+            height: 16px;
+            left: 10px;
+            top: 2px;
         }
     }
     &__txt {
@@ -135,9 +204,21 @@
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {
-           top: 6%;
-           left: 15%;
-            }
+            padding: 2%;
+            width: 70%;
+            top: 10%; 
+            left: 15%;
+            font-size: 0.87rem;
+           }
+        
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone) {
+            top: 17%;
+            font-size: 0.72rem;
+        }
+
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ){ font-size: 5vw;}
     }
 
     &__btn-submit {
@@ -188,6 +269,3 @@
         width: 80%;
     }
 }
-        
-    //tooltip
-@import "app/sass/blocks/tooltip/_tooltip.scss";    

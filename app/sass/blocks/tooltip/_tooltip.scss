@@ -13,21 +13,4 @@
     box-shadow: 0px 5px 19px 1px $c-dark;
     
     &__txt {margin: 0;}
-    
-    //медиа-запрос нeтбук
-    @media (max-width: $bp-netbook ) {
-        padding: 2%;
-        width: 70%;
-        font-size: 0.87rem;
-    }
-/*    
-    //медиа-запрос планшет
-    @media (max-width: $bp-tablet ) {font-size: 0.9rem;}  
-    
-     //медиа-запрос смартфон 
-    @media (max-width: $bp-smartphone ){ font-size: 5vw;}
-    */
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ){ font-size: 5vw;}
 }
