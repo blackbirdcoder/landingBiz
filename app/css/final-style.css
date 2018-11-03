@@ -217,7 +217,7 @@
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .header__control {
     padding: 9% 0 10% 0;
   }
@@ -248,7 +248,7 @@
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .logo {
     display: block;
     margin: 0 auto 3% auto;
@@ -278,7 +278,7 @@
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .logo__ico {
     float: none;
     margin: 0;
@@ -305,7 +305,7 @@
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .logo__heading {
     letter-spacing: 2px;
   }
@@ -335,7 +335,7 @@
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .logo__txt {
     letter-spacing: 1px;
   }
@@ -373,11 +373,21 @@
   display: inline-block;
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .navigation.container__navigation {
     display: block;
     margin: 0;
     text-align: center;
+  }
+}
+
+.translated-ltr .navigation.container__navigation {
+  margin: 0 0 0 46px;
+}
+
+@media (max-width: 1045px) {
+  .translated-ltr .navigation.container__navigation {
+    margin: 0 0 0 11px;
   }
 }
 
@@ -393,7 +403,7 @@
   vertical-align: 21px;
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .menu__item {
     vertical-align: 0;
   }
@@ -438,7 +448,7 @@
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .menu__link {
     text-transform: uppercase;
   }
@@ -467,7 +477,7 @@
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .menu__ico {
     margin: 0 8px 0 12px;
   }
@@ -479,7 +489,7 @@
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .menu {
     margin: auto;
   }
@@ -508,7 +518,7 @@
   vertical-align: 20px;
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .box-button {
     display: none;
   }
@@ -742,7 +752,7 @@
   vertical-align: top;
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .list__item {
     padding: 0 15% 0 15%;
     display: block;
@@ -767,7 +777,7 @@
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 960px) {
   .list__item:nth-of-type(2) {
     margin: 5% 0% 5% 0%;
   }
