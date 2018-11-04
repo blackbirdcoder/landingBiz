@@ -19,7 +19,7 @@
 //если медиа запрос записать  в вправило к .navigation
 //а если в .container__navigation записать медиа-запрос
 //то правила в запросе не переопределяют правило в .navigation
-//тоесть display: inline-block так и остается
+//то есть display: inline-block так и остается
 //поэтому было принято такое решение: 
 .navigation.container__navigation{
     //медиа-запрос планшет
