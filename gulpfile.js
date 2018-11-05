@@ -1,4 +1,5 @@
-//  gulp v.1.0.0 beta (browser-sync добавил новые опции)
+//  gulp v.1.1.0 beta (browser-sync добавил новые опции, а также в таске bulid добавлен
+// перенос папки с "заглушкой" для старых браузеров в папку dist)
 //  задачи для проекта "landing-business.hw", который выполняю в рамках курса ITVDN
 var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
@@ -39,7 +40,6 @@ gulp.task('scripts-min', function(){
 
 gulp.task('css-min', function(){
 	return gulp.src([
-            //Изменения
 	'app/css/base-style.css',
         'app/css/final-style.css'
 	])
@@ -120,4 +120,8 @@ gulp.task('bulid', ['clear', 'clear-cache', 'img', 'sass', 'scripts-min'], funct
     
     var buildHtml = gulp.src('app/*.html')
             .pipe(gulp.dest('dist'));
+
+//"Заглушка" для старых браузеров проноситься в папку dist
+    var buildStub = gulp.src('app/old-browser/**/*')
+            .pipe(gulp.dest('dist'));        
 });

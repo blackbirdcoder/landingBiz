@@ -1,0 +1,129 @@
+/* WARNING BROWSER CSS */
+
+.page {
+	
+	margin: 0;
+	min-width: 1250px;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	font-style: normal;
+	color: #000000;
+	background-color: #ffffff;
+	
+}
+
+.container {
+	
+	margin: 0 auto;
+	padding: 0 50px 0 50px;
+	max-width: 1250px;
+
+}
+
+.warning {
+	
+	text-align: center;
+}
+
+.container__warning {
+	
+	margin: 75px 0 0 0;
+}
+
+.warning__heading {
+	
+	margin: 0;
+	font-size: 28px;
+	font-weight: 600;
+	
+}
+
+.warning__heading_attention {
+	
+	
+	padding: 20px 0 10px 75px;
+	background:url("pic/attention_pic.jpeg") no-repeat;
+	color: #ff0000;
+}
+
+.warning__txt {
+	
+	margin: 25px 0 75px 0;
+	font-size: 19px;
+	font-weight: 600;
+	font-style: italic;
+}
+
+
+.table  {
+	
+	margin: auto;
+}
+
+.container__table {
+	
+	
+}
+
+.table__row {
+	
+	text-align: center;
+}
+
+
+.table__cell {
+	
+	width: 195px;
+	height: 40px;
+}
+
+.table__pic {
+	
+	
+}
+
+.table__link {
+	
+	font-size: 18px;
+}
+
+.browser-info  {
+	
+	
+}
+
+.container__browser {
+	
+	margin: 70px 0 0 0;
+}
+
+.browser-info__heading {
+	
+	margin: 0 0 10px 0;
+	font-size: 23px;
+	font-weight: 600;
+}
+
+.browser-info__txt {
+	
+	margin: 0;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.browser-info__txt_thanks {
+	
+	margin: 0;
+	padding: 45px 140px 0 0;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 19px;
+	text-align: right;
+	color: #ff0000;
+}
+
+
+
+
+
