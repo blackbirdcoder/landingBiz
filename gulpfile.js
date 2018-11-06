@@ -1,5 +1,5 @@
-//  gulp v.1.1.0 beta (browser-sync добавил новые опции, а также в таске bulid добавлен
-// перенос папки с "заглушкой" для старых браузеров в папку dist)
+//  gulp v.1.1.1 beta (browser-sync добавил новые опции, а также в таске "build" добавлен
+// перенос папки с "заглушкой" для старых браузеров в папку dist. Видоизменил таск "img")
 //  задачи для проекта "landing-business.hw", который выполняю в рамках курса ITVDN
 var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
@@ -89,14 +89,14 @@ gulp.task('sprite', function () {
 
 //Провёл изменения добавил исключения
 gulp.task('img', function(){
-    return gulp.src(['!app/img/res_ico/**/*', '!app/img/res_ico', 'app/img/**/*/'])
-            .pipe(cache(imagemin({
-                interlaced: true,
-                progressive: true,
-                svgoPlugins: [{removeViewBox: false}],
-                une: [pngquant()]
-            })))
-            .pipe(gulp.dest('dist/img'));
+    return gulp.src(['!app/img/res_ico/**/*', '!app/img/res_ico', 'app/img/**/*.+(png|jpg|gif|svg)'])
+    .pipe(cache(imagemin({
+        interlaced: true,
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        une: [pngquant()]
+    })))
+    .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('watch', ['browser-sync', 'pug-run', 'sass', 'css-min', 'scripts-min'],function(){
@@ -107,7 +107,7 @@ gulp.task('watch', ['browser-sync', 'pug-run', 'sass', 'css-min', 'scripts-min']
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
-gulp.task('bulid', ['clear', 'clear-cache', 'img', 'sass', 'scripts-min'], function(){
+gulp.task('build', ['clear', 'clear-cache', 'img', 'sass', 'scripts-min'], function(){
     
     var buildCss = gulp.src('app/css/*')
             .pipe(gulp.dest('dist/css'));
@@ -123,5 +123,5 @@ gulp.task('bulid', ['clear', 'clear-cache', 'img', 'sass', 'scripts-min'], funct
 
 //"Заглушка" для старых браузеров проноситься в папку dist
     var buildStub = gulp.src('app/old-browser/**/*')
-            .pipe(gulp.dest('dist'));        
+            .pipe(gulp.dest('dist/old-browser'));        
 });
