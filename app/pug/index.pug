@@ -24,6 +24,7 @@ html(lang='en', prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#")
     title Landing Business
     link(rel="stylesheet" href="css/base-style.css")
     link(rel="stylesheet" href="css/final-style.css")
+    //[if lt IE 10]><meta http-equiv="refresh" content="0; url=/old-browser/stub.html"><![endif]
   body.page
     include section/_header.pug
     include section/_hero.pug
@@ -33,6 +34,6 @@ html(lang='en', prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#")
     include section/_application.pug
     include section/_contact.pug
     include section/_footer.pug
-    
+  
     script(src="js/common.js")
   
