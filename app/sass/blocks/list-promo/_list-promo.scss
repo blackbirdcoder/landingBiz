@@ -6,7 +6,7 @@
        background-color: #f35e59;
        list-style-type: none;
        display: inline-block;
-       
+
        //Эффекты для List-promo
        &:hover .list-promo__ico {
             text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);
@@ -66,6 +66,7 @@
     &__box-info-text{
         margin: 85px 0 85px 0;
         text-align: center;
+        line-height: 137%;
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) { 
@@ -114,8 +115,8 @@
 
     }
     &__pic{
-        width: 251px;
-        height: 253px;
+        width: 251px; //251px
+        height: 246px; //253px
         vertical-align: bottom;
         transition: 0.5s;
         transition-property: filter;

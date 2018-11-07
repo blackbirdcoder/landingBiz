@@ -1409,6 +1409,7 @@
 .list-promo__box-info-text {
   margin: 85px 0 85px 0;
   text-align: center;
+  line-height: 137%;
 }
 
 @media (max-width: 1045px) {
@@ -1488,7 +1489,7 @@
 
 .list-promo__pic {
   width: 251px;
-  height: 253px;
+  height: 246px;
   vertical-align: bottom;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
