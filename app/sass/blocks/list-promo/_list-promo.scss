@@ -6,6 +6,7 @@
        background-color: #f35e59;
        list-style-type: none;
        display: inline-block;
+       vertical-align: text-top;
 
        //Эффекты для List-promo
        &:hover .list-promo__ico {
@@ -30,7 +31,6 @@
     &__item:nth-child(2) {
         position: relative;
         right: 5px;
-        bottom: 84px;
     }
     &__item:nth-child(3) {
         position: relative;
@@ -38,7 +38,6 @@
     }
     &__item:nth-child(4) {
         position: relative;
-        bottom: 84px;
         right: 13px;
     }
     &__ico{
@@ -64,9 +63,8 @@
        }
     }
     &__box-info-text{
-        margin: 85px 0 85px 0;
+        margin: 31% 0 34% 0; //85px 0 85px 0;
         text-align: center;
-        line-height: 137%;
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) { 
@@ -84,6 +82,9 @@
         color: $c-light;
         transition: 0.5s;
         transition-property: text-shadow;
+        //Добавил межстрочный интервал, тем самым привёл список к хорошему отображению
+        //в разных операционных система и в разных браузерах.
+        line-height: 1.1;
        
     
        //медиа-запрос нeтбуки
@@ -102,6 +103,9 @@
         color: $c-light;
         transition: 0.5s;
         transition-property: text-shadow;
+        //Добавил межстрочный интервал, тем самым привёл список к хорошему отображению
+        //в разных операционных система и в разных браузерах. (Windows и Linux)
+        line-height: 1.2; 
         
         
         //медиа-запрос нетбуки
@@ -120,7 +124,7 @@
         vertical-align: bottom;
         transition: 0.5s;
         transition-property: filter;
-        
+
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {
             width: 310px;

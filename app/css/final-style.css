@@ -1320,6 +1320,7 @@
   background-color: #f35e59;
   list-style-type: none;
   display: inline-block;
+  vertical-align: text-top;
 }
 
 .list-promo__item:hover .list-promo__ico {
@@ -1359,7 +1360,6 @@
 .list-promo__item:nth-child(2) {
   position: relative;
   right: 5px;
-  bottom: 84px;
 }
 
 .list-promo__item:nth-child(3) {
@@ -1369,7 +1369,6 @@
 
 .list-promo__item:nth-child(4) {
   position: relative;
-  bottom: 84px;
   right: 13px;
 }
 
@@ -1407,9 +1406,8 @@
 }
 
 .list-promo__box-info-text {
-  margin: 85px 0 85px 0;
+  margin: 31% 0 34% 0;
   text-align: center;
-  line-height: 137%;
 }
 
 @media (max-width: 1045px) {
@@ -1436,6 +1434,7 @@
   -webkit-transition-property: text-shadow;
   -o-transition-property: text-shadow;
   transition-property: text-shadow;
+  line-height: 1.1;
 }
 
 @media (max-width: 1045px) {
@@ -1467,6 +1466,7 @@
   -webkit-transition-property: text-shadow;
   -o-transition-property: text-shadow;
   transition-property: text-shadow;
+  line-height: 1.2;
 }
 
 @media (max-width: 1045px) {
@@ -1925,6 +1925,7 @@
   border: 1px solid #b5b4b4;
   -webkit-border-radius: 6px;
           border-radius: 6px;
+  background-color: #ffffff;
 }
 
 .form__field::-webkit-input-placeholder {

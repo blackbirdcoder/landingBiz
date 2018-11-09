@@ -160,6 +160,7 @@
         letter-spacing: 1px;
         border: 1px solid #b5b4b4;
         border-radius: 6px;
+        background-color: $c-light;
         // вид текста placeholder
         &::placeholder {
             font-size: 14px;
