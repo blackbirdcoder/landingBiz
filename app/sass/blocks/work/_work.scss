@@ -2,7 +2,7 @@
 /*----Section Work----*/
 .work{
    background-color: $c-accent;
-   &__box-info{padding: 105px 0 50px 0;}
+   &__box-info{padding: 105px 0 150px 0;}
    &__heading {
        @include title;
        @include bright-txt;
