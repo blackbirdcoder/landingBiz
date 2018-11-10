@@ -49,7 +49,10 @@
 
     }
     //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) { padding: 10px 16px 8px 16px;}
+    @media (max-width: $bp-netbook ) { 
+        padding: 10px 16px 8px 16px;
+        margin: 0 0 45px 0;
+    }
     
     //медиа-запрос смартфон
     @media (max-width: $bp-smartphone ){padding: 6px 10px 5px 10px;}

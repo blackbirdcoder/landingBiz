@@ -12,19 +12,41 @@
     position: relative;
     background-color: $c-light;
     display: none;
-    &__figure-triangle {
-        vertical-align: bottom;
+    //Делаю треугольник (пирамиду) через псевдоэлемент 
+    &::before {
+        content: '';
+        border: 34px solid transparent;
+        border-bottom: 36px solid $c-light;
         position: absolute;
-        bottom: 433px;
-        left: 307px;
-        
-        //медиа-запрос для 4k экранов
-        @media (min-width: $bp-4k) {display: none;}
-        
+        left: 46.5%;
+        margin-left: -11px;
+        top:-67px;
+        width: 0;
+
         //медиа-запрос нeтбуки
-        @media (max-width: $bp-netbook  ){display: none;}
-        
+        @media (max-width: $bp-netbook  ){
+            border: 25px solid transparent;
+            border-bottom: 27px solid $c-light;
+            margin-left: -7px;
+            top: -50px;
         }
+
+        //медиа-запрос смартфон
+        @media (max-width: $bp-smartphone ){
+            // display: none;
+            border: 20px solid transparent;
+            border-bottom: 23px solid $c-light;
+            margin: auto;
+            top: -116%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 24px;
+         }
+
+        //медиа-запрос смартфон маленький экран
+        @media (max-width: $bp-smartphone-sm ) { display: none; }
+    }
     &__btn-close {
         display: inline-block;
         width: 50px;
