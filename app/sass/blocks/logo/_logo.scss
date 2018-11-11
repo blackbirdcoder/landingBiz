@@ -53,6 +53,9 @@
         margin: 0;
         font-size: 37px;
         font-family: $f-bold, sans-serif;
+        //Добавил для кроссбраузерности и кроссплатформенности
+        //что бы Firefox в Linux не делала слишком жирный шрифт
+        font-weight: normal;
         
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {font-size: 2rem;}

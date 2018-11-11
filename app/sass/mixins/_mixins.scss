@@ -5,6 +5,9 @@
        text-align: center;
        font-family: $f-bold, sans-serif;
        font-size: 36px;
+       //Добавил для кроссбраузерности и кроссплатформенности
+       //что бы Firefox в Linux не делала слишком жирный шрифт
+       font-weight: normal;
 }
 //Для подзаголовок
 @mixin subtitle {

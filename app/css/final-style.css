@@ -297,6 +297,7 @@
   margin: 0;
   font-size: 37px;
   font-family: "HelveticaBold", sans-serif;
+  font-weight: normal;
 }
 
 @media (max-width: 1045px) {
@@ -582,6 +583,7 @@
   font-family: "HelveticaBold", sans-serif;
   font-size: 48px;
   color: #ffffff;
+  font-weight: normal;
 }
 
 @media (max-width: 1045px) {
@@ -683,6 +685,7 @@
   text-align: center;
   font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
+  font-weight: normal;
 }
 
 @media (max-width: 1045px) {
@@ -812,6 +815,7 @@
   margin: 20px 0 17px 0;
   font-family: "HelveticaBold", sans-serif;
   font-size: 22px;
+  font-weight: normal;
 }
 
 @media (max-width: 1045px) {
@@ -858,6 +862,7 @@
   text-align: center;
   font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
+  font-weight: normal;
 }
 
 @media (max-width: 1045px) {
@@ -1083,6 +1088,7 @@
   margin: 0;
   font-family: "HelveticaBold", sans-serif;
   font-size: 18px;
+  font-weight: normal;
 }
 
 @media (max-width: 1045px) {
@@ -1251,6 +1257,7 @@
   text-align: center;
   font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
+  font-weight: normal;
   color: #ffffff;
 }
 
@@ -1557,6 +1564,7 @@
   text-align: center;
   font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
+  font-weight: normal;
   color: #ffffff;
 }
 
@@ -2128,6 +2136,7 @@
   text-align: center;
   font-family: "HelveticaBold", sans-serif;
   font-size: 36px;
+  font-weight: normal;
   color: #ffffff;
   font-size: 30px;
 }
