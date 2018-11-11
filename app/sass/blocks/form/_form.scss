@@ -104,8 +104,8 @@
         top: 10px;
         left: 22px;
         transform: rotate(-35deg);
-
-        &:after {
+        //Делаю крестик (виде икса) через псевдоэлемент
+        &::after {
             display: inherit;
             background: $c-light;
             content: "";
@@ -188,10 +188,17 @@
             font-size: 14px;
             font-weight: 300;
             letter-spacing: 0;
+            //Для кроссбраузерности. Firefox убирает красный цвет букв
+            //если input стоит required
+            color: $c-dark;
             
             //медиа-запрос смартфон маленький экран
             @media (max-width: $bp-smartphone-sm ){ font-size: 5vw;}
         }
+        //Убирает красные границы вокруг полей 
+        //со значением required в браузере Firefox
+        &:-moz-ui-invalid {box-shadow: none;}
+
         //Взаимодействия пользователя с полями ввода
         //Показываю и прячу подсказку (tooltip)
         &_active:focus  { 

@@ -36,6 +36,10 @@
             //медиа-запрос смартфон маленький экран
             @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
         }
+        //Убирает красные границы вокруг полей
+        // со значением required в браузере Firefox
+        &:-moz-ui-invalid {box-shadow: none;}
+
         //Взаимодействия пользователя с полям ввода (email)
         //Показываю и прячу подсказку (tooltip)
         &_active:focus  {  + .tooltip {display: block;} }
