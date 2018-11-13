@@ -198,11 +198,30 @@
         //Убирает красные границы вокруг полей 
         //со значением required в браузере Firefox
         &:-moz-ui-invalid {box-shadow: none;}
-
+        
+        //Для его величества internet explorer
+        //Чтобы убрать красный цвет текста в поле ввода 
+        //у которого значение required, применил такой вот приём
+        &:-ms-input-placeholder.form__field { color: $c-dark;}
+        
+        //Убираю в internet explorer "крестик очистки" в поле ввода 
+        &::-ms-clear {display: none;}
+        
         //Взаимодействия пользователя с полями ввода
         //Показываю и прячу подсказку (tooltip)
         &_active:focus  { 
             box-shadow: 0px 0px 2px 1px #1287bf;
+            //Применил Хак для Internet Explorer!
+            //internet explorer 11 не очень хорошо отображает тень (box-shadow)
+            //по крайней мере в моём проекте.
+            //В IE 11 я получал тень слабую и неровную, отображение тени в IE 11 очень отличалась
+            //от других браузеров, поэтому я решил пойти другим немного путём. 
+            //Теперь при :focus в IE 11  поля ввода похожи как на макете.
+            //Этот Хак меня выручил. 
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                box-shadow: none;
+                border: 2px solid hsla(199, 83%, 41%, 0.6);
+            }
             + .tooltip {display: block;} 
         }
         &_active:focus:valid  { + .tooltip {display: none;} }
@@ -226,6 +245,7 @@
             font-size: 5vw;
             }
         }
+
     //позиционирование подсказки для полей формы
     &__tooltip {
         position: absolute;
@@ -297,5 +317,5 @@
     @media (max-width: $bp-smartphone ){
         padding: 6.4% 2% 6.4% 2%;
         width: 80%;
-    }
+    }    
 }

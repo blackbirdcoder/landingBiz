@@ -45,6 +45,14 @@
         &_active:focus  {  + .tooltip {display: block;} }
         &_active:focus:valid  { + .tooltip {display: none;} }
         &_active:invalid  {color: #ff4545;}
+
+        //Для его величества internet explorer
+        //Чтобы убрать красный цвет текста в поле ввода 
+        //у которого значение required, применил такой вот приём
+        &:-ms-input-placeholder.form-subscribe__field { color: #8b8b8b;}
+        
+        //Убираю в internet explorer "крестик очистки" в поле ввода 
+        &::-ms-clear {display: none;}
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {
