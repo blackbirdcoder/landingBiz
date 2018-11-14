@@ -183,6 +183,29 @@
         border: 1px solid #b5b4b4;
         border-radius: 6px;
         background-color: $c-light;
+
+        //Применил Хак для Internet Explorer!
+        //Поскольку в браузере IE при вводе текста в поля ввода 
+        //поля расширяются по высоте, что в других известных браузерах не происходит
+        //поэтому при расширении полей ввода происходит скачок, подёргивания секции в браузере IE
+        //что неприятно при работе с сайтом. Поэтому мной было принято решен поправить 
+        //стили для полей ввода только для браузера IE.
+        //Для этого я применил этот Хак.
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            height: 52px; 
+            padding: 0 25px 0 25px;
+            //Специально для internet explorer. Медиа-запрос нeтбуки
+            @media (max-width: $bp-netbook ) {
+                height: 42px; 
+                padding: 0 20px 0 20px !important;
+            }
+            //Специально для internet explorer. Медиа-запрос смартфон
+            @media (max-width: $bp-smartphone ) {
+                height: 35px;
+                padding: 0 15px 0 15px !important;
+            }
+        }
+
         // вид текста placeholder
         &::placeholder {
             font-size: 14px;

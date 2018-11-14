@@ -1948,6 +1948,27 @@
   background-color: #ffffff;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .form__field {
+    height: 52px;
+    padding: 0 25px 0 25px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1045px), (-ms-high-contrast: none) and (max-width: 1045px) {
+  .form__field {
+    height: 42px;
+    padding: 0 20px 0 20px !important;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 596px), (-ms-high-contrast: none) and (max-width: 596px) {
+  .form__field {
+    height: 35px;
+    padding: 0 15px 0 15px !important;
+  }
+}
+
 .form__field::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: 300;
@@ -2335,6 +2356,27 @@
   background-color: #424242;
   color: #ffffff;
   font-size: 17px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .form-subscribe__field {
+    height: 60px;
+    padding: 0 20px 0 20px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1045px), (-ms-high-contrast: none) and (max-width: 1045px) {
+  .form-subscribe__field {
+    height: 50px;
+    padding: 0 18px 0 18px !important;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 596px), (-ms-high-contrast: none) and (max-width: 596px) {
+  .form-subscribe__field {
+    height: 40px;
+    padding: 0 16px 0 16px !important;
+  }
 }
 
 .form-subscribe__field::-webkit-input-placeholder {

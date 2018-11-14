@@ -17,6 +17,7 @@
        //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {font-size: 5.2vw;}
    }
+
    &__field {
        margin: 25px 0 0 0;
        padding: 20px 20px 20px 20px;
@@ -26,6 +27,29 @@
        background-color: $c-dark;
        color: $c-light;
        font-size: 17px;
+
+        //Применил Хак для Internet Explorer!
+        //Поскольку в браузере IE при вводе текста в поля ввода 
+        //поля расширяются по высоте, что в других известных браузерах не происходит
+        //поэтому при расширении полей ввода происходит скачок, подёргивания секции в браузере IE
+        //что неприятно при работе с сайтом. Поэтому мной было принято решен поправить 
+        //стили для полей ввода только для браузера IE.
+        //Для этого я применил этот Хак.
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            height: 60px; 
+            padding: 0 20px 0 20px;
+            //Специально для internet explorer. Медиа-запрос нeтбуки
+            @media (max-width: $bp-netbook ) {
+                height: 50px; 
+                padding: 0 18px 0 18px !important;
+            }
+            //Специально для internet explorer. Медиа-запрос смартфон
+            @media (max-width: $bp-smartphone ) {
+                height: 40px;
+                padding: 0 16px 0 16px !important;
+            }
+        }
+
        &::placeholder {
             color:#979797;
             font-size: 14px;
