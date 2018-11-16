@@ -6,10 +6,16 @@
     border-radius: 50%;
     transition: 0.5s;
     cursor: pointer;
-    animation-name: spin;
+    animation-name: blinking; 
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    //Применил Хак для Internet Explorer! 
+    //Поскольку IE недостаточно жирно отображал border
+    //по сравнению с другими браузерами
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        border: 3px solid $c-light;
+    }
     &__ico { 
         font-size: 36px;
         color: $c-light;
@@ -30,7 +36,7 @@
     }
     
    
-    @keyframes spin {
+    @keyframes blinking {
         /*Анимация для кнопки "open" */
         //зелёный
         0% { background-color: rgba(76, 175, 80, 0.4);}

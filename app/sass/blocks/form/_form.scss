@@ -57,7 +57,7 @@
         text-decoration: none;
         background-color: $c-accent;
         color: $c-light;
-        border: 2.5px solid $c-light;
+        border: 2px solid $c-light;
         border-radius: 50%;
         cursor: pointer;
         transition: 0.1s;
@@ -84,7 +84,7 @@
        
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {
-            border: 1.5px solid $c-light;
+            border: 1px solid $c-light;
             width: 25px; 
             height: 25px; 
             top: -4%;
@@ -101,9 +101,10 @@
         height: 21px;
         width: 2px;
         position: inherit;
-        top: 10px;
+        top: 12px; 
         left: 22px;
         transform: rotate(-35deg);
+        
         //Делаю крестик (виде икса) через псевдоэлемент
         &::after {
             display: inherit;
@@ -121,6 +122,7 @@
                 width: 19px;    
                 top: 9px;
                 left: -8px;
+                transform: rotate(-16deg);
             }
 
             //медиа-запрос смартфон
@@ -131,9 +133,9 @@
 
             //медиа-запрос смартфон маленький экран
             @media (max-width: $bp-smartphone-sm ) {
-                width: 15px;
-                top: 7px;
-                left: -7px;
+                width: 14px;
+                top: 6px;
+                left: -6px;
             }
 
         }
@@ -141,7 +143,9 @@
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {
             height: 19px;
-            left: 19px; 
+            left: 19px;
+            //added up
+            top: 10px; 
         }
 
         //медиа-запрос смартфон
@@ -153,9 +157,9 @@
 
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {
-            height: 16px;
-            left: 10px;
-            top: 2px;
+            height: 14px;
+            left: 11px;
+            top: 4px;
         }
     }
     &__txt {
@@ -183,29 +187,6 @@
         border: 1px solid #b5b4b4;
         border-radius: 6px;
         background-color: $c-light;
-
-        //Применил Хак для Internet Explorer!
-        //Поскольку в браузере IE при вводе текста в поля ввода 
-        //поля расширяются по высоте, что в других известных браузерах не происходит
-        //поэтому при расширении полей ввода происходит скачок, подёргивания секции в браузере IE
-        //что неприятно при работе с сайтом. Поэтому мной было принято решен поправить 
-        //стили для полей ввода только для браузера IE.
-        //Для этого я применил этот Хак.
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            height: 52px; 
-            padding: 0 25px 0 25px;
-            //Специально для internet explorer. Медиа-запрос нeтбуки
-            @media (max-width: $bp-netbook ) {
-                height: 42px; 
-                padding: 0 20px 0 20px !important;
-            }
-            //Специально для internet explorer. Медиа-запрос смартфон
-            @media (max-width: $bp-smartphone ) {
-                height: 35px;
-                padding: 0 15px 0 15px !important;
-            }
-        }
-
         // вид текста placeholder
         &::placeholder {
             font-size: 14px;
@@ -233,17 +214,16 @@
         //Взаимодействия пользователя с полями ввода
         //Показываю и прячу подсказку (tooltip)
         &_active:focus  { 
-            box-shadow: 0px 0px 2px 1px #1287bf;
+            box-shadow: 0px 0px 2px 1px #b5d9eb;
+            border: 1px solid #1287bf;
             //Применил Хак для Internet Explorer!
             //internet explorer 11 не очень хорошо отображает тень (box-shadow)
             //по крайней мере в моём проекте.
             //В IE 11 я получал тень слабую и неровную, отображение тени в IE 11 очень отличалась
-            //от других браузеров, поэтому я решил пойти другим немного путём. 
-            //Теперь при :focus в IE 11  поля ввода похожи как на макете.
+            //от других браузеров, поэтому я решил тень отключить.
             //Этот Хак меня выручил. 
             @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                 box-shadow: none;
-                border: 2px solid hsla(199, 83%, 41%, 0.6);
             }
             + .tooltip {display: block;} 
         }
@@ -266,6 +246,28 @@
         @media (max-width: $bp-smartphone-sm ) {
             padding: 5vw 5vw 5vw 5vw;
             font-size: 5vw;
+            }
+        
+        //Применил Хак для Internet Explorer!
+        //Поскольку в браузере IE при вводе текста в поля ввода 
+        //поля расширяются по высоте, что в других известных браузерах не происходит
+        //поэтому при расширении полей ввода происходит скачок, подёргивания секции в браузере IE
+        //что неприятно при работе с сайтом. Поэтому мной было принято решен поправить 
+        //стили для полей ввода только для браузера IE.
+        //Для этого я применил этот Хак.
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            height: 52px; 
+            padding: 0 25px 0 25px;
+                //Специально для internet explorer. Медиа-запрос нeтбуки
+                @media (max-width: $bp-netbook ) {
+                height: 42px; 
+                padding: 0 20px 0 20px !important;
+                }
+                //Специально для internet explorer. Медиа-запрос смартфон
+                @media (max-width: $bp-smartphone ) {
+                height: 35px;
+                padding: 0 15px 0 15px !important;
+                }
             }
         }
 
