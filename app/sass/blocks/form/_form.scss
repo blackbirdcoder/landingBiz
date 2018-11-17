@@ -95,6 +95,7 @@
             display: none;
         }
     }
+    //Делаю крестик (виде икса)
     &__btn-close-ico {
         display: inline-block;
         background: $c-light;
@@ -104,8 +105,7 @@
         top: 12px; 
         left: 22px;
         transform: rotate(-35deg);
-        
-        //Делаю крестик (виде икса) через псевдоэлемент
+
         &::after {
             display: inherit;
             background: $c-light;
@@ -212,7 +212,6 @@
         &::-ms-clear {display: none;}
         
         //Взаимодействия пользователя с полями ввода
-        //Показываю и прячу подсказку (tooltip)
         &_active:focus  { 
             box-shadow: 0px 0px 2px 1px #b5d9eb;
             border: 1px solid #1287bf;
@@ -225,6 +224,16 @@
             @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                 box-shadow: none;
             }
+            //Применил Хак для Edge!
+            //Поскольку в браузере Edge тень имеет слабую видимость
+            //Мне пришлось добавить больше мощности для тени
+            //Чтобы добиться соответствия  как в макете
+            //В этом мне помог этот Хак
+            @supports (-ms-ime-align:auto){
+                box-shadow: 0px 0px 6px 1px #b5d9eb;
+            }
+
+        //Показываю и прячу подсказку (tooltip)
             + .tooltip {display: block;} 
         }
         &_active:focus:valid  { + .tooltip {display: none;} }
