@@ -1607,7 +1607,7 @@
 .btn-open {
   display: inline-block;
   padding: 10px 16px 10px 16px;
-  border: 2.5px solid #ffffff;
+  border: 3px solid #ffffff;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   -webkit-transition: 0.5s;
@@ -1910,7 +1910,7 @@
   .form__btn-close-ico {
     height: 18px;
     left: 17px;
-    top: 8px;
+    top: 9px;
   }
 }
 
@@ -2181,6 +2181,12 @@
   .form {
     padding: 6.4% 2% 6.4% 2%;
     width: 80%;
+  }
+}
+
+@media (max-width: 596px) {
+  .translated-ltr .form__tooltip {
+    top: 24%;
   }
 }
 
