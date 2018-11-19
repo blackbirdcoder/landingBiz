@@ -19,9 +19,9 @@
         //Добавил для кроссбраузерности и кроссплатформенности
         //что бы Firefox в Linux не делала слишком жирный шрифт
         font-weight: normal;
-        
+
         //медиа-запрос нетбуки
-        @media (max-width: $bp-netbook ) {font-size: 2.7rem;} 
+        @media (max-width: $bp-netbook ) {font-size: 2.7rem;} //2.7rem
         
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {font-size: 13vw;}
@@ -44,5 +44,36 @@
     padding: 30px 0 0 0;
     }
 }
+
+ //Немного магии. Сайт преподносит информацию на английском языке.
+ //Если пользователь просматривает сайт с помощью браузера Chrome
+ //и захочет перевести содержимое на русский язык при помощи Google Translate
+ //то слово в заголовке становится слишком длинное и выходит зп границы 
+ //чтобы этого происходило было мной принято такое решение
+ //если слово в заголовке приведено то применяются другие правила
+.translated-ltr {
+    //медиа-запрос смартфон
+    @media (max-width: $bp-smartphone ) {
+        .hero {
+            &__heading{ font-size: 2.3rem;}
+        }
+    }
+
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm ) {
+        .hero {
+            &__heading{ font-size: 12vw;}
+        }
+    }
+
+    //медиа-запрос очень маленький экран
+    @media (max-width: $bp-screen-small ) {
+        .hero {
+            &__heading{   font-size: 10vw;}
+
+        }
+    }
+}
+
     //button-big
 @import "app/sass/blocks/btn-big/_btn-big.scss";
