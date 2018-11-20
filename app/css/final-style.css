@@ -778,7 +778,6 @@
     padding: 0 15% 0 15%;
     display: block;
     width: 100%;
-    vertical-align: 0;
   }
 }
 
@@ -804,29 +803,35 @@
   }
 }
 
-.list__pic {
-  display: inline-block;
-}
-
-.list__pic_like {
+.list__item:nth-child(1) .list__picture {
   background-image: url(../img/sprite.png);
   background-position: -86px 0px;
   width: 83px;
   height: 79px;
 }
 
-.list__pic_book {
+.list__item:nth-child(2) .list__picture {
   background-image: url(../img/sprite.png);
   background-position: 0px -81px;
   width: 66px;
   height: 79px;
 }
 
-.list__pic_dialog {
+.list__item:nth-child(3) .list__picture {
   background-image: url(../img/sprite.png);
   background-position: 0px 0px;
   width: 84px;
   height: 81px;
+}
+
+.list__picture {
+  display: inline-block;
+}
+
+@media (max-width: 150px) {
+  .list__picture {
+    display: none;
+  }
 }
 
 .list__title {

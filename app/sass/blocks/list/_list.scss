@@ -14,7 +14,7 @@
             padding: 0 15% 0 15%;
             display: block;
             width: 100%;
-            vertical-align: 0;
+            //vertical-align: 0;
       }
       
       //медиа-запрос смартфон маленький экран
@@ -30,12 +30,26 @@
       //медиа-запрос планшет
       @media (max-width: $bp-tablet ) {margin: 5% 0% 5% 0%;}
   }
-  &__pic {
-      display: inline-block;
-      &_like {@include sprite($like)}
-      &_book {@include sprite($book)}
-      &_dialog {@include sprite($dialog)}
+
+  //Показываю изображения из спрайта
+  &__item:nth-child(1) {
+    .list__picture{@include sprite($like)}
   }
+  &__item:nth-child(2) {
+    .list__picture{@include sprite($book)}
+  }
+  &__item:nth-child(3) {
+    .list__picture{@include sprite($dialog)}
+  }
+  &__picture {
+      display: inline-block;
+      
+      //медиа-запрос, применил его что бы спрятать 
+      //изображения при очень суженом окне браузера. 
+      //Подсчитал что так будет более эстетично.
+      @media (max-width: 150px ) {display: none;}
+    }
+
   &__title {
       margin: 20px 0 17px 0;
       font-family: $f-bold, sans-serif;
