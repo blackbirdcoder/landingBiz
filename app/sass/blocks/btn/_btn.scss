@@ -1,13 +1,20 @@
 //Кнопка для сайта landing-business.hw
 /*Button*/
+
+//Кнопки сделаны так для того чтобы добиться ровного отображения
+//текста в кнопках на разных платформах
 .btn{
     display: inline-block;
-    padding: 10px 23px 10px 23px;
+    padding: 0 23px 0 23px ; //10px 23px 10px 23px 
+    height: 37px;//added up 
+    line-height: 36px;//added up
     border-radius: 5px;
     text-decoration: none;
     text-transform: capitalize;
-    font-family: $f-bold, sans-serif;
+    font-family: $f-safe, sans-serif; //$f-bold
     font-size: 15px;
+    font-weight: 700; //added up
+    letter-spacing: 0.5px; //added up
     color: $c-light;
     transition: 0.5s;
     
@@ -26,4 +33,13 @@
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {font-size: 0.9rem;}   
+}
+
+//added up
+//Хак для Firefox
+//Браузер Firefox немного по другому отображает текст
+//поэтому чтобы расстояние между буквами не сильно 
+//отличалось от других браузеров было принято такое решение.
+@-moz-document url-prefix() { 
+    .btn { letter-spacing: normal; }
 }

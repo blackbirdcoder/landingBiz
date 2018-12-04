@@ -10,7 +10,7 @@
        box-shadow: 0px 0px 1px 0px;
        border-radius: 2px;
        background-color: $c-light;
-       
+       width: 100%; //added up
        //Эффект для list-extended
        &:hover .block-number  {background-color: $c-green;}
        
@@ -26,6 +26,7 @@
    &__item:last-child {margin: 0;} 
    &__box-img {
        display: inline-block;
+       width: 33%; //added up
        
        //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {display: block;}
@@ -42,7 +43,7 @@
         @media (max-width: $bp-smartphone-sm ) {display: none;}
    }
    &__pic {
-       width: 336px;
+       width: auto; //336px
        height: 236px;
        vertical-align: bottom;
     //медиа-запрос для UHD экранов
@@ -59,12 +60,12 @@
         height: auto;
     }
    }
-   
+//Остановился   
    &__block-number {
        //позиционирование block-number
        vertical-align: 85px;
        position: relative;
-       right: 62px;
+       right: 55px; // 62px
        
        //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {
@@ -79,11 +80,11 @@
        vertical-align: 80px;
        &_position_right{
             position: relative;
-            right: 35px;
+            right: 28px; //35px
             //медиа-запрос для UHD экранов
             //также позволяет в браузерах Chrome, Opera хорошо отображаться
             //содержимому списка при зуме 33% , 25% (Ctrl -) 
-            @media (min-width: 5120px ) {top: 35px; }
+            @media (min-width: $bp-ultra ) {top: 35px; }
         
             //медиа-запрос нетбуки
             @media (max-width: $bp-netbook ) { right: 0;} 
@@ -96,6 +97,7 @@
             text-align: right;
             position: relative;
             left: 30px;
+            margin: 0px 0 0 17px; //added up
         //медиа-запрос для UHD экранов
         //также позволяет в браузерах Chrome, Opera хорошо отображаться
         //содержимому списка при зуме 33% , 25% (Ctrl -) 
@@ -116,7 +118,7 @@
        @media (max-width: $bp-smartphone ){width: 100%;}
    }
    &__title {
-       margin: 0;
+       margin: 0 16px 0 5px; //0
        font-family: $f-bold, sans-serif;
        font-size: 18px;
        //Добавил для кроссбраузерности и кроссплатформенности
@@ -130,8 +132,9 @@
        @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
    }
    &__txt {
-       margin: 15px 0 0 0;
+       margin: 10px 0 0 5px; //15px 0 0 0
        font-size: 14px;
+       line-height: 20px; //added up
        
        //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {font-size: 0.83rem;}

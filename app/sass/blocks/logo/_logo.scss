@@ -1,6 +1,7 @@
 //Logo для сайта landing-business.hw
 /*logo*/
-.container__logo {}
+//Закомментирован за ненадобностью
+//.container__logo {}
 
 .logo {
     display: inline-block;
@@ -28,9 +29,10 @@
     @media (max-width: $bp-smartphone-sm ) {margin: 0 auto 10% auto;}
     
     &__ico {
-        margin: 0 5px 0 0;
+        margin: 0 11px 0 0; //0 5px 0 0
         position: relative;
-        left: -4px;
+        left: 2px;
+        bottom: 7px; //added up
         font-size: 57px; 
         color: $c-accent;
         float: left;
@@ -51,6 +53,8 @@
     }
     &__heading {
         margin: 0;
+        position: relative; //added up
+        bottom: 3px; //adeded up
         font-size: 37px;
         font-family: $f-bold, sans-serif;
         //Добавил для кроссбраузерности и кроссплатформенности
@@ -71,6 +75,10 @@
     }
     &__txt {
         margin: 0;
+        padding: 0; //added up
+        position: relative; //dedded up
+        bottom: 3px; //dedded up
+        left: 3px; //dedded up
         font-size: 15px;
         font-family: $f-normal, sans-serif;
         

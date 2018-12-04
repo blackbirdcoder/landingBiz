@@ -2,7 +2,7 @@
 /*----Section Out Approch----*/
 .approch{
    background-color: #f3f3f3;
-   &__box-info{padding: 90px 0 130px 0;}
+   &__box-info{padding: 90px 0 132px 0;} //90px 0 130px 0
    &__heading {
        @include title;
        
@@ -14,7 +14,8 @@
    }
    &__txt {
        @include subtitle;
-   
+       margin: 0 0 13px 0; //added up 
+
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
        
@@ -31,7 +32,7 @@
         @media (max-width: $bp-smartphone-sm ) {display: none;}
    
    }
-   &__list-extended {margin: 43px 0 0 0;}
+   &__list-extended {margin: 46px 0 0 0;} // 43px 0 0 0
 }
 //list-extended
 @import "app/sass/blocks/list-extended/_list-extended.scss";

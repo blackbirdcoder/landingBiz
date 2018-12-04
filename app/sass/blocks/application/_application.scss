@@ -3,7 +3,7 @@
 .application {
     background-color: #1287bf;
     &__box-info {
-        padding: 85px 0 115px 0;
+        padding: 100px 0 111px 0; // 85px 0 115px 0
         text-align: center;
     }
     &__heading {
@@ -19,6 +19,7 @@
     &__txt {
        @include subtitle;
        @include bright-txt;
+       margin: 0 0 6px 0; //added up
        
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 1.07rem;}

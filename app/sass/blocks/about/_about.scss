@@ -3,7 +3,7 @@
 .about {
    background-color: $c-light;
    
-   &__box-info { padding: 90px 0 120px 0;}   
+   &__box-info { padding: 104px 0 118px 0;} // 90px 0 120px 0  
    &__heading {
        @include title;
        

@@ -2,6 +2,7 @@
 /*List-promo*/
 .list-promo {
     padding: 0;
+    position: relative; //added up
     &__item{
        background-color: #f35e59;
        list-style-type: none;
@@ -37,12 +38,13 @@
         right: 9px;
     }
     &__item:nth-child(4) {
-        position: relative;
-        right: 13px;
+        position: absolute; //relative
+        left: 767px; // right: 13px;
+
     }
     &__ico{
         position: relative;
-        bottom: 17px;
+        bottom: 21px; //17px
         font-size: 36px;
         color: $c-light;
         opacity: 0.5;
@@ -63,7 +65,7 @@
        }
     }
     &__box-info-text{
-        margin: 31% 0 34% 0; //85px 0 85px 0;
+        margin: 39% 0 27% 0; //31% 0 34% 0;
         text-align: center;
         
        //медиа-запрос нeтбуки
@@ -119,8 +121,8 @@
 
     }
     &__pic{
-        width: 251px; //251px
-        height: 246px; //253px
+        width: 256px; //251px
+        height: 251px; //246px
         vertical-align: bottom;
         transition: 0.5s;
         transition-property: filter;

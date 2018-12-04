@@ -1,12 +1,12 @@
 //Footer для сайта landing-business.hw
 /*----Footer----*/
 .footer {
-    padding: 30px 0 25px 0;
-    background-color: $c-dark;
+    padding: 25px 0 25px 0;
+    background-color: #515151; //$c-dark
     &__box-info {text-align: center;}
     &__txt {
         margin: 0;
-        color:#979797;
+        color:#cecece; //#979797
         font-size: 14px;
         
         //медиа-запрос нeтбуки
@@ -16,7 +16,7 @@
        //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
     }
-    &__ico-copyright {}
+    //&__ico-copyright {}
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) { padding: 2% 0 2% 0;}

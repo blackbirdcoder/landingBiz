@@ -36,6 +36,7 @@ font-family: 'GeorgiaBold';
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'HelveticaRegular';
     src: url('../fonts/HelveticaRegular/HelveticaRegular.ttf');
@@ -47,6 +48,7 @@ font-family: 'GeorgiaBold';
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'OpenSansRegular';
     src: url('../fonts/OpenSansRegular/OpenSansRegular.ttf');
@@ -58,3 +60,15 @@ font-family: 'GeorgiaBold';
     font-weight: normal;
     font-style: normal;
 }
+//added up
+@font-face {
+    font-family: 'ArialRegular';
+    src: url('../fonts/ArialRegular/ArialRegular.ttf')format('truetype');
+    src: url('../fonts/ArialRegular/ArialRegular.eot'),
+         url('../fonts/ArialRegular/ArialRegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ArialRegular/ArialRegular.woff2') format('woff2'),
+         url('../fonts/ArialRegular/ArialRegular.woff') format('woff'),
+         url('../fonts/ArialRegular/ArialRegular.svg#ArialRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 

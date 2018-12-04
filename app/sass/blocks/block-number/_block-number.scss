@@ -4,7 +4,7 @@
     display: inline-block;
     min-width: 100px;
     min-height: 100px;
-    padding:0px 31px 17px 36px;
+    padding:0px 31px 11px 30px;//0px 31px 17px 36px
     background-color: $c-accent;
     border: 2px solid $c-light;
     border-radius: 6px;
@@ -21,7 +21,7 @@
     
     &_position_left {
         position: relative;
-        left: 60px;
+        left: 58px; //60px
         
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {left: 0;}
@@ -39,14 +39,14 @@
         @media (max-width: $bp-smartphone-sm ) {font-size: 20vw;}
     } 
     &__txt{
-        margin: 0;
+        margin: 0; //
         text-align: center;
         font-family: $f-bold, sans-serif;
         font-size: 20px;
         color: $c-light;
         &_position{
             position: relative;
-            bottom: 10px;
+            bottom: 8px; //10px
         }
         
         //медиа-запрос нeтбуки

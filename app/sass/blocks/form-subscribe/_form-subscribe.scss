@@ -7,7 +7,7 @@
    position: relative;
    &__txt {
        margin: 0;
-       color: $c-light;
+       color: #cecece ; //$c-light
        font-size: 15px;
        font-family: $f-normal;
        
@@ -19,17 +19,18 @@
    }
 
    &__field {
-       margin: 25px 0 0 0;
-       padding: 20px 20px 20px 20px;
+       margin: 27px 0 0 0; //25px 0 0 0
+       padding: 18px 20px 18px 20px; // 20px 20px 20px 20px
        border: 0;
        outline: 0;
-       width: 66%;
-       background-color: $c-dark;
+       width: 67%; //66%
+       background-color: #515151; //$c-dark
        color: $c-light;
+       font-family: $f-safe, sans-serif; //added up
        font-size: 17px;
 
        &::placeholder {
-            color:#979797;
+            color:#cecece; //#979797
             font-size: 14px;
     
             //медиа-запрос нeтбуки
@@ -129,13 +130,18 @@
             font-size: 5vw;
         }
     }
-
+    //Кнопки сделаны так для того чтобы добиться ровного отображения
+    //текста в кнопках на разных платформах
     &__btn-subscribe {
-    margin: 20px 0 0 0;
-    padding: 18px 34px 18px 34px;
+    margin: 26px 0 0 0; //20px 0 0 0
+    padding: 0 34px 0 34px; //18px 34px 18px 34px
+    height: 53px; //added up
+    line-height: 50px; //added up
     font-size: 17px;
     color: $c-light;
-    font-family: $f-bold, sans-serif;
+    font-family: $f-safe, sans-serif; //$f-bold
+    font-weight: 700; //added up
+    letter-spacing: 1px;
     background-color: #2a2a2a;
     border: 2px solid $c-dark;
     border-radius: 4px;
@@ -163,5 +169,19 @@
     }
 }
    
+}
+
+//addede up
+//Хак для Firefox
+//Браузер Firefox немного смещает текст в поле ввода вверх.
+//Поэтому я его немного выравниваю.
+//А также делает слишком серым цвет в placeholder.
+//Меняю цвет на подходящий. 
+//Для этого применяю хак.
+@-moz-document url-prefix() {
+    .form-subscribe {
+        &__field {padding: 16px 20px 15px 20px;}
+       ::placeholder {color: #ffffff;}
+    }
 }
 

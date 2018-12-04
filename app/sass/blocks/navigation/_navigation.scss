@@ -1,14 +1,26 @@
 //navigation 
-.container__navigation {
-    margin: 0 0 0 176px;
-   //медиа-запрос для 4k экранов
-   //также позволяет в шапке избежать переход логотипа, меню и кнопки на
-   //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.  
-    @media (min-width: $bp-4k ) { margin: 0 0 0 25px;}
+.container {
+    &__navigation {
+        margin: 0 0 0 189px; //0 0 0 176px
+       //медиа-запрос для 4k экранов
+       //также позволяет в шапке избежать переход логотипа, меню и кнопки на
+       //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.  
+        @media (min-width: $bp-4k ) { margin: 0 0 0 25px;}
+        
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) { margin: 0 0 0 5%;}
     
-    //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) { margin: 0 0 0 5%;}
-
+    }    
+}
+//added up
+//Хак для Firefox
+//Браузер Firefox немного по другому отображает текст
+//и чтобы верстка не разваливалась пришлось немного "подвинутся"
+//Для этого применяю хак.
+@-moz-document url-prefix() {
+    .container {
+        &__navigation { margin: 0 0 0 184px;}
+    }
 }
 .navigation {display: inline-block}
 

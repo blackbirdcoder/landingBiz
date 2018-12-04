@@ -3,7 +3,7 @@
 .contact {
     background-color: #2a2a2a;
     &__box-info {
-        padding: 80px 0 80px 0;
+        padding: 90px 0 85px 0; //80px 0 80px 0
         text-align: center;
     } 
    &__heading {
@@ -18,7 +18,7 @@
        @media (max-width: $bp-smartphone-sm ) {font-size: 9vw;}
    }
    &__list-links {
-       margin: 30px 0 0 0;
+       margin: 24px 0 0 0; //30px 0 0 0
        
        
        //медиа-запрос смартфон маленький экран

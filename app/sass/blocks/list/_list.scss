@@ -33,13 +33,22 @@
 
   //Показываю изображения из спрайта
   &__item:nth-child(1) {
-    .list__picture{@include sprite($like)}
+    .list__picture{
+      @include sprite($like);
+      position: relative; //added up
+      left: 3px; //added up
+    }
   }
   &__item:nth-child(2) {
-    .list__picture{@include sprite($book)}
+    .list__picture{@include sprite($book);}
   }
   &__item:nth-child(3) {
-    .list__picture{@include sprite($dialog)}
+    .list__picture{
+      @include sprite($dialog);
+      position: relative; //added up
+      right: 9px; //added up 
+      top: 2px; //added up
+    }
   }
   &__picture {
       display: inline-block;
@@ -51,7 +60,7 @@
     }
 
   &__title {
-      margin: 20px 0 17px 0;
+      margin: 24px 0 12px 0; //20px 0 17px 0
       font-family: $f-bold, sans-serif;
       font-size: 22px;
       //Добавил для кроссбраузерности и кроссплатформенности
@@ -67,6 +76,7 @@
       margin: 0;
       padding: 0 20px 0 20px;
       font-size: 14px;
+      line-height: 20px; //added up
       
       //медиа-запрос нетбуки
       @media (max-width: $bp-netbook ) {font-size: 0.83rem;}

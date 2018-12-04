@@ -8,7 +8,7 @@
 /*form*/  
 .form {
     margin: 35px 170px 0 170px;
-    padding: 50px 50px 65px 50px;
+    padding: 50px 50px 68px 50px; //50px 50px 65px 50px
     position: relative;
     background-color: $c-light;
     display: none;
@@ -162,8 +162,11 @@
         }
     }
     &__txt {
-        margin: 0 0 35px 0;
+        margin: 0 0 33px 0;
         font-family: $f-normal, sans-serif;
+        font-size: 15px; //added up
+        line-height: 20px; //added up
+        color: #5a5a5a; //added up
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 0.93rem;}
@@ -174,27 +177,29 @@
            font-size: 5vw;
        }
     }
-    &__field:nth-of-type(2) {margin: 10px 0 10px 0;}
+    &__field:nth-of-type(2) {margin: 8px 0 8px 0;} //10px 0 10px 0
     &__field {
-        padding: 18px 25px 18px 25px;
-        width: 75%;
+        padding: 17px 25px 17px 25px;
+        width: 76%; // 75%
         outline: 0;
-        font-size: 15px;
-        font-family: $f-normal, sans-serif;
-        font-weight: 600;
+        font-size: 15px; 
+        font-family: $f-safe, sans-serif; //$f-normal
+        font-weight: 700; //600
         letter-spacing: 1px;
         border: 1px solid #b5b4b4;
         border-radius: 6px;
         background-color: $c-light;
+        //line-height: 1.2; //added up
         // вид текста placeholder
         &::placeholder {
             font-size: 14px;
             font-weight: 300;
             letter-spacing: 0;
+            //line-height: 1.2; //added up
             //Для кроссбраузерности. Firefox убирает красный цвет букв
             //если input стоит required
-            color: $c-dark;
-            
+            color:#b5b4b4; // $c-dark
+
             //медиа-запрос смартфон маленький экран
             @media (max-width: $bp-smartphone-sm ){ font-size: 5vw;}
         }
@@ -305,15 +310,19 @@
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ){ font-size: 5vw;}
     }
-
+    //Кнопки сделаны так для того чтобы добиться ровного отображения
+    //текста в кнопках на разных платформах
     &__btn-submit {
-        margin: 32px 0 0 0;
-        padding: 15px 27px 15px 27px;
+        margin: 35px 0 0 0; 
+        padding: 0 27px 0 27px; //15px 27px 15px 27
+        height: 47px; //addded up
+        line-height: 50px; //added up
         border: 0;
         border-radius: 5px;
         letter-spacing: 0.5px;
-        font-family: $f-bold, sans-serif;
+        font-family: $f-safe, sans-serif; //$f-bold
         font-size: 15px;
+        font-weight: 700; //added up
         text-transform: uppercase;
         color: $c-light;
         background-color: $c-accent;
@@ -323,7 +332,7 @@
         
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {
-           padding: 18px 27px 15px 27px;
+           //padding: 18px 27px 15px 27px;
            font-size: 0.87rem;
        }
        
@@ -367,5 +376,16 @@
         .form {
             &__tooltip { top: 24%; }
         }
+    }
+}
+
+//added up
+//Хак для Firefox
+//Делает слишком светлым цвет в placeholder.
+//Меняю цвет на подходящий. 
+//Для этого применяю хак.
+@-moz-document url-prefix() {
+    .form {
+       ::placeholder {color: #888888;}
     }
 }

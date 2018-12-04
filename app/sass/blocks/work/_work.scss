@@ -2,7 +2,7 @@
 /*----Section Work----*/
 .work{
    background-color: $c-accent;
-   &__box-info{padding: 105px 0 150px 0;}
+   &__box-info{padding: 111px 0 131px 0;} //105px 0 150px 0
    &__heading {
        @include title;
        @include bright-txt;
@@ -16,7 +16,8 @@
    &__txt {
        @include subtitle;
        @include bright-txt;
-       
+       margin: 0 0 13px 0; //added up
+
        //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
        
@@ -33,7 +34,7 @@
        //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {display: none;}
    }
-   &__list-promo {margin: 50px 0 0 0;}
+   &__list-promo {margin: 47px 0 0 0;} //50px 0 0 0
 }
    //list-promo
 @import "app/sass/blocks/list-promo/_list-promo.scss";

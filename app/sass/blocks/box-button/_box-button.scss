@@ -1,6 +1,6 @@
 //Обертка для кнопки
 .container__box-button {
-    margin: 0 0 0 16px;
+    margin: 4px 0 0 25px; //0 0 0 16px
     
     //медиа-запрос для 4k экранов
     //также позволяет в шапке избежать переход логотипа, меню и кнопки на
@@ -18,7 +18,7 @@
 }
 .box-button {
     display: inline-block;
-    vertical-align: 20px;
+    vertical-align: 22px; //20px
     
     //медиа-запрос планшет
     @media (max-width: $bp-tablet ) {display: none;}

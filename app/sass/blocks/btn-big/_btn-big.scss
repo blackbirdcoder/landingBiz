@@ -1,16 +1,21 @@
 //Большая кнопка для сайта landing-business.hw
 /*Button-Big*/
+
+//Кнопки сделаны так для того чтобы добиться ровного отображения
+//текста в кнопках на разных платформах
 .btn-big{
     display: inline-block;
-    padding: 21px 36px 21px 36px;
+    padding: 0 36px 0 36px; // 21px 36px 21px 36px
+    height: 70px; //dadded up
+    line-height: 74px; //dadded up
     border-radius: 7px;
     text-decoration: none;
-    font-family: $f-bold, sans-serif;
-    font-size: 24px;
+    font-family: $f-safe, sans-serif; //$f-bold
+    font-weight: 700; //added up
+    font-size: 24px; //added up
     text-transform: uppercase;
     color: $c-light;
    
-    
     &_theme_bright{
         background-color: #f8cd53;
         transition: 0.7s;
@@ -23,16 +28,16 @@
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
     }
-    
+
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {
-        padding: 24px 36px 21px 36px;
+        //padding: 24px 36px 21px 36px;
         font-size: 1.25rem;
     } 
     
     //медиа-запрос смартфон
     @media (max-width: $bp-smartphone ){
-        padding: 6% 4% 4% 4%;
+        //padding: 6% 4% 4% 4%;
         font-size: 1.22rem;
         
     }
@@ -40,3 +45,13 @@
     @media (max-width: $bp-smartphone-sm ) {font-size: 6vw;}
 }
 
+//addede up
+//Хак для Firefox
+//Браузер Firefox немного смещает текст в кнопке вверх
+//Поэтому я его немного выравниваю. Для этого применяю хак.
+// @-moz-document url-prefix() {
+//     .btn-big{
+//         height: 70px; 
+//         line-height: 72px; //70px
+//     }
+// }

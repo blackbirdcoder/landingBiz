@@ -55,8 +55,12 @@
         @media (max-width: $bp-smartphone-sm ) {font-size: 5.5vw;}
     }
     &__ico {
-        margin: 0 15px 0 15px;
-        font-size: 9px;
+        margin: 0 14px 0 15px; //0 15px 0 15px
+        font-size: 6px; //9px
+        position: relative; //added up
+        bottom: 2px; //added up
+        left: 2px; //added up
+        
         //медиа-запрос для 4k экранов
         //также позволяет в шапке избежать перехода логотипа, меню и кнопки на
         //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
