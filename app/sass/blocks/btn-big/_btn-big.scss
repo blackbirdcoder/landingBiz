@@ -13,6 +13,7 @@
     font-family: $f-safe, sans-serif; //$f-bold
     font-weight: 700; //added up
     font-size: 24px; //added up
+    white-space: nowrap; //added up
     text-transform: uppercase;
     color: $c-light;
    
@@ -37,8 +38,10 @@
     
     //медиа-запрос смартфон
     @media (max-width: $bp-smartphone ){
-        //padding: 6% 4% 4% 4%;
+        padding: 5% 6% 4% 6%;
         font-size: 1.22rem;
+        height: auto; 
+        line-height: normal; 
         
     }
     //медиа-запрос смартфон маленький экран

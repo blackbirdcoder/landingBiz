@@ -26,10 +26,20 @@
     }
     &_theme_bright{background-color: $c-accent;}
     
+    //медиа-запрос для Ultra HD экранов
+    @media (min-width: $bp-ultra ) {
+        line-height: normal; //added up
+        height: auto; //added up
+    }
+
     //медиа-запрос для 4k экранов
     //также позволяет в шапке избежать переход логотипа, меню и кнопки на
     //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-    @media (min-width: $bp-4k ) {padding: 10px 23px 13px 23px;}
+    @media (min-width: $bp-4k ) {
+        padding: 10px 23px 13px 23px;
+        line-height: normal; //added up
+        height: auto; //added up
+    }
     
     //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {font-size: 0.9rem;}   

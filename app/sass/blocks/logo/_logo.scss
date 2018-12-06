@@ -13,7 +13,7 @@
     
     //медиа-запрос нетбуки
     @media (max-width: $bp-netbook ) {
-        margin: 0 0 0 1.5%;
+        margin: 0;
         width: 28%;  
     }
     
@@ -86,7 +86,10 @@
         @media (max-width: $bp-netbook ) {font-size: 1rem;}
         
         //медиа-запрос планшет
-        @media (max-width: $bp-tablet ) {letter-spacing: 1px;}
+        @media (max-width: $bp-tablet ) {
+            letter-spacing: 1px;
+            left: 0;
+        }
         
         //медиа-запрос смартфон
         @media (max-width: $bp-smartphone ){letter-spacing: 0;}

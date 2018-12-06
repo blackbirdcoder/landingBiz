@@ -112,7 +112,7 @@
             width: 49%;
             padding: 1%;
             bottom: 83%;
-            left: 25%;
+            left: 26%;
             font-size: 0.87rem;
             }
 
@@ -126,7 +126,7 @@
         @media (max-width: $bp-smartphone-sm ) {
             width: 70%;
             bottom: 75%;
-            left: 13%;
+            left: 14%;
             font-size: 5vw;
         }
     }
@@ -158,7 +158,11 @@
     @media (max-width: $bp-netbook ) {font-size: 0.93rem;}
     
     //медиа-запрос смартфон
-    @media (max-width: $bp-smartphone ){padding: 15px 31px 15px 31px;}
+    @media (max-width: $bp-smartphone ){
+        padding: 15px 31px 15px 31px;
+        line-height: normal; //added up
+        height: auto; //added up
+    }
     
     //медиа-запрос смартфон маленький экран
     @media (max-width: $bp-smartphone-sm ) {
@@ -180,7 +184,12 @@
 //Для этого применяю хак.
 @-moz-document url-prefix() {
     .form-subscribe {
-        &__field {padding: 16px 20px 15px 20px;}
+        &__field {
+            padding: 16px 20px 15px 20px;
+
+            //медиа-запрос смартфон
+            @media (max-width: $bp-smartphone ){ padding: 3% 3% 3% 3%;}
+        }
        ::placeholder {color: #ffffff;}
     }
 }

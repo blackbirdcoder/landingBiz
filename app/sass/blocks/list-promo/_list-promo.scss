@@ -32,15 +32,24 @@
     &__item:nth-child(2) {
         position: relative;
         right: 5px;
+
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) {  position: static; }
+
     }
     &__item:nth-child(3) {
         position: relative;
         right: 9px;
+
+        //медиа-запрос нeтбуки
+        @media (max-width: $bp-netbook ) {  position: static; }
     }
     &__item:nth-child(4) {
         position: absolute; //relative
         left: 767px; // right: 13px;
 
+         //медиа-запрос нeтбуки
+         @media (max-width: $bp-netbook ) {  position: static; }
     }
     &__ico{
         position: relative;

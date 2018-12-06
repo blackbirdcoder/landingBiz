@@ -60,11 +60,12 @@
     @media (max-width: $bp-netbook ) {
         position: relative;
         z-index: 1000;
-        
+
         &_position_bottom {
             bottom: 55px;
-            
-            //медиа-запрос смартфон маленький экран
+            margin: 0 0 49px 0;
+
+           //медиа-запрос смартфон маленький экран
             @media (max-width: $bp-smartphone-sm ) {bottom: 0;}
             
         }

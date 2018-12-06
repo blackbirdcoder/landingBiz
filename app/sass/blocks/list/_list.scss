@@ -79,10 +79,16 @@
       line-height: 20px; //added up
       
       //медиа-запрос нетбуки
-      @media (max-width: $bp-netbook ) {font-size: 0.83rem;}
+      @media (max-width: $bp-netbook ) {
+        margin: 10px 0 0 0; //added up
+        font-size: 0.83rem;
+      }
       
       //медиа-запрос смартфон маленький экран
-      @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
+      @media (max-width: $bp-smartphone-sm ) {
+        line-height: 17px; //added up
+        font-size: 5vw;
+      }
   }
 }
 

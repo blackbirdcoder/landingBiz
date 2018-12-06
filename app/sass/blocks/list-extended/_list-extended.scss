@@ -15,10 +15,16 @@
        &:hover .block-number  {background-color: $c-green;}
        
        //медиа-запрос нетбуки
-       @media (max-width: $bp-netbook ) {padding: 3% 3% 3% 3%;}
+       @media (max-width: $bp-netbook ) {
+           padding: 5% 3% 0% 3%;
+           width: auto;
+        }
        
        //медиа-запрос смартфон
-       @media (max-width: $bp-smartphone ){width: 100%;}
+       @media (max-width: $bp-smartphone ){
+           padding: 8% 3% 0% 3%;
+           width: 100%;
+        }
        
        //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {padding: 10% 3% 3% 3%;}
@@ -29,7 +35,10 @@
        width: 33%; //added up
        
        //медиа-запрос нетбуки
-       @media (max-width: $bp-netbook ) {display: block;}
+       @media (max-width: $bp-netbook ) {
+           display: block;
+           width: auto; //added up
+        }
        
        &_position {
             //медиа-запрос нетбуки
@@ -49,7 +58,10 @@
     //медиа-запрос для UHD экранов
     //также позволяет в браузерах Chrome, Opera хорошо отображаться
     //содержимому списка при зуме 33% , 25% (Ctrl -) 
-    @media (min-width: $bp-ultra ) {height: 278px; }
+    @media (min-width: $bp-ultra ) {
+        width: 339px;
+        height: 278px; //added up
+    }
     
     //медиа-запрос нетбуки
     @media (max-width: $bp-netbook ) {vertical-align: baseline;}
@@ -66,6 +78,11 @@
        vertical-align: 85px;
        position: relative;
        right: 55px; // 62px
+
+        //медиа-запрос для UHD экранов
+        //также позволяет в браузерах Chrome, Opera хорошо отображаться
+        //содержимому списка при зуме 33% , 25% (Ctrl -) 
+       @media (min-width: $bp-ultra ) { vertical-align: 100px; }
        
        //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {
@@ -84,14 +101,14 @@
             //медиа-запрос для UHD экранов
             //также позволяет в браузерах Chrome, Opera хорошо отображаться
             //содержимому списка при зуме 33% , 25% (Ctrl -) 
-            @media (min-width: $bp-ultra ) {top: 35px; }
+            @media (min-width: $bp-ultra ) {top: -15px; }
         
             //медиа-запрос нетбуки
             @media (max-width: $bp-netbook ) { right: 0;} 
        }
        &_position_bottom{
             //медиа-запрос нетбуки
-            @media (max-width: $bp-netbook ) { bottom: 30px;}
+            @media (max-width: $bp-netbook ) { bottom: 37px;}
        }
        &_position_left{
             text-align: right;
@@ -101,10 +118,13 @@
         //медиа-запрос для UHD экранов
         //также позволяет в браузерах Chrome, Opera хорошо отображаться
         //содержимому списка при зуме 33% , 25% (Ctrl -) 
-        @media (min-width: $bp-ultra ) {top: 35px; }
+        @media (min-width: $bp-ultra ) {top: -10px; }
         
         //медиа-запрос нетбуки
-        @media (max-width: $bp-netbook ) { left: 0;}
+        @media (max-width: $bp-netbook ) {
+            margin: 0; //added up 
+            left: 0;
+        }
   
        }
        
@@ -126,7 +146,10 @@
        font-weight: normal;
        
        //медиа-запрос нетбуки
-       @media (max-width: $bp-netbook ) {font-size: 1.05rem;}
+       @media (max-width: $bp-netbook ) {
+           margin: 0; //added up
+           font-size: 1.05rem;
+        }
        
        //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
@@ -140,7 +163,10 @@
        @media (max-width: $bp-netbook ) {font-size: 0.83rem;}
        
        //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
+       @media (max-width: $bp-smartphone-sm ) {
+           line-height: 17px; //added up
+           font-size: 5vw;
+        }
     }
     
     //медиа-запрос нетбуки
