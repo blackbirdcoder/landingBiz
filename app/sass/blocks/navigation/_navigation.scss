@@ -5,7 +5,10 @@
        //медиа-запрос для 4k экранов
        //также позволяет в шапке избежать переход логотипа, меню и кнопки на
        //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.  
-        @media (min-width: $bp-4k ) { margin: 0 0 0 25px;}
+        @media (min-width: $bp-4k ) { 
+            margin: 0 0 0 25px;
+            vertical-align: top; //added up
+        } 
         
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) { margin: 0 0 0 7%;}

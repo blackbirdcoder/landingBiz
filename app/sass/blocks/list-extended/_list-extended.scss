@@ -13,6 +13,8 @@
        width: 100%; //added up
        //Эффект для list-extended
        &:hover .block-number  {background-color: $c-green;}
+       //added up
+       //@media (min-width: $bp-ultra) { width: 101%; }
        
        //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {
@@ -59,8 +61,8 @@
     //также позволяет в браузерах Chrome, Opera хорошо отображаться
     //содержимому списка при зуме 33% , 25% (Ctrl -) 
     @media (min-width: $bp-ultra ) {
-        width: 339px;
-        height: 278px; //added up
+        width: 349px; //339px
+        height: 280px; //278px
     }
     
     //медиа-запрос нетбуки
@@ -114,11 +116,14 @@
             text-align: right;
             position: relative;
             left: 30px;
-            margin: 0px 0 0 17px; //added up
+            margin: 0 0 0 17px; //added up
         //медиа-запрос для UHD экранов
         //также позволяет в браузерах Chrome, Opera хорошо отображаться
         //содержимому списка при зуме 33% , 25% (Ctrl -) 
-        @media (min-width: $bp-ultra ) {top: -10px; }
+        @media (min-width: $bp-ultra ) {
+            top: -10px;
+            margin: 0 0 0 4px; //added up 
+        }
         
         //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {
@@ -176,6 +181,24 @@
     }
        
 }
+
+//addede up
+//Хак для Firefox
+//В браузеру Firefox разваливается список.
+//Я думаю из-за того что немного по другому отображается шрифт
+//и ему перестаёт хватать места соответственно картинка переходит на новую строку
+//Поэтому я поменял размер обёртки. 
+//Для этого применяю хак.
+@-moz-document url-prefix() {
+    .list-extended {
+        &__box-img { width: 32%; 
+            //added up
+            //медиа-запрос нетбуки
+            @media (max-width: $bp-netbook ) {width: auto;}
+        }
+    }
+}
+
    //block-number
 @import "app/sass/blocks/block-number/_block-number.scss";
 

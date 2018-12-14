@@ -1,16 +1,18 @@
 //Обертка для кнопки
 .container {
     &__box-button {
-        margin: 4px 0 0 25px; //0 0 0 16px
-        
+        margin: 4px 0 0 0; //0 0 0 16px | 4px 0 0 25px
+
+        //added up
+       // @media (min-width: $bp-ultra ) {margin: 25px 0 0 0 !important;}
+
         //медиа-запрос для 4k экранов
         //также позволяет в шапке избежать переход логотипа, меню и кнопки на
         //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
         @media (min-width: $bp-4k ) {
-            float: right;
+            //float: right;
             margin: 0;//12px 0 0 0;
         }
-        
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {
             float: right;
@@ -20,9 +22,16 @@
 
 }
 .box-button {
-    display: inline-block;
-    vertical-align: 22px; //20px
-    
+    display: block;
+    float: right; //added up
+    //vertical-align: 22px; //20px
+
+    //added up
+    // @media (max-width: $bp-4k ) {
+    //     position: static;
+    //     margin: 0 0 0 183px;
+    // } 
+
     //медиа-запрос планшет
     @media (max-width: $bp-tablet ) {display: none;}
 
