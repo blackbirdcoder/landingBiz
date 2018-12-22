@@ -178,3 +178,19 @@
     //медиа-запрос смартфон
     @media (max-width: $bp-smartphone ){width: 68%;}
 }
+
+//added up
+//Если перевести страницу на русский язык
+//то список разваливается на маленьком зуме 33% 25%
+//чтобы этого не происходило убираю кое какой контент
+//и немного правлю высоту.
+.translated-ltr{
+    .list-promo {
+        &__txt {
+             @media (min-width: $bp-ultra ) {display: none;}
+        }
+        &__pic {
+             @media (min-width: $bp-ultra ) {height: 230px;}
+        }
+    }
+}

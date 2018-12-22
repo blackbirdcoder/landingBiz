@@ -412,13 +412,13 @@
   }
 }
 
-.translated-ltr .navigation.container__navigation {
+.root[lang=ru] .navigation.container__navigation {
   margin: 0 0 0 46px;
 }
 
 @media (max-width: 1045px) {
-  .translated-ltr .navigation.container__navigation {
-    margin: 0 0 0 11px;
+  .root[lang=ru] .navigation.container__navigation {
+    margin: 0;
   }
 }
 
@@ -529,6 +529,10 @@
   }
 }
 
+.menu__link[_msthash] {
+  letter-spacing: -1px;
+}
+
 .container__box-button {
   margin: 4px 0 0 0;
 }
@@ -553,6 +557,18 @@
 
 @media (max-width: 960px) {
   .box-button {
+    display: none;
+  }
+}
+
+@media (min-width: 5120px) {
+  .root[lang=ru] .box-button {
+    display: none;
+  }
+}
+
+@media (min-width: 5120px) {
+  .translated-ltr .box-button {
     display: none;
   }
 }
@@ -613,6 +629,15 @@
   }
 }
 
+.btn[_msthash] {
+  letter-spacing: -0.5px;
+  width: 120px;
+  line-height: 100%;
+  height: 40px;
+  text-align: center;
+  padding: 4px 0 0 0;
+}
+
 /*----Section Hero----*/
 .hero {
   min-height: 590px;
@@ -670,7 +695,7 @@
 
 .hero__box-button-big {
   display: inline-block;
-  padding: 32px 0 0 3px;
+  padding: 32px 0 0 0;
 }
 
 @media (max-width: 596px) {
@@ -747,6 +772,13 @@
 @media (max-width: 288px) {
   .btn-big {
     font-size: 6vw;
+  }
+}
+
+@media (max-width: 596px) {
+  .root[lang=ru] .btn-big {
+    white-space: normal;
+    margin: 0 5px 0 5px;
   }
 }
 
@@ -1238,6 +1270,22 @@
   }
 }
 
+.root[lang=ru] .list-extended__pic {
+  height: 239px;
+}
+
+@media (max-width: 596px) {
+  .root[lang=ru] .list-extended__pic {
+    height: 165px;
+  }
+}
+
+@media (min-width: 5120px) {
+  .root[lang=ru] .list-extended__pic {
+    width: 353px;
+  }
+}
+
 @-moz-document url-prefix() {
   .list-extended__box-img {
     width: 32%;
@@ -1689,6 +1737,18 @@
 @media (max-width: 596px) {
   .list-promo {
     width: 68%;
+  }
+}
+
+@media (min-width: 5120px) {
+  .translated-ltr .list-promo__txt {
+    display: none;
+  }
+}
+
+@media (min-width: 5120px) {
+  .translated-ltr .list-promo__pic {
+    height: 230px;
   }
 }
 
@@ -2343,8 +2403,14 @@
 }
 
 @media (max-width: 596px) {
-  .translated-ltr .form__tooltip {
+  .root[lang=ru] .form__tooltip {
     top: 24%;
+  }
+}
+
+@media (max-width: 596px) {
+  .root[lang=ru] .form::before {
+    top: -114%;
   }
 }
 
@@ -2354,6 +2420,12 @@
   }
   .form ::placeholder {
     color: #888888;
+  }
+}
+
+@media (max-width: 596px) {
+  .form__txt[_msthash] {
+    line-height: 15px;
   }
 }
 

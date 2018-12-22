@@ -42,10 +42,23 @@
         font-size: 1.22rem;
         height: auto; 
         line-height: normal; 
-        
     }
     //медиа-запрос смартфон маленький экран
     @media (max-width: $bp-smartphone-sm ) {font-size: 6vw;}
+}
+
+//added up
+//У меня есть небольшое сожаления что я поступил именно так
+//но всё же это решения меня на сегодня устраивает.
+//Кнопка на русском не вмещается. Поэтому я поступил так. 
+//root это html
+.root[lang=ru]{
+    .btn-big {
+        @media (max-width: $bp-smartphone ){
+            white-space: normal;
+            margin: 0 5px 0 5px;
+        }
+    }
 }
 
 //addede up

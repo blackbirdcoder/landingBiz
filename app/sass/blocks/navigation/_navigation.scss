@@ -44,8 +44,27 @@
         text-align: center;
     }
  }
+
+ //added up
+ //У меня есть небольшое сожаления что я поступил именно так
+ //но всё же это решения меня на сегодня устраивает.
+ //Браузер Яндекс он при переводе сайта на русский не добавляет
+ //никаких сторонних классов мне пришлось сделать селектор по атрибуту
+ //и это работает.Теперь кнопка в Яндекс браузере не падает.
+ //Также это работает и в других браузерах которые переведут страницу на русский
+ //root это html
+ .root[lang=ru]{
+    .navigation.container__navigation{
+        margin: 0 0 0 46px;
+    }
+    @media (max-width: $bp-netbook ) {
+        .navigation.container__navigation{
+            margin: 0;
+        }
+    }
+ }
  
- //Немного магии. Сайт преподносит информацию на английском языке.
+ //Сайт преподносит информацию на английском языке.
  //Если пользователь просматривает сайт с помощью браузера Chrome
  //и захочет перевести содержимое на русский язык при помощи Google Translate
  // то поломается шапка сайта поскольку изменится язык и добавится больше букв.
@@ -53,18 +72,18 @@
  //И в тег html добавляется класс (translated-ltr), вот за него я "зацепился", сделал вложенность  
  // и чтобы вёрстка не поломалось я для меню сделал больше места, 
  //если происходит перевод сайта
-.translated-ltr{
-    .navigation.container__navigation{
-        margin: 0 0 0 46px;
-    }
+// .translated-ltr{
+//     .navigation.container__navigation{
+//         margin: 0 0 0 46px;
+//     }
 
-    @media (max-width: $bp-netbook ) {
-        .navigation.container__navigation{
-            margin: 0 0 0 11px;
-        }
-    }
+//     @media (max-width: $bp-netbook ) {
+//         .navigation.container__navigation{
+//             margin: 0 0 0 11px;
+//         }
+//     }
 
- }
+//  }
 //  .translated-rtl{
 //     .navigation.container__navigation{
 //         margin: 0 0 0 46px;
