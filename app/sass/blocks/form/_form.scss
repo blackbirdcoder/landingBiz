@@ -84,11 +84,11 @@
        
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {
-            border: 1px solid $c-light;
-            width: 25px; 
-            height: 25px; 
+            border: 2px solid $c-light;
+            width: 32px; 
+            height: 32px; 
             top: -4%;
-            right: -4%;
+            right: -5%;
         }
 
         @media (max-width: $bp-screen-small ) {
@@ -98,67 +98,47 @@
     //Делаю крестик (виде икса)
     &__btn-close-ico {
         display: inline-block;
-        background: $c-light;
-        height: 21px;
-        width: 2px;
-        position: inherit;
-        top: 12px; 
-        left: 22px;
-        transform: rotate(-35deg);
-
-        &::after {
-            display: inherit;
-            background: $c-light;
+        background: transparent; //$c-light
+        height: 25px;//21px
+        width: 29px;//2px;
+        position: absolute; //inherit
+        top: 11px; //12px
+        right: 10px; //left: 22px;
+        
+        &::after{
             content: "";
-            height: 2px;
-            left: -9px;
             position: inherit;
-            top: 10px;
-            width: 20px;
-            transform: rotate(-20deg);
-
-            //медиа-запрос нeтбуки
-            @media (max-width: $bp-netbook ) {
-                width: 19px;    
-                top: 9px;
-                left: -8px;
-                transform: rotate(-16deg);
-            }
-
-            //медиа-запрос смартфон
-            @media (max-width: $bp-smartphone ) {
-                width: 18px;    
-                top: 8px; 
-            }
-
-            //медиа-запрос смартфон маленький экран
-            @media (max-width: $bp-smartphone-sm ) {
-                width: 14px;
-                top: 6px;
-                left: -6px;
-            }
-
+            height: 24px; //2px
+            width: 2px;//20px
+            background: $c-light;
+            transform: rotate(-39deg);
+        }
+        &::before {
+            content: "";
+            position: inherit;
+            height: 24px; //2px
+            left: 15px; //-9px
+            width: 2px;//20px
+            background: $c-light;
+            transform: rotate(39deg);
         }
 
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {
-            height: 19px;
-            left: 19px;
-            top: 10px; 
+            left: 5px;//19px
+            top: 9px; //10px 
         }
 
         //медиа-запрос смартфон
         @media (max-width: $bp-smartphone ){
-            height: 18px;
-            left: 17px;
-            top: 9px; 
+            left: 2px; //17px
+            top: 6px; //9px
         }
 
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {
-            height: 14px;
-            left: 11px;
-            top: 4px;
+            left: -2px;//11px
+            top: 2px; //4px
         }
     }
     &__txt {

@@ -2035,11 +2035,11 @@
 
 @media (max-width: 288px) {
   .form__btn-close {
-    border: 1px solid #ffffff;
-    width: 25px;
-    height: 25px;
+    border: 2px solid #ffffff;
+    width: 32px;
+    height: 32px;
     top: -4%;
-    right: -4%;
+    right: -5%;
   }
 }
 
@@ -2051,78 +2051,55 @@
 
 .form__btn-close-ico {
   display: inline-block;
-  background: #ffffff;
-  height: 21px;
-  width: 2px;
-  position: inherit;
-  top: 12px;
-  left: 22px;
-  -webkit-transform: rotate(-35deg);
-      -ms-transform: rotate(-35deg);
-          transform: rotate(-35deg);
+  background: transparent;
+  height: 25px;
+  width: 29px;
+  position: absolute;
+  top: 11px;
+  right: 10px;
 }
 
 .form__btn-close-ico::after {
-  display: inherit;
-  background: #ffffff;
   content: "";
-  height: 2px;
-  left: -9px;
   position: inherit;
-  top: 10px;
-  width: 20px;
-  -webkit-transform: rotate(-20deg);
-      -ms-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  height: 24px;
+  width: 2px;
+  background: #ffffff;
+  -webkit-transform: rotate(-39deg);
+      -ms-transform: rotate(-39deg);
+          transform: rotate(-39deg);
+}
+
+.form__btn-close-ico::before {
+  content: "";
+  position: inherit;
+  height: 24px;
+  left: 15px;
+  width: 2px;
+  background: #ffffff;
+  -webkit-transform: rotate(39deg);
+      -ms-transform: rotate(39deg);
+          transform: rotate(39deg);
 }
 
 @media (max-width: 1045px) {
-  .form__btn-close-ico::after {
-    width: 19px;
+  .form__btn-close-ico {
+    left: 5px;
     top: 9px;
-    left: -8px;
-    -webkit-transform: rotate(-16deg);
-        -ms-transform: rotate(-16deg);
-            transform: rotate(-16deg);
   }
 }
 
 @media (max-width: 596px) {
-  .form__btn-close-ico::after {
-    width: 18px;
-    top: 8px;
-  }
-}
-
-@media (max-width: 288px) {
-  .form__btn-close-ico::after {
-    width: 14px;
+  .form__btn-close-ico {
+    left: 2px;
     top: 6px;
-    left: -6px;
-  }
-}
-
-@media (max-width: 1045px) {
-  .form__btn-close-ico {
-    height: 19px;
-    left: 19px;
-    top: 10px;
-  }
-}
-
-@media (max-width: 596px) {
-  .form__btn-close-ico {
-    height: 18px;
-    left: 17px;
-    top: 9px;
   }
 }
 
 @media (max-width: 288px) {
   .form__btn-close-ico {
-    height: 14px;
-    left: 11px;
-    top: 4px;
+    left: -2px;
+    top: 2px;
   }
 }
 
