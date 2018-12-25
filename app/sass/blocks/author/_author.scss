@@ -6,10 +6,8 @@
         color: rgba(255, 255, 0, 0.5);
         letter-spacing: 1px;
        
-        //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) { font-size: 0.68rem;}
         
-        //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {font-size: 4vw;}
     } 
     &__link {

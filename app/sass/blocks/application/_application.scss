@@ -3,28 +3,24 @@
 .application {
     background-color: #1287bf;
     &__box-info {
-        padding: 100px 0 111px 0; // 85px 0 115px 0
+        padding: 100px 0 111px 0; 
         text-align: center;
     }
     &__heading {
        @include title;
        @include bright-txt;
-       
-       //медиа-запрос нeтбуки
+
        @media (max-width: $bp-netbook ) {font-size: 2rem;}
-       
-       //медиа-запрос смартфон маленький экран
+
        @media (max-width: $bp-smartphone-sm ) {font-size: 12vw;}
     }
     &__txt {
        @include subtitle;
        @include bright-txt;
-       margin: 0 0 6px 0; //added up
+       margin: 0 0 6px 0; 
        
-       //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
        
-       //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
     }
     &__btn-open {margin: 10px 0 20px 0;}

@@ -9,12 +9,12 @@
       width: 30%;
       vertical-align: top;
       
-      //медиа-запрос планшет
+
       @media (max-width: $bp-tablet ) {
             padding: 0 15% 0 15%;
             display: block;
             width: 100%;
-            //vertical-align: 0;
+
       }
       
       //медиа-запрос смартфон маленький экран
@@ -24,10 +24,9 @@
   &__item:nth-of-type(2) { 
       margin: 0 31px 0 31px;
       
-      //медиа-запрос нетбуки
+
       @media (max-width: $bp-netbook ) {margin: 0 1% 0 1%;}
-      
-      //медиа-запрос планшет
+
       @media (max-width: $bp-tablet ) {margin: 5% 0% 5% 0%;}
   }
 
@@ -35,8 +34,8 @@
   &__item:nth-child(1) {
     .list__picture{
       @include sprite($like);
-      position: relative; //added up
-      left: 3px; //added up
+      position: relative; 
+      left: 3px; 
     }
   }
   &__item:nth-child(2) {
@@ -45,9 +44,9 @@
   &__item:nth-child(3) {
     .list__picture{
       @include sprite($dialog);
-      position: relative; //added up
-      right: 9px; //added up 
-      top: 2px; //added up
+      position: relative; 
+      right: 9px;  
+      top: 2px; 
     }
   }
   &__picture {
@@ -60,13 +59,13 @@
     }
 
   &__title {
-      margin: 24px 0 12px 0; //20px 0 17px 0
+      margin: 24px 0 12px 0; 
       font-family: $f-bold, sans-serif;
       font-size: 22px;
       //Добавил для кроссбраузерности и кроссплатформенности
       //что бы Firefox в Linux не делала слишком жирный шрифт
       font-weight: normal;
-      //медиа-запрос нетбуки
+
       @media (max-width: $bp-netbook ) {font-size: 1.1rem;}
       
       //медиа-запрос смартфон маленький экран
@@ -76,17 +75,17 @@
       margin: 0;
       padding: 0 20px 0 20px;
       font-size: 14px;
-      line-height: 20px; //added up
+      line-height: 20px; 
       
-      //медиа-запрос нетбуки
+
       @media (max-width: $bp-netbook ) {
-        margin: 10px 0 0 0; //added up
+        margin: 10px 0 0 0;
         font-size: 0.83rem;
       }
       
       //медиа-запрос смартфон маленький экран
       @media (max-width: $bp-smartphone-sm ) {
-        line-height: 17px; //added up
+        line-height: 17px;
         font-size: 5vw;
       }
   }

@@ -1,20 +1,18 @@
 //Кнопка для сайта landing-business.hw
 /*Button*/
 
-//Кнопки сделаны так для того чтобы добиться ровного отображения
-//текста в кнопках на разных платформах
 .btn{
     display: inline-block;
-    padding: 0 23px 0 23px ; //10px 23px 10px 23px 
-    height: 37px;//added up 
-    line-height: 36px;//added up
+    padding: 0 23px 0 23px ; 
+    height: 37px;
+    line-height: 36px;
     border-radius: 5px;
     text-decoration: none;
     text-transform: capitalize;
-    font-family: $f-safe, sans-serif; //$f-bold
+    font-family: $f-safe, sans-serif; 
     font-size: 15px;
-    font-weight: 700; //added up
-    letter-spacing: 0.5px; //added up
+    font-weight: 700; 
+    letter-spacing: 0.5px; 
     color: $c-light;
     transition: 0.5s;
     
@@ -28,8 +26,8 @@
     
     //медиа-запрос для Ultra HD экранов
     @media (min-width: $bp-ultra ) {
-        line-height: normal; //added up
-        height: auto; //added up
+        line-height: normal;
+        height: auto; 
     }
 
     //медиа-запрос для 4k экранов
@@ -37,15 +35,14 @@
     //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
     @media (min-width: $bp-4k ) {
         padding: 10px 23px 13px 23px;
-        line-height: normal; //added up
-        height: auto; //added up
+        line-height: normal; 
+        height: auto; 
     }
     
-    //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) {font-size: 0.9rem;}   
 }
 
-//added up
+
 //Хак для Firefox
 //Браузер Firefox немного по другому отображает текст
 //поэтому чтобы расстояние между буквами не сильно 
@@ -54,7 +51,6 @@
     .btn { letter-spacing: normal; }
 }
 
-//added up for EDGE
 //В браузере EDGE при использовании перевода страницы 
 //на русский текст в кнопке становится длинней и она "падает"
 //поэтому я её изменил немного внешне.

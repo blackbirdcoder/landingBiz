@@ -1,43 +1,29 @@
 //Обертка для кнопки
 .container {
     &__box-button {
-        margin: 4px 0 0 0; //0 0 0 16px | 4px 0 0 25px
-
-        //added up
-       // @media (min-width: $bp-ultra ) {margin: 25px 0 0 0 !important;}
+        margin: 4px 0 0 0;
 
         //медиа-запрос для 4k экранов
         //также позволяет в шапке избежать переход логотипа, меню и кнопки на
         //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-        @media (min-width: $bp-4k ) {
-            //float: right;
-            margin: 0;//12px 0 0 0;
-        }
-        //медиа-запрос нeтбуки
+        @media (min-width: $bp-4k ) { margin: 0;}
+
         @media (max-width: $bp-netbook ) {
             float: right;
-            margin: 0 2px 0 0;//0.5% 0.7% 0 0
+            margin: 0 2px 0 0;
         }
     }
 
 }
 .box-button {
     display: block;
-    float: right; //added up
-    //vertical-align: 22px; //20px
+    float: right; 
 
-    //added up
-    // @media (max-width: $bp-4k ) {
-    //     position: static;
-    //     margin: 0 0 0 183px;
-    // } 
-
-    //медиа-запрос планшет
     @media (max-width: $bp-tablet ) {display: none;}
 
 }
 
-//added up
+
 //У меня есть небольшое сожаления что я поступил именно так
 //но всё же это решения меня на сегодня устраивает.
 //Браузер Яндекс он при переводе сайта на русский не добавляет
@@ -52,14 +38,14 @@
     }
 }
 
-//added up
+//Моё старое (первое) решения
 //Если перевести страницу на русский язык то кнопка
 //становится больше (больше букв) соответственно занимает больше места
 //и в браузере Chrome при зуме 33% 25% кнопка "падает"
 //так что было принято решение если сайт приведён на русский
 //и имеет таком маленьком зуме. Убираю кнопку.
-.translated-ltr{
-    .box-button {
-        @media (min-width: $bp-ultra ) {display: none;}
-    }
-}
+// .translated-ltr{
+//     .box-button {
+//         @media (min-width: $bp-ultra ) {display: none;}
+//     }
+// }

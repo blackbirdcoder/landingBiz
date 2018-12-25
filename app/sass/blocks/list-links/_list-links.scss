@@ -9,7 +9,6 @@
     
        &:last-child {margin: 0;}
        
-     //медиа-запрос смартфон
     @media (max-width: $bp-smartphone ){margin: 0 1.7% 0 0;}  
     
     }
@@ -32,13 +31,11 @@
             @media (max-width: $bp-smartphone-sm ) {border: none;}
         }
         
-       //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {
            width: 48px;
            height: 48px;
        }
        
-       //медиа-запрос смартфон
        @media (max-width: $bp-smartphone ){
            width: 42px;
            height: 42px;
@@ -57,10 +54,8 @@
         vertical-align: -16px;
         color: $c-light;
         
-       //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {font-size: 1.31rem;}
        
-       //медиа-запрос смартфон
        @media (max-width: $bp-smartphone ){
            font-size: 1.3rem;
            vertical-align: -11px;

@@ -10,19 +10,15 @@
        box-shadow: 0px 0px 1px 0px;
        border-radius: 2px;
        background-color: $c-light;
-       width: 100%; //added up
+       width: 100%;
        //Эффект для list-extended
        &:hover .block-number  {background-color: $c-green;}
-       //added up
-       //@media (min-width: $bp-ultra) { width: 101%; }
-       
-       //медиа-запрос нетбуки
+
        @media (max-width: $bp-netbook ) {
            padding: 5% 3% 0% 3%;
            width: auto;
         }
-       
-       //медиа-запрос смартфон
+
        @media (max-width: $bp-smartphone ){
            padding: 8% 3% 0% 3%;
            width: 100%;
@@ -32,18 +28,18 @@
        @media (max-width: $bp-smartphone-sm ) {padding: 10% 3% 3% 3%;}
    }
    &__item:last-child {margin: 0;} 
+
    &__box-img {
        display: inline-block;
-       width: 33%; //added up
-       
-       //медиа-запрос нетбуки
+       width: 33%;
+
+
        @media (max-width: $bp-netbook ) {
            display: block;
            width: auto; //added up
         }
        
        &_position {
-            //медиа-запрос нетбуки
             @media (max-width: $bp-netbook ) {
                 margin: 15px 0 0 0;
                 position: relative;
@@ -54,15 +50,15 @@
         @media (max-width: $bp-smartphone-sm ) {display: none;}
    }
    &__pic {
-       width: auto; //336px
+       width: auto; 
        height: 236px;
        vertical-align: bottom;
     //медиа-запрос для UHD экранов
     //также позволяет в браузерах Chrome, Opera хорошо отображаться
     //содержимому списка при зуме 33% , 25% (Ctrl -) 
     @media (min-width: $bp-ultra ) {
-        width: 349px; //339px
-        height: 280px; //278px
+        width: 349px; 
+        height: 280px; 
     }
     
     //медиа-запрос нетбуки
@@ -86,7 +82,6 @@
         //содержимому списка при зуме 33% , 25% (Ctrl -) 
        @media (min-width: $bp-ultra ) { vertical-align: 100px; }
        
-       //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {
            vertical-align: 60px;
            position: static;
@@ -99,60 +94,56 @@
        vertical-align: 80px;
        &_position_right{
             position: relative;
-            right: 28px; //35px
+            right: 28px; 
             //медиа-запрос для UHD экранов
             //также позволяет в браузерах Chrome, Opera хорошо отображаться
             //содержимому списка при зуме 33% , 25% (Ctrl -) 
             @media (min-width: $bp-ultra ) {top: -15px; }
         
-            //медиа-запрос нетбуки
             @media (max-width: $bp-netbook ) { right: 0;} 
        }
        &_position_bottom{
-            //медиа-запрос нетбуки
+
             @media (max-width: $bp-netbook ) { bottom: 37px;}
        }
        &_position_left{
             text-align: right;
             position: relative;
             left: 30px;
-            margin: 0 0 0 17px; //added up
+            margin: 0 0 0 17px; 
         //медиа-запрос для UHD экранов
         //также позволяет в браузерах Chrome, Opera хорошо отображаться
         //содержимому списка при зуме 33% , 25% (Ctrl -) 
         @media (min-width: $bp-ultra ) {
             top: -10px;
-            margin: 0 0 0 4px; //added up 
+            margin: 0 0 0 4px; 
         }
-        
-        //медиа-запрос нетбуки
+
         @media (max-width: $bp-netbook ) {
-            margin: 0; //added up 
+            margin: 0; 
             left: 0;
         }
   
        }
        
-       //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {
             display: block;
             text-align: center;
        }
        
-       //медиа-запрос смартфон
        @media (max-width: $bp-smartphone ){width: 100%;}
    }
    &__title {
-       margin: 0 16px 0 5px; //0
+       margin: 0 16px 0 5px; 
        font-family: $f-bold, sans-serif;
        font-size: 18px;
        //Добавил для кроссбраузерности и кроссплатформенности
        //что бы Firefox в Linux не делала слишком жирный шрифт
        font-weight: normal;
        
-       //медиа-запрос нетбуки
+
        @media (max-width: $bp-netbook ) {
-           margin: 0; //added up
+           margin: 0;
            font-size: 1.05rem;
         }
        
@@ -160,21 +151,19 @@
        @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
    }
    &__txt {
-       margin: 10px 0 0 5px; //15px 0 0 0
+       margin: 10px 0 0 5px;
        font-size: 14px;
-       line-height: 20px; //added up
+       line-height: 20px;
        
-       //медиа-запрос нетбуки
        @media (max-width: $bp-netbook ) {font-size: 0.83rem;}
        
        //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {
-           line-height: 17px; //added up
+           line-height: 17px; 
            font-size: 5vw;
         }
     }
     
-    //медиа-запрос нетбуки
     @media (max-width: $bp-netbook ) {
         padding: 10px 10px 10px 10px;
         text-align: center;
@@ -182,7 +171,7 @@
        
 }
 
-//added up
+
 //Если перевести страницу на русский язык то 
 //то появляется зазор у картинки. Устраняю зазор у изображения
 //если сайт на русском.
@@ -200,7 +189,7 @@
     }
 }
 
-//addede up
+
 //Хак для Firefox
 //В браузеру Firefox разваливается список.
 //Я думаю из-за того что немного по другому отображается шрифт

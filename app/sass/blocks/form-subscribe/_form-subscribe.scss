@@ -7,11 +7,10 @@
    position: relative;
    &__txt {
        margin: 0;
-       color: #cecece ; //$c-light
+       color: #cecece ;
        font-size: 15px;
        font-family: $f-normal;
-       
-       //медиа-запрос нeтбуки
+
        @media (max-width: $bp-netbook ) {font-size: 0.87rem;}
        
        //медиа-запрос смартфон маленький экран
@@ -19,24 +18,22 @@
    }
 
    &__field {
-       margin: 27px 0 0 0; //25px 0 0 0
-       padding: 18px 20px 18px 20px; // 20px 20px 20px 20px
+       margin: 27px 0 0 0;
+       padding: 18px 20px 18px 20px;
        border: 0;
        outline: 0;
-       width: 67%; //66%
-       background-color: #515151; //$c-dark
+       width: 67%; 
+       background-color: #515151;
        color: $c-light;
-       font-family: $f-safe, sans-serif; //added up
+       font-family: $f-safe, sans-serif; 
        font-size: 17px;
 
        &::placeholder {
-            color:#cecece; //#979797
+            color:#cecece;
             font-size: 14px;
-    
-            //медиа-запрос нeтбуки
+
             @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
-    
-            //медиа-запрос смартфон маленький экран
+
             @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
         }
         //Убирает красные границы вокруг полей
@@ -107,7 +104,6 @@
         bottom: 150px;
         left: 285px;
         
-        //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {
             width: 49%;
             padding: 1%;
@@ -116,7 +112,6 @@
             font-size: 0.87rem;
             }
 
-        //медиа-запрос смартфон    
         @media (max-width: $bp-smartphone)  {
             font-size: 0.72rem;
             bottom: 80%;
@@ -130,17 +125,16 @@
             font-size: 5vw;
         }
     }
-    //Кнопки сделаны так для того чтобы добиться ровного отображения
-    //текста в кнопках на разных платформах
+
     &__btn-subscribe {
-    margin: 26px 0 0 0; //20px 0 0 0
-    padding: 0 34px 0 34px; //18px 34px 18px 34px
-    height: 53px; //added up
-    line-height: 50px; //added up
+    margin: 26px 0 0 0; 
+    padding: 0 34px 0 34px; 
+    height: 53px; 
+    line-height: 50px;
     font-size: 17px;
     color: $c-light;
-    font-family: $f-safe, sans-serif; //$f-bold
-    font-weight: 700; //added up
+    font-family: $f-safe, sans-serif;
+    font-weight: 700; 
     letter-spacing: 1px;
     background-color: #2a2a2a;
     border: 2px solid $c-dark;
@@ -160,8 +154,8 @@
     //медиа-запрос смартфон
     @media (max-width: $bp-smartphone ){
         padding: 15px 31px 15px 31px;
-        line-height: normal; //added up
-        height: auto; //added up
+        line-height: normal;
+        height: auto;
     }
     
     //медиа-запрос смартфон маленький экран
@@ -175,7 +169,6 @@
    
 }
 
-//addede up
 //Хак для Firefox
 //Браузер Firefox немного смещает текст в поле ввода вверх.
 //Поэтому я его немного выравниваю.
@@ -187,7 +180,6 @@
         &__field {
             padding: 16px 20px 15px 20px;
 
-            //медиа-запрос смартфон
             @media (max-width: $bp-smartphone ){ padding: 3% 3% 3% 3%;}
         }
        ::placeholder {color: #ffffff;}

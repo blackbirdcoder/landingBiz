@@ -8,7 +8,7 @@
 /*form*/  
 .form {
     margin: 35px 170px 0 170px;
-    padding: 50px 50px 68px 50px; //50px 50px 65px 50px
+    padding: 50px 50px 68px 50px; 
     position: relative;
     background-color: $c-light;
     display: none;
@@ -23,7 +23,6 @@
         top:-67px;
         width: 0;
 
-        //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook  ){
             border: 25px solid transparent;
             border-bottom: 27px solid $c-light;
@@ -31,9 +30,7 @@
             top: -50px;
         }
 
-        //медиа-запрос смартфон
         @media (max-width: $bp-smartphone ){
-            // display: none;
             border: 20px solid transparent;
             border-bottom: 23px solid $c-light;
             margin: auto;
@@ -69,13 +66,11 @@
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
         
-       //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) {
             width: 45px;
             height: 45px;
        }
        
-       //медиа-запрос смартфон
        @media (max-width: $bp-smartphone ){
             width: 40px;
             height: 40px;
@@ -98,93 +93,90 @@
     //Делаю крестик (виде икса)
     &__btn-close-ico {
         display: inline-block;
-        background: transparent; //$c-light
-        height: 25px;//21px
-        width: 29px;//2px;
-        position: absolute; //inherit
-        top: 11px; //12px
-        right: 10px; //left: 22px;
+        background: transparent;
+        height: 25px;
+        width: 29px;
+        position: absolute; 
+        top: 11px;
+        right: 10px; 
         
         &::after{
             content: "";
             position: inherit;
-            height: 24px; //2px
-            width: 2px;//20px
+            height: 24px; 
+            width: 2px;
             background: $c-light;
             transform: rotate(-39deg);
         }
         &::before {
             content: "";
             position: inherit;
-            height: 24px; //2px
-            left: 15px; //-9px
-            width: 2px;//20px
+            height: 24px; 
+            left: 15px; 
+            width: 2px;
             background: $c-light;
             transform: rotate(39deg);
         }
 
         //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {
-            left: 5px;//19px
-            top: 9px; //10px 
+            left: 5px;
+            top: 9px; 
         }
 
         //медиа-запрос смартфон
         @media (max-width: $bp-smartphone ){
-            left: 2px; //17px
-            top: 6px; //9px
+            left: 2px; 
+            top: 6px; 
         }
 
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {
-            left: -2px;//11px
-            top: 2px; //4px
+            left: -2px;
+            top: 2px; 
         }
     }
     &__txt {
         margin: 0 0 33px 0;
         font-family: $f-normal, sans-serif;
-        font-size: 15px; //added up
-        line-height: 20px; //added up
-        color: #5a5a5a; //added up
-        
-       //медиа-запрос нeтбуки
+        font-size: 15px; 
+        line-height: 20px; 
+        color: #5a5a5a; 
+
        @media (max-width: $bp-netbook ) {font-size: 0.93rem;}
        
        //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) {
            margin: 0 0 5vw 0;
            font-size: 5vw;
-           line-height: 17px; //added up
+           line-height: 17px;
        }
     }
     &__field:nth-of-type(2) {
-        margin: 8px 0 8px 0;//10px 0 10px 0
+        margin: 8px 0 8px 0;
 
         //медиа-запрос смартфон маленький экран
        @media (max-width: $bp-smartphone-sm ) { margin: 4px 0 4px 0; }
     } 
     &__field {
         padding: 17px 25px 17px 25px;
-        width: 76%; // 75%
+        width: 76%; 
         outline: 0;
         font-size: 15px; 
-        font-family: $f-safe, sans-serif; //$f-normal
-        font-weight: 700; //600
+        font-family: $f-safe, sans-serif;
+        font-weight: 700;
         letter-spacing: 1px;
         border: 1px solid #b5b4b4;
         border-radius: 6px;
         background-color: $c-light;
-        //line-height: 1.2; //added up
         // вид текста placeholder
         &::placeholder {
             font-size: 14px;
             font-weight: 300;
             letter-spacing: 0;
-            //line-height: 1.2; //added up
             //Для кроссбраузерности. Firefox убирает красный цвет букв
             //если input стоит required
-            color:#b5b4b4; // $c-dark
+            color:#b5b4b4;
 
             //медиа-запрос смартфон маленький экран
             @media (max-width: $bp-smartphone-sm ){ font-size: 5vw;}
@@ -229,13 +221,11 @@
         &_active:focus:valid  { + .tooltip {display: none;} }
         &_active:invalid  {color: $c-accent;}
 
-        //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {
             padding: 15px 23px 15px 23px;
             width: 70%;
             }
         
-        //медиа-запрос смартфон
         @media (max-width: $bp-smartphone ){
             padding: 12px 21px 12px 21px;
             width: 75%;
@@ -285,7 +275,6 @@
             font-size: 0.87rem;
            }
         
-        //медиа-запрос смартфон
         @media (max-width: $bp-smartphone) {
             top: 20%; //17%
             font-size: 0.72rem;
@@ -296,19 +285,18 @@
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ){ font-size: 5vw;}
     }
-    //Кнопки сделаны так для того чтобы добиться ровного отображения
-    //текста в кнопках на разных платформах
+
     &__btn-submit {
         margin: 35px 0 0 0; 
-        padding: 0 27px 0 27px; //15px 27px 15px 27
-        height: 47px; //addded up
-        line-height: 50px; //added up
+        padding: 0 27px 0 27px; 
+        height: 47px; 
+        line-height: 50px; 
         border: 0;
         border-radius: 5px;
         letter-spacing: 0.5px;
-        font-family: $f-safe, sans-serif; //$f-bold
+        font-family: $f-safe, sans-serif; 
         font-size: 15px;
-        font-weight: 700; //added up
+        font-weight: 700; 
         text-transform: uppercase;
         color: $c-light;
         background-color: $c-accent;
@@ -316,19 +304,14 @@
         
         &:hover {background-color: #4CAF50}
         
-       //медиа-запрос нeтбуки
-       @media (max-width: $bp-netbook ) {
-           //padding: 18px 27px 15px 27px;
-           font-size: 0.87rem;
-       }
-       
-       //медиа-запрос смартфон
+       @media (max-width: $bp-netbook ) { font-size: 0.87rem;}
+
        @media (max-width: $bp-smartphone ){
             margin: 9% 0 0 0;
             padding: 16px 25px 13px 25px; 
             font-size: 0.77rem; 
-            line-height: normal; //added up
-            height: auto; //added up
+            line-height: normal;
+            height: auto; 
        }
        
        //медиа-запрос смартфон маленький экран
@@ -338,21 +321,21 @@
        }
     }
 
-    //медиа-запрос нeтбуки
+
     @media (max-width: $bp-netbook ) {
         margin: auto;
         padding: 3% 3% 4% 3%;
         width: 500px;
     }
     
-    //медиа-запрос смартфон
+
     @media (max-width: $bp-smartphone ){
         padding: 6.4% 2% 6.4% 2%;
         width: 80%;
     }    
 }
 
- //Немного магии. Сайт преподносит информацию на английском языке.
+ //Сайт преподносит информацию на английском языке.
  //Если пользователь просматривает сайт с помощью браузера Chrome
  //и захочет перевести содержимое на русский язык при помощи Google Translate
  //то текста в в форме обратной связи станет больше и соответственно tooltip
@@ -367,7 +350,7 @@
     }
 }
 
-//added up
+
 //Если перевести страницу на русский язык
 //треугольник (переамида) немного при адаптивности 
 //отсоединятся от самой формы. Исправляю это. 
@@ -377,7 +360,6 @@
     }
 }
 
-//added up
 //Хак для Firefox
 //Делает слишком светлым цвет в placeholder.
 //Меняю цвет на подходящий. 
@@ -388,7 +370,6 @@
     }
 }
 
-//added up for EDGE
 //В браузере EDGE при переводе на русский
 //уменьшаю высоту строки.
 .form{

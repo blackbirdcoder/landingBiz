@@ -2,7 +2,7 @@
 /*List-promo*/
 .list-promo {
     padding: 0;
-    position: relative; //added up
+    position: relative; 
     &__item{
        background-color: #f35e59;
        list-style-type: none;
@@ -19,21 +19,18 @@
         &:hover .list-promo__txt {text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);}
         &:hover .list-promo__pic {filter: saturate(200%);}
         
-       //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) { 
             display: table-row;
             min-width: 475px;
             box-shadow: 0px 0px 4px 0px #000000;
         }
         
-        //медиа-запрос смартфон
         @media (max-width: $bp-smartphone ){width: 100%;}
     }
     &__item:nth-child(2) {
         position: relative;
         right: 5px;
 
-        //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {  position: static; }
 
     }
@@ -41,19 +38,17 @@
         position: relative;
         right: 9px;
 
-        //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {  position: static; }
     }
     &__item:nth-child(4) {
-        position: absolute; //relative
-        left: 767px; // right: 13px;
+        position: absolute; 
+        left: 767px; 
 
-         //медиа-запрос нeтбуки
          @media (max-width: $bp-netbook ) {  position: static; }
     }
     &__ico{
         position: relative;
-        bottom: 21px; //17px
+        bottom: 21px; 
         font-size: 36px;
         color: $c-light;
         opacity: 0.5;
@@ -61,10 +56,8 @@
         transition-property: text-shadow, color,  opacity;
         
         
-       //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) { font-size: 2.12rem;}
-       
-       //медиа-запрос смартфон
+
        @media (max-width: $bp-smartphone ){font-size: 1.8rem;}
        
        //медиа-запрос смартфон маленький экран
@@ -74,16 +67,14 @@
        }
     }
     &__box-info-text{
-        margin: 39% 0 27% 0; //31% 0 34% 0;
+        margin: 39% 0 27% 0;
         text-align: center;
         
-       //медиа-запрос нeтбуки
        @media (max-width: $bp-netbook ) { 
            margin: 0;
            padding: 85px 0 50px 0;
        }
-       
-        //медиа-запрос смартфон
+
         @media (max-width: $bp-smartphone ){padding: 15% 0 10% 0;}
     }
     &__title{
@@ -96,12 +87,9 @@
         //Добавил межстрочный интервал, тем самым привёл список к хорошему отображению
         //в разных операционных система и в разных браузерах.
         line-height: 1.1;
-       
-    
-       //медиа-запрос нeтбуки
+
        @media (max-width: $bp-netbook ) { font-size: 1.5rem;}
-       
-       //медиа-запрос смартфон
+
        @media (max-width: $bp-smartphone ){font-size: 1.4rem;}
        
        //медиа-запрос смартфон маленький экран
@@ -118,11 +106,8 @@
         //в разных операционных система и в разных браузерах. (Windows и Linux)
         line-height: 1.2; 
         
-        
-        //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) { font-size: 0.87rem;}
-        
-        //медиа-запрос смартфон
+
         @media (max-width: $bp-smartphone ){font-size: 0.84rem;}
         
         //медиа-запрос смартфон маленький экран
@@ -130,13 +115,12 @@
 
     }
     &__pic{
-        width: 256px; //251px
-        height: 251px; //246px
+        width: 256px; 
+        height: 251px;
         vertical-align: bottom;
         transition: 0.5s;
         transition-property: filter;
 
-        //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) {
             width: 310px;
             height: auto;
@@ -151,7 +135,6 @@
             }
         }
         
-        //медиа-запрос смартфон
         @media (max-width: $bp-smartphone ){
             width: 70%;
             
@@ -165,8 +148,7 @@
             }
         }
     }
-    
-    //медиа-запрос нeтбуки
+
     @media (max-width: $bp-netbook ) { 
         margin: auto;
         display: table;
@@ -175,11 +157,9 @@
         text-align: center;
     }
     
-    //медиа-запрос смартфон
     @media (max-width: $bp-smartphone ){width: 68%;}
 }
 
-//added up
 //Если перевести страницу на русский язык
 //то список разваливается на маленьком зуме 33% 25%
 //чтобы этого не происходило убираю кое какой контент

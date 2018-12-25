@@ -9,10 +9,8 @@
         display: inline-block;
         vertical-align: 21px;
 
-        //медиа-запрос планшет
         @media (max-width: $bp-tablet ) {vertical-align: 0;}
-        
-        //медиа-запрос смартфон
+
         @media (max-width: $bp-smartphone ){
             display: block;
             margin: auto;
@@ -21,7 +19,6 @@
             border-bottom: 2px solid rgba(66, 66, 66, 0.50);
         }
         
-        //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {
             width: 100%;
             border-bottom: 0;
@@ -44,43 +41,36 @@
             //вокруг кнопки при просмотре сайта через мобильное устройство
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
-        
-        //медиа-запрос нетбуки
+
         @media (max-width: $bp-netbook ) {font-size: 0.9rem;}
-        
-        //медиа-запрос планшет
+
         @media (max-width: $bp-tablet ) {text-transform: uppercase;}
         
         //медиа-запрос смартфон маленький экран
         @media (max-width: $bp-smartphone-sm ) {font-size: 5.5vw;}
     }
     &__ico {
-        margin: 0 14px 0 15px; //0 15px 0 15px
-        font-size: 6px; //9px
-        position: relative; //added up
-        bottom: 2px; //added up
-        left: 2px; //added up
+        margin: 0 14px 0 15px; 
+        font-size: 6px; 
+        position: relative; 
+        bottom: 2px; 
+        left: 2px; 
         
         //медиа-запрос для 4k экранов
         //также позволяет в шапке избежать перехода логотипа, меню и кнопки на
         //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
         @media (min-width: $bp-4k) {display: none;}
-        
-        //медиа-запрос нетбуки
+
         @media (max-width: $bp-netbook ) { margin: 0 3px 0 7px;}
-        
-        //медиа-запрос планшет
+
         @media (max-width: $bp-tablet ) {margin: 0 8px 0 12px;}
-        
-        //медиа-запрос смартфон
+
         @media (max-width: $bp-smartphone ){display: none;}
     }
     
-    //медиа-запрос планшет
     @media (max-width: $bp-tablet ) {margin: auto;}
 }
 
-//added up for EDGE
 //В браузере EDGE при использовании перевода страницы 
 //на русский названия в меню стают длинней, поэтому я 
 //немного сближаю текст таким вот способом тем самым дою больше места

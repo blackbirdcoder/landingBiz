@@ -2,14 +2,13 @@
 /*----Footer----*/
 .footer {
     padding: 25px 0 25px 0;
-    background-color: #515151; //$c-dark
+    background-color: #515151; 
     &__box-info {text-align: center;}
     &__txt {
         margin: 0;
-        color:#cecece; //#979797
+        color:#cecece; 
         font-size: 14px;
         
-        //медиа-запрос нeтбуки
         @media (max-width: $bp-netbook ) { font-size: 0.81rem;}
         
         
@@ -18,7 +17,6 @@
     }
     //&__ico-copyright {}
     
-    //медиа-запрос нeтбуки
     @media (max-width: $bp-netbook ) { padding: 2% 0 2% 0;}
 }
   //author

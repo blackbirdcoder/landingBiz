@@ -13,16 +13,14 @@
         box-shadow: 0px 2px 4px -2px #b9b9b9;  
     }
     &__info-phone { display: inline-block;
-                    
-        //медиа-запрос смартфон
+
         @media (max-width: $bp-smartphone ){padding: 0 5% 0 0;}     
                     
         &_decor-line_vertical {
             border-right: 1px solid #d6d6d6;
             height: 40px;
-            padding: 9px 12px 0 0; //9px 9px 0 0
-            
-            //медиа-запрос смартфон
+            padding: 9px 12px 0 0;
+
             @media (max-width: $bp-smartphone ) {
                 padding: 0;
                 border-right: none;
@@ -34,7 +32,7 @@
     &__ico-phone { 
         vertical-align: -3px;
         font-size: 24px;
-        margin: 0 5px 0 0; //added up
+        margin: 0 5px 0 0;
         //медиа-запрос для 4k экранов
         @media (min-width: $bp-4k ) { vertical-align: baseline;}
         
@@ -45,7 +43,6 @@
         padding: 0 3px 0 18px;
         display: inline-block;
         
-        //медиа-запрос смартфон
         @media (max-width: $bp-smartphone ){display: none;}  
     }
     &__ico-email { font-size: 19px; }
@@ -73,7 +70,7 @@
     &__info-social-net {
         
         display: inline-block;
-        margin: 0 1px 0 0; //0 7px 0 0
+        margin: 0 1px 0 0; 
         border-radius: 12%;
         background-color: #1287bf;
         
@@ -81,11 +78,10 @@
         @media (max-width: $bp-smartphone ){margin: 3% 1% 3% 0;}
             
     }
-    &__ico-social-net {font-size: 17px;} //19px        
+    &__ico-social-net {font-size: 17px;}     
     &__link-social-net {
         display: block;
-        padding: 5px 8px 6px 8px; //4px 7px 4px 7px
-        width: 26px;
+        padding: 5px 8px 6px 8px;
         height: 26px;
         text-decoration: none;
         color: $c-light;
@@ -105,13 +101,12 @@
     
     //control
     &__control{
-        padding: 46px 0 28px 0; //40px 0 40px 0
+        padding: 46px 0 28px 0;
         //медиа-запрос для 4k экранов
         //также позволяет в шапке избежать переход логотипа, меню и кнопки на
         //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
         @media (min-width: $bp-4k ) {text-align: center;}
         
-        //медиа-запрос планшет
         @media (max-width: $bp-tablet ) {padding: 9% 0 10% 0;}
         
         //медиа-запрос смартфон маленький экран

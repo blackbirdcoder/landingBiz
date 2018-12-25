@@ -196,7 +196,6 @@
 .header__link-social-net {
   display: block;
   padding: 5px 8px 6px 8px;
-  width: 26px;
   height: 26px;
   text-decoration: none;
   color: #ffffff;
@@ -563,12 +562,6 @@
 
 @media (min-width: 5120px) {
   .root[lang=ru] .box-button {
-    display: none;
-  }
-}
-
-@media (min-width: 5120px) {
-  .translated-ltr .box-button {
     display: none;
   }
 }

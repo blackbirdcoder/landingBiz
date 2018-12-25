@@ -11,13 +11,11 @@
     //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
     @media (min-width: $bp-4k ) {width: 26%;}
     
-    //медиа-запрос нетбуки
     @media (max-width: $bp-netbook ) {
         margin: 0;
         width: 28%;  
     }
     
-    //медиа-запрос планшет
     @media (max-width: $bp-tablet ) {
         display: block;
         margin: 0 auto 3% auto;
@@ -29,18 +27,16 @@
     @media (max-width: $bp-smartphone-sm ) {margin: 0 auto 10% auto;}
     
     &__ico {
-        margin: 0 11px 0 0; //0 5px 0 0
+        margin: 0 11px 0 0; 
         position: relative;
         left: 2px;
-        bottom: 7px; //added up
+        bottom: 7px;
         font-size: 57px; 
         color: $c-accent;
         float: left;
         
-        //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {font-size: 3.4rem;}
-        
-        //медиа-запрос планшет
+
         @media (max-width: $bp-tablet ) {
             float: none;
             margin: 0;
@@ -53,21 +49,18 @@
     }
     &__heading {
         margin: 0;
-        position: relative; //added up
-        bottom: 3px; //adeded up
+        position: relative; 
+        bottom: 3px; 
         font-size: 37px;
         font-family: $f-bold, sans-serif;
         //Добавил для кроссбраузерности и кроссплатформенности
         //что бы Firefox в Linux не делала слишком жирный шрифт
         font-weight: normal;
         
-        //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {font-size: 2rem;}
         
-        //медиа-запрос планшет
         @media (max-width: $bp-tablet ) {letter-spacing: 2px;}
-        
-        //медиа-запрос смартфон
+
         @media (max-width: $bp-smartphone ){letter-spacing: 0;}
         
         //медиа-запрос смартфон маленький экран
@@ -75,23 +68,20 @@
     }
     &__txt {
         margin: 0;
-        padding: 0; //added up
-        position: relative; //dedded up
-        bottom: 3px; //dedded up
-        left: 3px; //dedded up
+        padding: 0;
+        position: relative; 
+        bottom: 3px; 
+        left: 3px; 
         font-size: 15px;
         font-family: $f-normal, sans-serif;
         
-        //медиа-запрос нетбуки
         @media (max-width: $bp-netbook ) {font-size: 1rem;}
         
-        //медиа-запрос планшет
         @media (max-width: $bp-tablet ) {
             letter-spacing: 1px;
             left: 0;
         }
-        
-        //медиа-запрос смартфон
+
         @media (max-width: $bp-smartphone ){letter-spacing: 0;}
         
         //медиа-запрос смартфон маленький экран
@@ -99,7 +89,6 @@
     }
 }
 
-//addede up
 //Хак для Firefox
 //В браузеру Firefox разваливается логотип.
 //Поэтому чтобы логотип не разваливался я дою ему немного больше места. 
