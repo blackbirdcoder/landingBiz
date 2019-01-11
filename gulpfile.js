@@ -1,6 +1,7 @@
-//  gulp v.1.1.1 beta (browser-sync добавил новые опции, а также в таске "build" добавлен
-// перенос папки с "заглушкой" для старых браузеров в папку dist. Видоизменил таск "img")
-//  задачи для проекта "landing-business.hw", который выполняю в рамках курса ITVDN
+//Gulp file v.2.0.0 beta (появилась возможность взаимодействовать с PHP
+//browser-sync изменил функционал, а также gulp начал следить за файлами .php)
+//ВНИМАНИЕ: Каждый проект требует индивидуальной настройки.
+//Для проекта "landing-business.hw"
 var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
     browserSync  = require('browser-sync'),
@@ -16,10 +17,13 @@ var gulp         = require('gulp'),
     sourcemaps   = require('gulp-sourcemaps'),
     pug          = require('gulp-pug'),
     spritesmith  = require('gulp.spritesmith'),
-    plumber      = require('gulp-plumber');
+    plumber      = require('gulp-plumber'),
+    //для работы с php
+    php          = require('gulp-connect-php');
     
     
-   
+//---ЗАДАЧИ---   
+
 gulp.task('sass', function() {
 	return gulp.src(['app/sass/**/*.scss', 'app/sass/**/*.sass' ])
         .pipe(sourcemaps.init())
@@ -48,15 +52,35 @@ gulp.task('css-min', function(){
 		.pipe(gulp.dest('app/css'));
 });
 
-gulp.task('browser-sync', function(){
-	browserSync({
-        open: false,
-		server: { 
-            baseDir: 'app',
-            routes: {"/node_modules": "node_modules"},
-		}, notify: false
-	});
+//Настраиваем сервер для работы с php
+gulp.task('php', function(){
+    php.server({base:'app', port:8080, keepalive:true});
 });
+
+//ЗАДАЧА BROWSER SYNC ДЛЯ BACK-END 
+//(работа с PHP), ПОЗВОЛЯЕТ РАБОТАТЬ И С FRONT-END
+//Если нет необходимости работать с PHP можно закомментировать
+gulp.task('browser-sync',['php'], function(){
+    browserSync.init({
+        proxy:"landing-business.hw",
+        baseDir: "app",
+        open:true,
+        notify:false
+    });
+});
+
+//ЗАДАЧА BROWSER SYNC ДЛЯ FRONTEND
+//ПРОСТАЯ СИНХРОНИЗАЦИЯ ДЛЯ FRONTEND РАЗРАБОТКИ
+//Походит для клиентской части сайт.
+// gulp.task('browser-sync', function(){
+// 	browserSync({
+//         open: false,
+// 		server: { 
+//             baseDir: 'app',
+//             routes: {"/node_modules": "node_modules"},
+// 		}, notify: false
+// 	});
+// });
 
 //Делаю задачу PUG (изменения в пути и добавлены исключения)
 gulp.task('pug-run', function buildHTML(){
@@ -99,13 +123,19 @@ gulp.task('img', function(){
     .pipe(gulp.dest('dist/img'));
 });
 
+//---НАБЛЮДЕНИЕ---
+
 gulp.task('watch', ['browser-sync', 'pug-run', 'sass', 'css-min', 'scripts-min'],function(){
     //наблюдаю за PUG и перезагружаю браузер 
-        gulp.watch('app/pug/**/*.pug', ['pug-run'], browserSync.reload);
+    gulp.watch('app/pug/**/*.pug', ['pug-run'], browserSync.reload);
 	gulp.watch(['app/sass/**/*.scss', 'app/sass/**/*.sass' ], ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/js/**/*.js', browserSync.reload);
+    gulp.watch('app/js/**/*.js', browserSync.reload);
+    //для наблюдаю за файлами php и перезагружаю браузер 
+    gulp.watch('app/php/**/*.php' ,browserSync.reload);
 });
+
+//---СБОРКА---
 
 gulp.task('build', ['clear', 'clear-cache', 'img', 'sass', 'scripts-min'], function(){
     
@@ -120,8 +150,11 @@ gulp.task('build', ['clear', 'clear-cache', 'img', 'sass', 'scripts-min'], funct
     
     var buildHtml = gulp.src('app/*.html')
             .pipe(gulp.dest('dist'));
-
+            
 //"Заглушка" для старых браузеров проноситься в папку dist
     var buildStub = gulp.src('app/old-browser/**/*')
-            .pipe(gulp.dest('dist/old-browser'));        
+            .pipe(gulp.dest('dist/old-browser')); 
+//PHP файлы            
+    var buildPhp = gulp.src('app/php/**/*')
+            .pipe(gulp.dest('dist/php'));                
 });
