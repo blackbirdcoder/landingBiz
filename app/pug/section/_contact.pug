@@ -1,22 +1,22 @@
 //Contact
-section.contact
+section#contact.contact
     div.container
         div.contact__box-info
             h3.contact__heading Get in touch
             ul.list-links.contact__list-links
                 li.list-links__item
                     a.list-links__link(href="https://www.facebook.com/" target="_blank")
-                       span.fa.fa-facebook.list-links__ico 
+                        span.fa.fa-facebook.list-links__ico 
                 li.list-links__item
                     a.list-links__link(href="https://twitter.com/" target="_blank")
-                       span.fa.fa-twitter.list-links__ico 
+                        span.fa.fa-twitter.list-links__ico 
                 li.list-links__item
                     a.list-links__link(href="https://plus.google.com" target="_blank")
-                       span.fa.fa-google-plus.list-links__ico 
+                        span.fa.fa-google-plus.list-links__ico 
                 li.list-links__item
                     a.list-links__link(href="https://www.linkedin.com/" target="_blank")
-                       span.fa.fa-linkedin.list-links__ico 
-            form.form-subscribe.contact__form-subscribe(action="#" method="POST" name="subscribeForm")
+                        span.fa.fa-linkedin.list-links__ico 
+            form.form-subscribe.contact__form-subscribe(action="php/checker-sender-email.php" method="POST" name="subscribeForm")
                 p.form-subscribe__txt Subscribe to our newsletter to stay update with what is new
                 input.form-subscribe__field.form-subscribe__field_active(type="email" name="email" placeholder="Email Address *"  maxlength="319"  pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]{1,64}@[a-zA-Z0-9-]{1,64}[\\.][a-zA-z]{2,}[\\.]{0,1}[a-zA-z]{0,}$" title="Example: username@example.com" required)
                 div.tooltip.form-subscribe__tooltip

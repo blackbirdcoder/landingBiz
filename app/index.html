@@ -193,7 +193,7 @@
           <h3 class="application__heading">Get Your Free Facebook Analysis Now</h3>
           <p class="application__txt">Enter your details below</p>
           <div class="application__btn-open btn-open" id="btn-open" title="click me"><span class="fa fa-angle-down btn-open__ico"></span></div><br>
-          <form class="form application__form" id="form" action="#" method="POST" name="applicationForm">
+          <form class="form application__form" id="form" action="php/checker-sender-form.php" method="POST" name="applicationForm">
             <div class="form__btn-close" id="btn-close"><span class="form__btn-close-ico"></span></div>
             <p class="form__txt">Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more</p>
             <input class="form__field form__field_active" type="text" name="name" placeholder="Your Name *" minlength="2" maxlength="40" pattern="(?![\s'-]*$)[^0-9}{!><*@#№$%^&=:;,.~+?)(|\[\]\\\/&quot;]*" title="Example: Alexander" required>
@@ -214,7 +214,7 @@
       </div>
     </section>
     <!--Contact-->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="contact__box-info">
           <h3 class="contact__heading">Get in touch</h3>
@@ -224,7 +224,7 @@
             <li class="list-links__item"><a class="list-links__link" href="https://plus.google.com" target="_blank"><span class="fa fa-google-plus list-links__ico"> </span></a></li>
             <li class="list-links__item"><a class="list-links__link" href="https://www.linkedin.com/" target="_blank"><span class="fa fa-linkedin list-links__ico"> </span></a></li>
           </ul>
-          <form class="form-subscribe contact__form-subscribe" action="#" method="POST" name="subscribeForm">
+          <form class="form-subscribe contact__form-subscribe" action="php/checker-sender-email.php" method="POST" name="subscribeForm">
             <p class="form-subscribe__txt">Subscribe to our newsletter to stay update with what is new</p>
             <input class="form-subscribe__field form-subscribe__field_active" type="email" name="email" placeholder="Email Address *" maxlength="319" pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]{1,64}@[a-zA-Z0-9-]{1,64}[\.][a-zA-z]{2,}[\.]{0,1}[a-zA-z]{0,}$" title="Example: username@example.com" required>
             <div class="tooltip form-subscribe__tooltip">
