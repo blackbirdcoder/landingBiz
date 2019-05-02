@@ -97,13 +97,10 @@ header('Refresh: 16; ../../index.html?#application');
             </div>
         </header>
         <main style="color:#454545;" class="notice">
-            <!-- <p class="notice__title"><b></b></p> -->
             <?php
             echo $noticeTitle; 
             echo $noticeText;
             ?>
-            <!-- <p class="notice__txt">Your application for a free consultation is accepted. Our managers will contact you shortly.</p>
-            <p class="notice__txt">Thank you,&nbsp;<b></b>, for choosing us!</p> -->
         </main>
         <div class="box-btn">
             <a href="../../index.html?#application" class="btn">Back</a>
