@@ -214,7 +214,7 @@
       </div>
     </section>
     <!--Contact-->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="contact__box-info">
           <h3 class="contact__heading">Get in touch</h3>
@@ -224,7 +224,7 @@
             <li class="list-links__item"><a class="list-links__link" href="https://plus.google.com" target="_blank"><span class="fa fa-google-plus list-links__ico"> </span></a></li>
             <li class="list-links__item"><a class="list-links__link" href="https://www.linkedin.com/" target="_blank"><span class="fa fa-linkedin list-links__ico"> </span></a></li>
           </ul>
-          <form class="form-subscribe contact__form-subscribe" action="#" method="POST" name="subscribeForm">
+          <form class="form-subscribe contact__form-subscribe" action="php/checker-sender-email.php" method="POST" name="subscribeForm">
             <p class="form-subscribe__txt">Subscribe to our newsletter to stay update with what is new</p>
             <input class="form-subscribe__field form-subscribe__field_active" type="email" name="email" placeholder="Email Address *" maxlength="319" pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]{1,64}@[a-zA-Z0-9-]{1,64}[\.][a-zA-z]{2,}[\.]{0,1}[a-zA-z]{0,}$" title="Example: username@example.com" required>
             <div class="tooltip form-subscribe__tooltip">
