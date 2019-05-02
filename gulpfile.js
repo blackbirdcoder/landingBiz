@@ -151,7 +151,7 @@ gulp.task('build', ['clear', 'clear-cache', 'img', 'sass', 'scripts-min'], funct
     var buildHtml = gulp.src('app/*.html')
             .pipe(gulp.dest('dist'));
             
-//"Заглушка" для старых браузеров проноситься в папку dist
+//"Заглушка" для старых браузеров переносится в папку dist
     var buildStub = gulp.src('app/old-browser/**/*')
             .pipe(gulp.dest('dist/old-browser')); 
 //PHP файлы            
