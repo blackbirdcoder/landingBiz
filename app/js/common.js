@@ -1,6 +1,6 @@
-/*Js скрипты для сайта landing-business.hw */
+/*scripts for the site landing-business.hw */
 
-/*Скрипт для открытия и закрытия формы обратной связи*/
+/*opening and closing a feedback form*/
 document.getElementById('btn-open').onclick = function() {
     document.getElementById('form').style.display = 'block';
 };
