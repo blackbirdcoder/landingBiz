@@ -101,42 +101,6 @@
         background-size: 40%;
         background-repeat: no-repeat;
         background-position: center center;
-        
-        // &::after{
-        //     content: "";
-        //     position: inherit;
-        //     height: 24px; 
-        //     width: 2px;
-        //     background: $c-light;
-        //     transform: rotate(-39deg);
-        // }
-        // &::before {
-        //     content: "";
-        //     position: inherit;
-        //     height: 24px; 
-        //     left: 15px; 
-        //     width: 2px;
-        //     background: $c-light;
-        //     transform: rotate(39deg);
-        // }
-
-        //медиа-запрос нeтбуки
-        // @media (max-width: $bp-netbook ) {
-        //     left: 5px;
-        //     top: 9px; 
-        // }
-
-        //медиа-запрос смартфон
-        // @media (max-width: $bp-smartphone ){
-        //     left: 2px; 
-        //     top: 6px; 
-        // }
-
-        //медиа-запрос смартфон маленький экран
-        // @media (max-width: $bp-smartphone-sm ) {
-        //     left: -2px;
-        //     top: 2px; 
-        // }
     }
     &__txt {
         margin: 0 0 33px 0;
