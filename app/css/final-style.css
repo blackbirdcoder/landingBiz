@@ -2043,57 +2043,16 @@
 }
 
 .form__btn-close-ico {
-  display: inline-block;
-  background: transparent;
-  height: 25px;
-  width: 29px;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: 11px;
-  right: 10px;
-}
-
-.form__btn-close-ico::after {
-  content: "";
-  position: inherit;
-  height: 24px;
-  width: 2px;
-  background: #ffffff;
-  -webkit-transform: rotate(-39deg);
-      -ms-transform: rotate(-39deg);
-          transform: rotate(-39deg);
-}
-
-.form__btn-close-ico::before {
-  content: "";
-  position: inherit;
-  height: 24px;
-  left: 15px;
-  width: 2px;
-  background: #ffffff;
-  -webkit-transform: rotate(39deg);
-      -ms-transform: rotate(39deg);
-          transform: rotate(39deg);
-}
-
-@media (max-width: 1045px) {
-  .form__btn-close-ico {
-    left: 5px;
-    top: 9px;
-  }
-}
-
-@media (max-width: 596px) {
-  .form__btn-close-ico {
-    left: 2px;
-    top: 6px;
-  }
-}
-
-@media (max-width: 288px) {
-  .form__btn-close-ico {
-    left: -2px;
-    top: 2px;
-  }
+  top: 0;
+  right: 0;
+  background-image: url("../img/close.svg");
+  -webkit-background-size: 40% 40%;
+          background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .form__txt {
