@@ -214,15 +214,15 @@
             height: 52px; 
             padding: 0 25px 0 25px;
                 //Специально для internet explorer. Медиа-запрос нeтбуки
-                @media (max-width: $bp-netbook ) {
-                    height: 42px; 
-                    padding: 0 20px 0 20px !important;
-                }
+                // @media (max-width: $bp-netbook ) {
+                //     height: 42px; 
+                //     padding: 0 20px 0 20px !important;
+                // }
                 //Специально для internet explorer. Медиа-запрос смартфон
-                @media (max-width: $bp-smartphone ) {
-                    height: 35px;
-                    padding: 0 15px 0 15px !important;
-                }
+                // @media (max-width: $bp-smartphone ) {
+                //     height: 35px;
+                //     padding: 0 15px 0 15px !important;
+                // }
             }
         }
 

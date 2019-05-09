@@ -2226,20 +2226,6 @@
   }
 }
 
-@media screen and (-ms-high-contrast: active) and (max-width: 1045px), (-ms-high-contrast: none) and (max-width: 1045px) {
-  .form__field {
-    height: 42px;
-    padding: 0 20px 0 20px !important;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) and (max-width: 596px), (-ms-high-contrast: none) and (max-width: 596px) {
-  .form__field {
-    height: 35px;
-    padding: 0 15px 0 15px !important;
-  }
-}
-
 .form__tooltip {
   position: absolute;
   top: 40px;
