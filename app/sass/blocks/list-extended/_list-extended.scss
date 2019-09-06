@@ -1,211 +1,345 @@
 //Список расширенный для сайта landing-business.hw
 /*list-extended*/
-.list-extended{
-    padding: 0;
-    
-   &__item {
-       margin: 0 0 40px 0;
-       list-style-type: none;
-       display: inline-block;
-       box-shadow: 0px 0px 1px 0px;
-       border-radius: 2px;
-       background-color: $c-light;
-       width: 100%;
-       //Эффект для list-extended
-       &:hover .block-number  {background-color: $c-green;}
+.list-extended {
+  padding: 0;
 
-       @media (max-width: $bp-netbook ) {
-           padding: 5% 3% 0% 3%;
-           width: auto;
-        }
+  &__item {
+    margin: 0 0 40px 0;
+    list-style-type: none;
+    display: inline-block;
+    box-shadow: 0px 0px 1px 0px;
+    border-radius: 2px;
+    background-color: $c-light;
+    width: 100%;
+    height: 235px;
+    position: relative;
 
-       @media (max-width: $bp-smartphone ){
-           padding: 8% 3% 0% 3%;
-           width: 100%;
-        }
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {padding: 10% 3% 3% 3%;}
-   }
-   &__item:last-child {margin: 0;} 
-
-   &__box-img {
-       display: inline-block;
-       width: 33%;
-
-
-       @media (max-width: $bp-netbook ) {
-           display: block;
-           width: auto; //added up
-        }
-       
-       &_position {
-            @media (max-width: $bp-netbook ) {
-                margin: 15px 0 0 0;
-                position: relative;
-                bottom: 40px;
-            }
+    @media (max-width: $bp-netbook) {
+      padding: 5% 3% 0% 3%;
+      width: auto;
+      height: 450px;
     }
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {display: none;}
-   }
-   &__pic {
-       width: auto; 
-       height: 236px;
-       vertical-align: bottom;
-    //медиа-запрос для UHD экранов
-    //также позволяет в браузерах Chrome, Opera хорошо отображаться
-    //содержимому списка при зуме 33% , 25% (Ctrl -) 
-    @media (min-width: $bp-ultra ) {
-        width: 349px; 
-        height: 280px; 
-    }
-    
-    //медиа-запрос нетбуки
-    @media (max-width: $bp-netbook ) {vertical-align: baseline;}
-    
-    //медиа-запрос смартфон
-    @media (max-width: $bp-smartphone ){
-        width: 220px;
-        height: auto;
-    }
-   }
-//Остановился   
-   &__block-number {
-       //позиционирование block-number
-       vertical-align: 85px;
-       position: relative;
-       right: 55px; // 62px
 
-        //медиа-запрос для UHD экранов
-        //также позволяет в браузерах Chrome, Opera хорошо отображаться
-        //содержимому списка при зуме 33% , 25% (Ctrl -) 
-       @media (min-width: $bp-ultra ) { vertical-align: 100px; }
-       
-       @media (max-width: $bp-netbook ) {
-           vertical-align: 60px;
-           position: static;
-           right: 0;  
-       }
-   }
-   &__desc {
-       display: inline-block;
-       width: 554px;
-       vertical-align: 80px;
-       &_position_right{
-            position: relative;
-            right: 28px; 
-            //медиа-запрос для UHD экранов
-            //также позволяет в браузерах Chrome, Opera хорошо отображаться
-            //содержимому списка при зуме 33% , 25% (Ctrl -) 
-            @media (min-width: $bp-ultra ) {top: -15px; }
-        
-            @media (max-width: $bp-netbook ) { right: 0;} 
-       }
-       &_position_bottom{
-
-            @media (max-width: $bp-netbook ) { bottom: 37px;}
-       }
-       &_position_left{
-            text-align: right;
-            position: relative;
-            left: 30px;
-            margin: 0 0 0 17px; 
-        //медиа-запрос для UHD экранов
-        //также позволяет в браузерах Chrome, Opera хорошо отображаться
-        //содержимому списка при зуме 33% , 25% (Ctrl -) 
-        @media (min-width: $bp-ultra ) {
-            top: -10px;
-            margin: 0 0 0 4px; 
-        }
-
-        @media (max-width: $bp-netbook ) {
-            margin: 0; 
-            left: 0;
-        }
-  
-       }
-       
-       @media (max-width: $bp-netbook ) {
-            display: block;
-            text-align: center;
-       }
-       
-       @media (max-width: $bp-smartphone ){width: 100%;}
-   }
-   &__title {
-       margin: 0 16px 0 5px; 
-       font-family: $f-bold, sans-serif;
-       font-size: 18px;
-       //Добавил для кроссбраузерности и кроссплатформенности
-       //что бы Firefox в Linux не делала слишком жирный шрифт
-       font-weight: normal;
-       
-
-       @media (max-width: $bp-netbook ) {
-           margin: 0;
-           font-size: 1.05rem;
-        }
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
-   }
-   &__txt {
-       margin: 10px 0 0 5px;
-       font-size: 14px;
-       line-height: 20px;
-       
-       @media (max-width: $bp-netbook ) {font-size: 0.83rem;}
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {
-           line-height: 17px; 
-           font-size: 5vw;
-        }
+    @media (max-width: $bp-smartphone) {
+      padding: 8% 3% 0% 3%;
+      width: 100%;
     }
-    
-    @media (max-width: $bp-netbook ) {
-        padding: 10px 10px 10px 10px;
-        text-align: center;
+
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm) {
+      padding: 10% 3% 3% 3%;
     }
-       
+  }
+  // &__item:hover {
+  //   &:hover {
+  //     &::after {
+  //       background-color: $c-green;
+  //       transition: background-color 0.1s linear;
+  //     }
+  //   }
+  // }
+  &__item:nth-child(1) {
+    background-image: url(../img/camera-2x.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (max-width: $bp-netbook) {
+      background-position: center 30%;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      background-position: center 1%;
+    }
+    &::after {
+      content: "1";
+      @include block-number-after;
+      top: 61px;
+      left: 285px;
+      @media (max-width: $bp-netbook) {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
+      @media (max-width: $bp-smartphone) {
+        bottom: 200px;
+      }
+      @media (max-width: $bp-smartphone-sm) {
+        display: none;
+      }
+    }
+    &::before {
+      content: "step";
+      @include block-number-before;
+      top: 119px;
+      left: 319px;
+      @media (max-width: $bp-netbook) {
+        top: 235px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
+      @media (max-width: $bp-smartphone) {
+        top: 135px;
+      }
+      @media (max-width: $bp-smartphone-sm) {
+        display: none;
+      }
+    }
+  }
+  &__item:nth-child(2) {
+    background-image: url(../img/track-2x.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    @media (max-width: $bp-netbook) {
+      background-position: center 30%;
+    }
+    @media (max-width: $bp-smartphone) {
+      background-position: center 1%;
+    }
+
+    &::after {
+      content: "2";
+      @include block-number-after;
+      top: 63px;
+      right: 290px;
+      @media (max-width: $bp-netbook) {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
+      @media (max-width: $bp-smartphone) {
+        bottom: 200px;
+      }
+      @media (max-width: $bp-smartphone-sm) {
+        display: none;
+      }
+    }
+    &::before {
+      content: "step";
+      @include block-number-before;
+      top: 119px;
+      right: 319px;
+      @media (max-width: $bp-netbook) {
+        top: 235px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
+      @media (max-width: $bp-smartphone) {
+        top: 135px;
+      }
+      @media (max-width: $bp-smartphone-sm) {
+        display: none;
+      }
+    }
+  }
+  &__item:nth-child(3) {
+    background-image: url(../img/table-2x.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    @media (max-width: $bp-netbook) {
+      background-position: center 30%;
+    }
+    @media (max-width: $bp-smartphone) {
+      background-position: center 1%;
+    }
+
+    &::after {
+      content: "3";
+      @include block-number-after;
+      top: 63px;
+      left: 285px;
+      @media (max-width: $bp-netbook) {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
+      @media (max-width: $bp-smartphone) {
+        bottom: 200px;
+      }
+      @media (max-width: $bp-smartphone-sm) {
+        display: none;
+      }
+    }
+    &::before {
+      content: "step";
+      @include block-number-before;
+      top: 130px;
+      left: 319px;
+      @media (max-width: $bp-netbook) {
+        top: 235px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
+      @media (max-width: $bp-smartphone) {
+        top: 140px;
+      }
+      @media (max-width: $bp-smartphone-sm) {
+        display: none;
+      }
+    }
+  }
+  &__item:nth-child(4) {
+    background-image: url(../img/work-2x.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    @media (max-width: $bp-netbook) {
+      background-position: center 30%;
+    }
+    @media (max-width: $bp-smartphone) {
+      background-position: center 1%;
+    }
+
+    &::after {
+      content: "4";
+      @include block-number-after;
+      top: 63px;
+      right: 290px;
+      @media (max-width: $bp-netbook) {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
+      @media (max-width: $bp-smartphone) {
+        bottom: 200px;
+      }
+      @media (max-width: $bp-smartphone-sm) {
+        display: none;
+      }
+    }
+    &::before {
+      content: "step";
+      @include block-number-before;
+      top: 130px;
+      right: 319px;
+      @media (max-width: $bp-netbook) {
+        top: 235px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
+      @media (max-width: $bp-smartphone) {
+        top: 141px;
+      }
+      @media (max-width: $bp-smartphone-sm) {
+        display: none;
+      }
+    }
+  }
+  &__item:last-child {
+    margin: 0;
+  }
+  &__desc {
+    display: inline-block;
+    width: 554px;
+    vertical-align: 80px;
+    //add
+    margin-top: 73px;
+    margin-left: 420px;
+    &_position_right {
+      //медиа-запрос для UHD экранов
+      //также позволяет в браузерах Chrome, Opera хорошо отображаться
+      //содержимому списка при зуме 33% , 25% (Ctrl -)
+      @media (min-width: $bp-ultra) {
+        top: -15px;
+      }
+
+      @media (max-width: $bp-netbook) {
+        right: 0;
+      }
+    }
+    &_position_bottom {
+      @media (max-width: $bp-netbook) {
+        bottom: 37px;
+      }
+    }
+    &_position_left {
+      text-align: right;
+      position: relative;
+      left: 30px;
+      margin-top: 73px;
+      margin-left: 10px;
+      //медиа-запрос для UHD экранов
+      //также позволяет в браузерах Chrome, Opera хорошо отображаться
+      //содержимому списка при зуме 33% , 25% (Ctrl -)
+      @media (min-width: $bp-ultra) {
+        top: -10px;
+        margin: 0 0 0 4px;
+      }
+
+      @media (max-width: $bp-netbook) {
+        margin: 0;
+        left: 0;
+      }
+    }
+
+    @media (max-width: $bp-netbook) {
+      display: block;
+      text-align: center;
+      //add
+      margin-left: 0;
+      margin-top: 0;
+      position: relative;
+      top: 290px;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      width: 100%;
+      top: 230px;
+    }
+  }
+  &__title {
+    margin: 0 16px 0 5px;
+    font-family: $f-bold, sans-serif;
+    font-size: 18px;
+    //Добавил для кроссбраузерности и кроссплатформенности
+    //что бы Firefox в Linux не делала слишком жирный шрифт
+    font-weight: normal;
+
+    @media (max-width: $bp-netbook) {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 7vw;
+    }
+  }
+  &__txt {
+    margin: 10px 0 0 5px;
+    font-size: 14px;
+    line-height: 20px;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 0.83rem;
+    }
+
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm) {
+      line-height: 17px;
+      font-size: 5vw;
+    }
+  }
+
+  @media (max-width: $bp-netbook) {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+  }
 }
 
-
-//Если перевести страницу на русский язык то 
-//то появляется зазор у картинки. Устраняю зазор у изображения
-//если сайт на русском.
-//Также класс .translated-ltr можно смело менять на .root[lang=ru]
-// .translated-ltr  просто это моё первое решение, затем я начал применять .root[lang=ru]
-//.translated-ltr  это в хроме работает, а вот в Яндекс браузер нет.
-//Понимаю что решение не лучшие но на сегодня оно меня выручает. 
-.root[lang=ru]{
-    .list-extended {
-        &__pic { 
-            height: 239px;
-                @media (max-width: $bp-smartphone ) {height: 165px;}
-                @media (min-width: $bp-ultra ) {width:353px;}
-        }
-    }
-}
-
-
-//Хак для Firefox
-//В браузеру Firefox разваливается список.
-//Я думаю из-за того что немного по другому отображается шрифт
-//и ему перестаёт хватать места соответственно картинка переходит на новую строку
-//Поэтому я поменял размер обёртки. 
-//Для этого применяю хак.
-@-moz-document url-prefix() {
-    .list-extended {
-        &__box-img { width: 32%; 
-            //added up
-            //медиа-запрос нетбуки
-            @media (max-width: $bp-netbook ) {width: auto;}
-        }
-    }
-}
-
-   //block-number
+//block-number
 @import "app/sass/blocks/block-number/_block-number.scss";
-
