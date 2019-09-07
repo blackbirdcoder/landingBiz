@@ -30,3 +30,25 @@
     background-color: $c-light;
     border: 0;
 }
+
+// For block with step number
+@mixin block-number-after {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: $c-accent; 
+    border: 2px solid;
+    border-color: $c-light;
+    border-radius: 7px;
+    color: $c-light;
+    font-family: $f-num;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+}
+@mixin block-number-before {
+    position: absolute;
+    color: $c-light;
+    font-size: 20px;
+    z-index: 1;
+}
