@@ -1,37 +1,50 @@
-////Work стили для сайта landing-business.hw
+////Work styles for the site landing-business.hw
 /*----Section Work----*/
-.work{
-   background-color: $c-accent;
-   &__box-info{padding: 111px 0 131px 0;} 
-   &__heading {
-       @include title;
-       @include bright-txt;
+.work {
+  background-color: $c-accent;
+  &__box-info {
+    padding: 111px 0 131px 0;
+  }
+  &__heading {
+    @include title;
+    @include bright-txt;
 
-       @media (max-width: $bp-netbook ) {font-size: 2rem;}
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {font-size: 12vw;}
-   }
-   &__txt {
-       @include subtitle;
-       @include bright-txt;
-       margin: 0 0 13px 0;
+    @media (max-width: $bp-netbook) {
+      font-size: 2rem;
+    }
 
-       @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
-   }  
-   &__decor-line{
-       @include line-bold;
-       @include line-bright;
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 12vw;
+    }
+  }
+  &__txt {
+    @include subtitle;
+    @include bright-txt;
+    margin: 0 0 13px 0;
 
-       @media (max-width: $bp-netbook ) { height: 5px;}
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {display: none;}
-   }
-   &__list-promo {margin: 47px 0 0 0;} 
+    @media (max-width: $bp-netbook) {
+      font-size: 1.07rem;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 7vw;
+    }
+  }
+  &__decor-line {
+    @include line-bold;
+    @include line-bright;
+
+    @media (max-width: $bp-netbook) {
+      height: 5px;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      display: none;
+    }
+  }
+  &__list-promo {
+    margin: 47px 0 0 0;
+  }
 }
-   //list-promo
+//list-promo
 @import "app/sass/blocks/list-promo/_list-promo.scss";
