@@ -4,6 +4,7 @@ dist
 node_modules
 npm-debug.log
 .DS_Store
+.vscode
 ### Windows template
 # Windows image file caches
 Thumbs.db
