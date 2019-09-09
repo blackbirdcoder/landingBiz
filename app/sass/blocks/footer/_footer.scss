@@ -1,25 +1,32 @@
-//Footer для сайта landing-business.hw
+//Footer styles for the site landing-business.hw
 /*----Footer----*/
 .footer {
-    padding: 25px 0 25px 0;
-    background-color: #515151; 
-    &__box-info {text-align: center;}
-    &__txt {
-        margin: 0;
-        color:#cecece; 
-        font-size: 14px;
-        
-        @media (max-width: $bp-netbook ) { font-size: 0.81rem;}
-        
-        
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
+  padding: 25px 0 25px 0;
+  background-color: #515151;
+  &__box-info {
+    text-align: center;
+  }
+  &__txt {
+    margin: 0;
+    color: #cecece;
+    font-size: 14px;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 0.81rem;
     }
-    //&__ico-copyright {}
-    
-    @media (max-width: $bp-netbook ) { padding: 2% 0 2% 0;}
+
+    //media request smartphone small screen
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 5vw;
+    }
+  }
+  //&__ico-copyright {}
+
+  @media (max-width: $bp-netbook) {
+    padding: 2% 0 2% 0;
+  }
 }
-  //author
+//author
 @import "app/sass/blocks/author/_author.scss";
- //w3c mark
+//w3c mark
 @import "app/sass/blocks/w3c-mark/_w3c-mark.scss";

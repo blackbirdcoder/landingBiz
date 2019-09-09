@@ -1,64 +1,69 @@
-//Кнопка для сайта landing-business.hw
+//Button for the site landing-business.hw
 /*Button*/
 
-.btn{
-    display: inline-block;
-    padding: 0 23px 0 23px ; 
-    height: 37px;
-    line-height: 36px;
-    border-radius: 5px;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-family: $f-safe, sans-serif; 
-    font-size: 15px;
-    font-weight: 700; 
-    letter-spacing: 0.5px; 
-    color: $c-light;
-    transition: 0.5s;
-    
-    &:hover{
-        color: lighten(#f8cd53, 15%);
-        //Убираю цвет выделения, который появляется при нажатии 
-        //вокруг кнопки при просмотре сайта через мобильное устройство
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);    
-    }
-    &_theme_bright{background-color: $c-accent;}
-    
-    //медиа-запрос для Ultra HD экранов
-    @media (min-width: $bp-ultra ) {
-        line-height: normal;
-        height: auto; 
-    }
+.btn {
+  display: inline-block;
+  padding: 0 23px 0 23px;
+  height: 37px;
+  line-height: 36px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: $f-safe, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: $c-light;
+  transition: 0.5s;
 
-    //медиа-запрос для 4k экранов
-    //также позволяет в шапке избежать переход логотипа, меню и кнопки на
-    //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-    @media (min-width: $bp-4k ) {
-        padding: 10px 23px 13px 23px;
-        line-height: normal; 
-        height: auto; 
-    }
-    
-    @media (max-width: $bp-netbook ) {font-size: 0.9rem;}   
+  &:hover {
+    color: lighten(#f8cd53, 15%);
+    // I remove the highlight color that appears when I click
+    // around the button when viewing a site through a mobile device
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  &_theme_bright {
+    background-color: $c-accent;
+  }
+
+  // Ultra HD
+  @media (min-width: $bp-ultra) {
+    line-height: normal;
+    height: auto;
+  }
+
+  // media request for 4k screens
+  // also allows you to avoid the transition of the logo, menu and button to
+  // new line with a zoom of 33%, 25%
+  @media (min-width: $bp-4k) {
+    padding: 10px 23px 13px 23px;
+    line-height: normal;
+    height: auto;
+  }
+
+  @media (max-width: $bp-netbook) {
+    font-size: 0.9rem;
+  }
 }
 
-
-//Хак для Firefox
-//Браузер Firefox немного по другому отображает текст
-//поэтому чтобы расстояние между буквами не сильно 
-//отличалось от других браузеров было принято такое решение.
-@-moz-document url-prefix() { 
-    .btn { letter-spacing: normal; }
+// Hack for Firefox
+// Firefox browser displays text a little differently
+// so that the distance between the letters is not strong
+// different from other browsers, such a decision was made.
+@-moz-document url-prefix() {
+  .btn {
+    letter-spacing: normal;
+  }
 }
 
-//В браузере EDGE при использовании перевода страницы 
-//на русский текст в кнопке становится длинней и она "падает"
-//поэтому я её изменил немного внешне.
+// In the EDGE browser when using page translation
+// the Russian text in the button becomes longer and it "falls"
+// so I changed it a bit externally.
 .btn[_msthash] {
-    letter-spacing: -0.5px;
-    width: 120px;
-    line-height: 100%;
-    height: 40px;
-    text-align: center;
-    padding: 4px 0 0 0;
+  letter-spacing: -0.5px;
+  width: 120px;
+  line-height: 100%;
+  height: 40px;
+  text-align: center;
+  padding: 4px 0 0 0;
 }

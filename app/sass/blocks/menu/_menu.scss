@@ -1,80 +1,91 @@
-//Меню для сайта landing-business.hw
+//Menu for the site landing-business.hw
 /*Menu*/
 .menu {
-    margin: 13px 0 0 0;
-    padding: 0;
-    
-    &__item { 
-        list-style-type: none;
-        display: inline-block;
-        vertical-align: 21px;
+  margin: 13px 0 0 0;
+  padding: 0;
 
-        @media (max-width: $bp-tablet ) {vertical-align: 0;}
+  &__item {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: 21px;
 
-        @media (max-width: $bp-smartphone ){
-            display: block;
-            margin: auto;
-            padding: 0.7% 0 0.7% 0;
-            width: 200px;
-            border-bottom: 2px solid rgba(66, 66, 66, 0.50);
-        }
-        
-        @media (max-width: $bp-smartphone-sm ) {
-            width: 100%;
-            border-bottom: 0;
-           
-        }
-        
-        
+    @media (max-width: $bp-tablet) {
+      vertical-align: 0;
     }
-    &__link {
-        text-decoration: none;
-        text-transform: capitalize;
-        font-family: $f-bold, sans-serif;
-        font-size: 15px;
-        color: $c-dark;
-        transition: 0.5s;
-        
-        &:hover {
-            color: $c-accent;
-            //Убираю цвет выделения, который появляется при нажатии 
-            //вокруг кнопки при просмотре сайта через мобильное устройство
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
 
-        @media (max-width: $bp-netbook ) {font-size: 0.9rem;}
-
-        @media (max-width: $bp-tablet ) {text-transform: uppercase;}
-        
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {font-size: 5.5vw;}
+    @media (max-width: $bp-smartphone) {
+      display: block;
+      margin: auto;
+      padding: 0.7% 0 0.7% 0;
+      width: 200px;
+      border-bottom: 2px solid rgba(66, 66, 66, 0.5);
     }
-    &__ico {
-        margin: 0 14px 0 15px; 
-        font-size: 6px; 
-        position: relative; 
-        bottom: 2px; 
-        left: 2px; 
-        
-        //медиа-запрос для 4k экранов
-        //также позволяет в шапке избежать перехода логотипа, меню и кнопки на
-        //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-        @media (min-width: $bp-4k) {display: none;}
 
-        @media (max-width: $bp-netbook ) { margin: 0 3px 0 7px;}
-
-        @media (max-width: $bp-tablet ) {margin: 0 8px 0 12px;}
-
-        @media (max-width: $bp-smartphone ){display: none;}
+    @media (max-width: $bp-smartphone-sm) {
+      width: 100%;
+      border-bottom: 0;
     }
-    
-    @media (max-width: $bp-tablet ) {margin: auto;}
+  }
+  &__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: $f-bold, sans-serif;
+    font-size: 15px;
+    color: $c-dark;
+    transition: 0.5s;
+
+    &:hover {
+      color: $c-accent;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    @media (max-width: $bp-netbook) {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: $bp-tablet) {
+      text-transform: uppercase;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 5.5vw;
+    }
+  }
+  &__ico {
+    margin: 0 14px 0 15px;
+    font-size: 6px;
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+
+    @media (min-width: $bp-4k) {
+      display: none;
+    }
+
+    @media (max-width: $bp-netbook) {
+      margin: 0 3px 0 7px;
+    }
+
+    @media (max-width: $bp-tablet) {
+      margin: 0 8px 0 12px;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    margin: auto;
+  }
 }
 
-//В браузере EDGE при использовании перевода страницы 
-//на русский названия в меню стают длинней, поэтому я 
-//немного сближаю текст таким вот способом тем самым дою больше места
-//для соседней кнопки и этим не позволяю кнопке падать на новую стр.
+// In the EDGE browser when using page translation
+// the names in the menu become longer in Russian, so I
+// bring the text a little closer in this way, thereby milking more space
+// for the adjacent button and this does not allow the button to fall on a new page
 .menu {
-    &__link[_msthash] {letter-spacing: -1px;}
+  &__link[_msthash] {
+    letter-spacing: -1px;
+  }
 }

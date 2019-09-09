@@ -1,34 +1,48 @@
-//About стили для сайта landing-business.hw
+//About styles for the site landing-business.hw
 /*----Section About----*/
 .about {
-   background-color: $c-light;
-   
-   &__box-info { padding: 104px 0 118px 0;} 
-   &__heading {
-       @include title;
+  background-color: $c-light;
 
-       @media (max-width: $bp-netbook ) {font-size: 2rem;}
+  &__box-info {
+    padding: 104px 0 118px 0;
+  }
+  &__heading {
+    @include title;
 
-       @media (max-width: $bp-smartphone-sm ) {font-size: 12vw;}
-   }
-   &__txt {
-       @include subtitle;
+    @media (max-width: $bp-netbook) {
+      font-size: 2rem;
+    }
 
-       @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
-       
-       @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
-   }  
-   &__decor-line{
-       @include line-bold;
-        
-       @media (max-width: $bp-netbook ) { height: 5px;}
-       
-       @media (max-width: $bp-smartphone-sm ) {display: none;}
-   }
-   &__list {margin: 45px 0px 0 0;}
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 12vw;
+    }
+  }
+  &__txt {
+    @include subtitle;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 1.07rem;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 7vw;
+    }
+  }
+  &__decor-line {
+    @include line-bold;
+
+    @media (max-width: $bp-netbook) {
+      height: 5px;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      display: none;
+    }
+  }
+  &__list {
+    margin: 45px 0px 0 0;
+  }
 }
 
 //list
 @import "app/sass/blocks/list/_list.scss";
-     
-  

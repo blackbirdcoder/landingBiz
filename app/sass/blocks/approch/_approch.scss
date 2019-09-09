@@ -1,32 +1,47 @@
-////Out Approch стили для сайта landing-business.hw
+////Out Approch styles for the site landing-business.hw
 /*----Section Out Approch----*/
-.approch{
-   background-color: #f3f3f3;
-   &__box-info{padding: 90px 0 132px 0;} 
-   &__heading {
-       @include title;
-       
-       @media (max-width: $bp-netbook ) {font-size: 2rem;}
-       
-       @media (max-width: $bp-smartphone-sm ) {font-size: 10vw;}
-   }
-   &__txt {
-       @include subtitle;
-       margin: 0 0 13px 0; 
+.approch {
+  background-color: #f3f3f3;
+  &__box-info {
+    padding: 90px 0 132px 0;
+  }
+  &__heading {
+    @include title;
 
-       @media (max-width: $bp-netbook ) {font-size: 1.07rem;}
+    @media (max-width: $bp-netbook) {
+      font-size: 2rem;
+    }
 
-       @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
-   }  
-   &__decor-line{
-       @include line-bold; 
-       
-       @media (max-width: $bp-netbook ) { height: 5px;}
-       
-       @media (max-width: $bp-smartphone-sm ) {display: none;}
-   
-   }
-   &__list-extended {margin: 46px 0 0 0;} 
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 10vw;
+    }
+  }
+  &__txt {
+    @include subtitle;
+    margin: 0 0 13px 0;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 1.07rem;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 7vw;
+    }
+  }
+  &__decor-line {
+    @include line-bold;
+
+    @media (max-width: $bp-netbook) {
+      height: 5px;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      display: none;
+    }
+  }
+  &__list-extended {
+    margin: 46px 0 0 0;
+  }
 }
 //list-extended
 @import "app/sass/blocks/list-extended/_list-extended.scss";

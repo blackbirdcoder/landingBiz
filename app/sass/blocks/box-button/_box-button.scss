@@ -1,51 +1,42 @@
-//Обертка для кнопки
+//Button Wrap
 .container {
-    &__box-button {
-        margin: 4px 0 0 0;
+  &__box-button {
+    margin: 4px 0 0 0;
 
-        //медиа-запрос для 4k экранов
-        //также позволяет в шапке избежать переход логотипа, меню и кнопки на
-        //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-        @media (min-width: $bp-4k ) { margin: 0;}
-
-        @media (max-width: $bp-netbook ) {
-            float: right;
-            margin: 0 2px 0 0;
-        }
+    //media query for 4k screens
+    //also allows you to avoid the transition of the logo,
+    //menu and button to a new line in the header with a zoom of 33%, 25%
+    @media (min-width: $bp-4k) {
+      margin: 0;
     }
 
+    @media (max-width: $bp-netbook) {
+      float: right;
+      margin: 0 2px 0 0;
+    }
+  }
 }
 .box-button {
-    display: block;
-    float: right; 
+  display: block;
+  float: right;
 
-    @media (max-width: $bp-tablet ) {display: none;}
-
+  @media (max-width: $bp-tablet) {
+    display: none;
+  }
 }
 
-
-//У меня есть небольшое сожаления что я поступил именно так
-//но всё же это решения меня на сегодня устраивает.
-//Браузер Яндекс он при переводе сайта на русский не добавляет
-//никаких сторонних классов мне пришлось сделать селектор по атрибуту
-//и это работает.Теперь кнопка в Яндекс браузере при зуме 33% 25% кнопка
-// не падает и не портит внешний вид. Я кнопку убираю.
-//Также это работает и в других браузерах которые переведут страницу на русский
-//root это html
-.root[lang=ru]{
-    .box-button {
-        @media (min-width: $bp-ultra ) {display: none;}
+// I have a little regret that I did just that
+// but still this solution suits me for today.
+// Yandex browser does not add it when translating a site into Russian
+// no third-party classes, I had to make an attribute selector
+// and it works. Now the button in the Yandex browser with a zoom of 33% 25% button
+// does not crash or spoil the look. I remove the button.
+// It also works in other browsers that translate the page into Russian
+// root is html
+.root[lang="ru"] {
+  .box-button {
+    @media (min-width: $bp-ultra) {
+      display: none;
     }
+  }
 }
-
-//Моё старое (первое) решения
-//Если перевести страницу на русский язык то кнопка
-//становится больше (больше букв) соответственно занимает больше места
-//и в браузере Chrome при зуме 33% 25% кнопка "падает"
-//так что было принято решение если сайт приведён на русский
-//и имеет таком маленьком зуме. Убираю кнопку.
-// .translated-ltr{
-//     .box-button {
-//         @media (min-width: $bp-ultra ) {display: none;}
-//     }
-// }

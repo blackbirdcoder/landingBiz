@@ -1,80 +1,89 @@
-//Section Hero для сайта landing-business.hw
+//Section Hero landing-business.hw
 /*----Section Hero----*/
 .hero {
-    min-height: 590px;
-    background: #71796c url("../img/bg-hero.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    &__box-info{
-        padding: 176px 0 235px 0; 
-        text-align: center;
-    }
-    &__heading {
-        margin: 0;
-        font-family: $f-bold, sans-serif;
-        font-size: 48px;
-        color: $c-light;
-        //Добавил для кроссбраузерности и кроссплатформенности
-        //что бы Firefox в Linux не делала слишком жирный шрифт
-        font-weight: normal;
+  min-height: 590px;
+  background: #71796c url("../img/bg-hero.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  &__box-info {
+    padding: 176px 0 235px 0;
+    text-align: center;
+  }
+  &__heading {
+    margin: 0;
+    font-family: $f-bold, sans-serif;
+    font-size: 48px;
+    color: $c-light;
+    // Added for cross-browser and cross-platform
+    // so that Firefox on Linux doesn't make too bold a font
+    font-weight: normal;
 
-        @media (max-width: $bp-netbook ) {font-size: 2.7rem;} //2.7rem
-        
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {font-size: 13vw;}
+    @media (max-width: $bp-netbook) {
+      font-size: 2.7rem;
     }
-    &__txt {
-        margin: 0;
-        font-family: $f-light, sans-serif;
-        font-weight: 300;
-        font-size: 30px;
-        color: $c-light;
 
-        @media (max-width: $bp-netbook ) {font-size: 1.6rem;}
-        
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {font-size: 7vw;}
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 13vw;
     }
-    &__box-button-big {
+  }
+  &__txt {
+    margin: 0;
+    font-family: $f-light, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: $c-light;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 7vw;
+    }
+  }
+  &__box-button-big {
     display: inline-block;
-    padding: 32px 0 0 0; 
+    padding: 32px 0 0 0;
 
-
-    @media (max-width: $bp-smartphone ){ display: block; }
-
+    @media (max-width: $bp-smartphone) {
+      display: block;
     }
+  }
 }
 
- //Сайт преподносит информацию на английском языке.
- //Если пользователь просматривает сайт с помощью браузера Chrome
- //и захочет перевести содержимое на русский язык при помощи Google Translate
- //то слово в заголовке становится слишком длинное и выходит зп границы 
- //чтобы этого происходило было мной принято такое решение
- //если слово в заголовке приведено то применяются другие правила
+// The site presents information in English.
+// If the user views the site using the Chrome browser
+// and wants to translate the content into Russian using Google Translate
+// then the word in the title gets too long and goes out of bounds
+// to make this happen I made such a decision
+// if the word in the title is given, then other rules apply
 .translated-ltr {
-
-    @media (max-width: $bp-smartphone ) {
-        .hero {
-            &__heading{ font-size: 2.3rem;}
-        }
+  @media (max-width: $bp-smartphone) {
+    .hero {
+      &__heading {
+        font-size: 2.3rem;
+      }
     }
+  }
 
-    @media (max-width: $bp-smartphone-sm ) {
-        .hero {
-            &__heading{ font-size: 12vw;}
-        }
+  @media (max-width: $bp-smartphone-sm) {
+    .hero {
+      &__heading {
+        font-size: 12vw;
+      }
     }
+  }
 
-    //медиа-запрос очень маленький экран
-    @media (max-width: $bp-screen-small ) {
-        .hero {
-            &__heading{   font-size: 10vw;}
-
-        }
+  @media (max-width: $bp-screen-small) {
+    .hero {
+      &__heading {
+        font-size: 10vw;
+      }
     }
+  }
 }
 
-    //button-big
+//button-big
 @import "app/sass/blocks/btn-big/_btn-big.scss";

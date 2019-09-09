@@ -1,70 +1,87 @@
-//Кнопка "открыть (V)" для сайта landing-business.hw
+//Button "open (V)" for the site landing-business.hw
 .btn-open {
-    display: inline-block;
-    padding: 10px 16px 10px 16px;
+  display: inline-block;
+  padding: 10px 16px 10px 16px;
+  border: 3px solid $c-light;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+  animation-name: blinking;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  // Applied Hack for Internet Explorer!
+  // Since IE didn’t display border well enough
+  // compared to other browsers
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     border: 3px solid $c-light;
-    border-radius: 50%;
-    transition: 0.5s;
-    cursor: pointer;
-    animation-name: blinking; 
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    //Применил Хак для Internet Explorer! 
-    //Поскольку IE недостаточно жирно отображал border
-    //по сравнению с другими браузерами
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        border: 3px solid $c-light;
-    }
-    &__ico { 
-        font-size: 36px;
-        color: $c-light;
+  }
+  &__ico {
+    font-size: 36px;
+    color: $c-light;
 
-       @media (max-width: $bp-netbook ) {font-size: 2.12rem;}
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {font-size: 12vw;}
-    }
-    
-    &:hover {
-        //Останавливаю анимацию
-        animation-play-state: paused;
-        //Убираю цвет выделения, который появляется при нажатии 
-        //вокруг кнопки при просмотре сайта через мобильное устройство
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
-    
-   
-    @keyframes blinking {
-        /*Анимация для кнопки "open" */
-        //зелёный
-        0% { background-color: rgba(76, 175, 80, 0.4);}
-        //зелёный
-        25% { background-color: rgba(76, 175, 80, 0.6);}
-        //зелёный
-        50% {background-color: rgba(76, 175, 80, 0.9);}
-        //голубой
-        75% { background-color: rgba(5, 103, 150, 0.7);}
-        //голубой
-        85% { background-color: rgba(5, 103, 150, 0.6);}
-        //голубой
-        90% { background-color: rgba(5, 103, 150, 0.4);}
-        //зелёный
-        100% {background-color: rgba(76, 175, 80, 0.3);}
-
+    @media (max-width: $bp-netbook) {
+      font-size: 2.12rem;
     }
 
-    @media (max-width: $bp-netbook ) { 
-        padding: 10px 16px 8px 16px;
-        margin: 0 0 45px 0;
+    // media request smartphone small screen
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 12vw;
     }
-    
-    @media (max-width: $bp-smartphone ){padding: 5px 10px 5px 10px;}
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {
-        padding: 1% 3% 1% 3%;
-        border: 1.7px solid $c-light;
+  }
+
+  &:hover {
+    // Stop the animation
+    animation-play-state: paused;
+    // I remove the highlight color that appears when I click
+    // around the button when viewing a site through a mobile device
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  @keyframes blinking {
+    /* Animation for the open button */
+    //green
+    0% {
+      background-color: rgba(76, 175, 80, 0.4);
     }
+    // green
+    25% {
+      background-color: rgba(76, 175, 80, 0.6);
+    }
+    // green
+    50% {
+      background-color: rgba(76, 175, 80, 0.9);
+    }
+    //blue
+    75% {
+      background-color: rgba(5, 103, 150, 0.7);
+    }
+    //blue
+    85% {
+      background-color: rgba(5, 103, 150, 0.6);
+    }
+    //blue
+    90% {
+      background-color: rgba(5, 103, 150, 0.4);
+    }
+    // green
+    100% {
+      background-color: rgba(76, 175, 80, 0.3);
+    }
+  }
+
+  @media (max-width: $bp-netbook) {
+    padding: 10px 16px 8px 16px;
+    margin: 0 0 45px 0;
+  }
+
+  @media (max-width: $bp-smartphone) {
+    padding: 5px 10px 5px 10px;
+  }
+
+  //media query smartphone small screen
+  @media (max-width: $bp-smartphone-sm) {
+    padding: 1% 3% 1% 3%;
+    border: 1.7px solid $c-light;
+  }
 }
-

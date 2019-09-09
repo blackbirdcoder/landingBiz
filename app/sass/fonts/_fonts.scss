@@ -1,74 +1,82 @@
-//Шрифты для сайта landing-busness.hw
-/*Шрифты для сайта*/
+//Fonts for the site landing-busness.hw
+
 @font-face {
-font-family: 'GeorgiaBold';
-    src: url('../fonts/GeorgiaBold/GeorgiaBold.ttf');
-    src: url('../fonts/GeorgiaBold/GeorgiaBold.eot'),
-         url('../fonts/GeorgiaBold/GeorgiaBold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/GeorgiaBold/GeorgiaBold.woff2') format('woff2'),
-         url('../fonts/GeorgiaBold/GeorgiaBold.woff') format('woff'),
-         url('../fonts/GeorgiaBold/GeorgiaBold.svg#GeorgiaBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GeorgiaBold";
+  src: url("../fonts/GeorgiaBold/GeorgiaBold.ttf");
+  src: url("../fonts/GeorgiaBold/GeorgiaBold.eot"),
+    url("../fonts/GeorgiaBold/GeorgiaBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/GeorgiaBold/GeorgiaBold.woff2") format("woff2"),
+    url("../fonts/GeorgiaBold/GeorgiaBold.woff") format("woff"),
+    url("../fonts/GeorgiaBold/GeorgiaBold.svg#GeorgiaBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'HelveticaBold';
-    src: url('../fonts/HelveticaBold/HelveticaBold.ttf');
-    src: url('../fonts/HelveticaBold/HelveticaBold.eot'),
-         url('../fonts/HelveticaBold/HelveticaBold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/HelveticaBold/HelveticaBold.woff2') format('woff2'),
-         url('../fonts/HelveticaBold/HelveticaBold.woff') format('woff'),
-         url('../fonts/HelveticaBold/HelveticaBold.svg#HelveticaBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "HelveticaBold";
+  src: url("../fonts/HelveticaBold/HelveticaBold.ttf");
+  src: url("../fonts/HelveticaBold/HelveticaBold.eot"),
+    url("../fonts/HelveticaBold/HelveticaBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/HelveticaBold/HelveticaBold.woff2") format("woff2"),
+    url("../fonts/HelveticaBold/HelveticaBold.woff") format("woff"),
+    url("../fonts/HelveticaBold/HelveticaBold.svg#HelveticaBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'HelveticaLight';
-    src: url('../fonts/HelveticaLight/HelveticaLight.ttf');
-    src: url('../fonts/HelveticaLight/HelveticaLight.eot'),
-         url('../fonts/HelveticaLight/HelveticaLight.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/HelveticaLight/HelveticaLight.woff2') format('woff2'),
-         url('../fonts/HelveticaLight/HelveticaLight.woff') format('woff'),
-         url('../fonts/HelveticaLight/HelveticaLight.svg#HelveticaLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "HelveticaLight";
+  src: url("../fonts/HelveticaLight/HelveticaLight.ttf");
+  src: url("../fonts/HelveticaLight/HelveticaLight.eot"),
+    url("../fonts/HelveticaLight/HelveticaLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/HelveticaLight/HelveticaLight.woff2") format("woff2"),
+    url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"),
+    url("../fonts/HelveticaLight/HelveticaLight.svg#HelveticaLight")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'HelveticaRegular';
-    src: url('../fonts/HelveticaRegular/HelveticaRegular.ttf');
-    src: url('../fonts/HelveticaRegular/HelveticaRegular.eot'),
-         url('../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/HelveticaRegular/HelveticaRegular.woff2') format('woff2'),
-         url('../fonts/HelveticaRegular/HelveticaRegular.woff') format('woff'),
-         url('../fonts/HelveticaRegular/HelveticaRegular.svg#HelveticaRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "HelveticaRegular";
+  src: url("../fonts/HelveticaRegular/HelveticaRegular.ttf");
+  src: url("../fonts/HelveticaRegular/HelveticaRegular.eot"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.woff2") format("woff2"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.svg#HelveticaRegular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'OpenSansRegular';
-    src: url('../fonts/OpenSansRegular/OpenSansRegular.ttf');
-    src: url('../fonts/OpenSansRegular/OpenSansRegular.eot'),
-         url('../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSansRegular/OpenSansRegular.woff2') format('woff2'),
-         url('../fonts/OpenSansRegular/OpenSansRegular.woff') format('woff'),
-         url('../fonts/OpenSansRegular/OpenSansRegular.svg#OpenSansRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.ttf");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.svg#OpenSansRegular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'ArialRegular';
-    src: url('../fonts/ArialRegular/ArialRegular.ttf')format('truetype');
-    src: url('../fonts/ArialRegular/ArialRegular.eot'),
-         url('../fonts/ArialRegular/ArialRegular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ArialRegular/ArialRegular.woff2') format('woff2'),
-         url('../fonts/ArialRegular/ArialRegular.woff') format('woff'),
-         url('../fonts/ArialRegular/ArialRegular.svg#ArialRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-} 
+  font-family: "ArialRegular";
+  src: url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+  src: url("../fonts/ArialRegular/ArialRegular.eot"),
+    url("../fonts/ArialRegular/ArialRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ArialRegular/ArialRegular.woff2") format("woff2"),
+    url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+    url("../fonts/ArialRegular/ArialRegular.svg#ArialRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

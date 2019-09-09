@@ -1,21 +1,20 @@
-//Переменные для сайта landing-business.hw
+// Variables for landing-business.hw
 
-//Цвет
+// Colour
 $c-accent: #dd2a24;
 $c-dark: #424242;
 $c-light: #ffffff;
-$c-green: #4CAF50;
+$c-green: #4caf50;
 
-//Шрифт
-$f-base: 'OpenSansRegular';
-$f-bold: 'HelveticaBold';
-$f-light: 'HelveticaLight';
-$f-num: 'GeorgiaBold';
-$f-normal:'HelveticaRegular';
-$f-safe: 'ArialRegular';
+// Font
+$f-base: "OpenSansRegular";
+$f-bold: "HelveticaBold";
+$f-light: "HelveticaLight";
+$f-num: "GeorgiaBold";
+$f-normal: "HelveticaRegular";
+$f-safe: "ArialRegular";
 
-
-//Медиа-запрос. Точки перехода
+//Media request
 $bp-ultra: 5120px;
 $bp-4k: 3840px;
 $bp-netbook: 1045px;

@@ -1,7 +1,5 @@
-@charset "UTF-8";
-/*Шрифты для сайта*/
 @font-face {
-  font-family: 'GeorgiaBold';
+  font-family: "GeorgiaBold";
   src: url("../fonts/GeorgiaBold/GeorgiaBold.ttf");
   src: url("../fonts/GeorgiaBold/GeorgiaBold.eot"), url("../fonts/GeorgiaBold/GeorgiaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GeorgiaBold/GeorgiaBold.woff2") format("woff2"), url("../fonts/GeorgiaBold/GeorgiaBold.woff") format("woff"), url("../fonts/GeorgiaBold/GeorgiaBold.svg#GeorgiaBold") format("svg");
   font-weight: normal;
@@ -9,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'HelveticaBold';
+  font-family: "HelveticaBold";
   src: url("../fonts/HelveticaBold/HelveticaBold.ttf");
   src: url("../fonts/HelveticaBold/HelveticaBold.eot"), url("../fonts/HelveticaBold/HelveticaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaBold/HelveticaBold.woff2") format("woff2"), url("../fonts/HelveticaBold/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold/HelveticaBold.svg#HelveticaBold") format("svg");
   font-weight: normal;
@@ -17,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'HelveticaLight';
+  font-family: "HelveticaLight";
   src: url("../fonts/HelveticaLight/HelveticaLight.ttf");
   src: url("../fonts/HelveticaLight/HelveticaLight.eot"), url("../fonts/HelveticaLight/HelveticaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaLight/HelveticaLight.woff2") format("woff2"), url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"), url("../fonts/HelveticaLight/HelveticaLight.svg#HelveticaLight") format("svg");
   font-weight: normal;
@@ -25,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'HelveticaRegular';
+  font-family: "HelveticaRegular";
   src: url("../fonts/HelveticaRegular/HelveticaRegular.ttf");
   src: url("../fonts/HelveticaRegular/HelveticaRegular.eot"), url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaRegular/HelveticaRegular.woff2") format("woff2"), url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"), url("../fonts/HelveticaRegular/HelveticaRegular.svg#HelveticaRegular") format("svg");
   font-weight: normal;
@@ -33,7 +31,7 @@
 }
 
 @font-face {
-  font-family: 'OpenSansRegular';
+  font-family: "OpenSansRegular";
   src: url("../fonts/OpenSansRegular/OpenSansRegular.ttf");
   src: url("../fonts/OpenSansRegular/OpenSansRegular.eot"), url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.svg#OpenSansRegular") format("svg");
   font-weight: normal;
@@ -41,7 +39,7 @@
 }
 
 @font-face {
-  font-family: 'ArialRegular';
+  font-family: "ArialRegular";
   src: url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
   src: url("../fonts/ArialRegular/ArialRegular.eot"), url("../fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialRegular/ArialRegular.woff2") format("woff2"), url("../fonts/ArialRegular/ArialRegular.woff") format("woff"), url("../fonts/ArialRegular/ArialRegular.svg#ArialRegular") format("svg");
   font-weight: normal;
@@ -79,10 +77,6 @@
 
 /*----Header----*/
 .header__contact-info {
-  /*Если не нужно использовать info-phone_decor-line_vertical*/
-  /*(вертикальную линию возле номера телефона)*/
-  /*Тогда снять комментарий с padding */
-  /*и закомментировать селектор header__info-phone_decor-line_vertical*/
   /*padding: 7px 0 10px 0;*/
   text-align: right;
   background-color: #f0f2f4;
@@ -411,12 +405,12 @@
   }
 }
 
-.root[lang=ru] .navigation.container__navigation {
+.root[lang="ru"] .navigation.container__navigation {
   margin: 0 0 0 46px;
 }
 
 @media (max-width: 1045px) {
-  .root[lang=ru] .navigation.container__navigation {
+  .root[lang="ru"] .navigation.container__navigation {
     margin: 0;
   }
 }
@@ -561,7 +555,7 @@
 }
 
 @media (min-width: 5120px) {
-  .root[lang=ru] .box-button {
+  .root[lang="ru"] .box-button {
     display: none;
   }
 }
@@ -769,7 +763,7 @@
 }
 
 @media (max-width: 596px) {
-  .root[lang=ru] .btn-big {
+  .root[lang="ru"] .btn-big {
     white-space: normal;
     margin: 0 5px 0 5px;
   }
@@ -1763,6 +1757,15 @@
   vertical-align: text-top;
 }
 
+@media (max-width: 1045px) {
+  .list-promo__item {
+    display: table-row;
+    min-width: 475px;
+    -webkit-box-shadow: 0px 0px 4px 0px #000000;
+            box-shadow: 0px 0px 4px 0px #000000;
+  }
+}
+
 @media (max-width: 596px) {
   .list-promo__item {
     width: 100%;
@@ -2090,7 +2093,7 @@
 }
 
 @-webkit-keyframes blinking {
-  /*Анимация для кнопки "open" */
+  /* Animation for the open button */
   0% {
     background-color: rgba(76, 175, 80, 0.4);
   }
@@ -2115,7 +2118,7 @@
 }
 
 @keyframes blinking {
-  /*Анимация для кнопки "open" */
+  /* Animation for the open button */
   0% {
     background-color: rgba(76, 175, 80, 0.4);
   }
@@ -2188,7 +2191,7 @@
 }
 
 .form::before {
-  content: '';
+  content: "";
   border: 34px solid transparent;
   border-bottom: 36px solid #ffffff;
   position: absolute;
@@ -2515,7 +2518,7 @@
 }
 
 .form__btn-submit:hover {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 @media (max-width: 1045px) {
@@ -2557,13 +2560,13 @@
 }
 
 @media (max-width: 596px) {
-  .root[lang=ru] .form__tooltip {
+  .root[lang="ru"] .form__tooltip {
     top: 24%;
   }
 }
 
 @media (max-width: 596px) {
-  .root[lang=ru] .form::before {
+  .root[lang="ru"] .form::before {
     top: -114%;
   }
 }

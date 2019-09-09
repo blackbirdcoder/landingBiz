@@ -1,93 +1,93 @@
-//Список для сайта landing-business.hw
+//List for site landing-business.hw
 /*list*/
-.list  {
+.list {
   padding: 0;
   text-align: center;
   &__item {
-      list-style-type: none;
-      display: inline-block;
-      width: 30%;
-      vertical-align: top;
-      
+    list-style-type: none;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
 
-      @media (max-width: $bp-tablet ) {
-            padding: 0 15% 0 15%;
-            display: block;
-            width: 100%;
+    @media (max-width: $bp-tablet) {
+      padding: 0 15% 0 15%;
+      display: block;
+      width: 100%;
+    }
 
-      }
-      
-      //медиа-запрос смартфон маленький экран
-      @media (max-width: $bp-smartphone-sm ) {padding: 0 1% 0 1%;}
-      
-  }  
-  &__item:nth-of-type(2) { 
-      margin: 0 31px 0 31px;
-      
+    @media (max-width: $bp-smartphone-sm) {
+      padding: 0 1% 0 1%;
+    }
+  }
+  &__item:nth-of-type(2) {
+    margin: 0 31px 0 31px;
 
-      @media (max-width: $bp-netbook ) {margin: 0 1% 0 1%;}
+    @media (max-width: $bp-netbook) {
+      margin: 0 1% 0 1%;
+    }
 
-      @media (max-width: $bp-tablet ) {margin: 5% 0% 5% 0%;}
+    @media (max-width: $bp-tablet) {
+      margin: 5% 0% 5% 0%;
+    }
   }
 
-  //Показываю изображения из спрайта
   &__item:nth-child(1) {
-    .list__picture{
+    .list__picture {
       @include sprite($like);
-      position: relative; 
-      left: 3px; 
+      position: relative;
+      left: 3px;
     }
   }
   &__item:nth-child(2) {
-    .list__picture{@include sprite($book);}
+    .list__picture {
+      @include sprite($book);
+    }
   }
   &__item:nth-child(3) {
-    .list__picture{
+    .list__picture {
       @include sprite($dialog);
-      position: relative; 
-      right: 9px;  
-      top: 2px; 
+      position: relative;
+      right: 9px;
+      top: 2px;
     }
   }
   &__picture {
-      display: inline-block;
-      
-      //медиа-запрос, применил его что бы спрятать 
-      //изображения при очень суженом окне браузера. 
-      //Подсчитал что так будет более эстетично.
-      @media (max-width: 150px ) {display: none;}
+    display: inline-block;
+
+    @media (max-width: 150px) {
+      display: none;
     }
+  }
 
   &__title {
-      margin: 24px 0 12px 0; 
-      font-family: $f-bold, sans-serif;
-      font-size: 22px;
-      //Добавил для кроссбраузерности и кроссплатформенности
-      //что бы Firefox в Linux не делала слишком жирный шрифт
-      font-weight: normal;
+    margin: 24px 0 12px 0;
+    font-family: $f-bold, sans-serif;
+    font-size: 22px;
 
-      @media (max-width: $bp-netbook ) {font-size: 1.1rem;}
-      
-      //медиа-запрос смартфон маленький экран
-      @media (max-width: $bp-smartphone-sm ) {font-size: 6vw;}
+    font-weight: normal;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 6vw;
+    }
   }
   &__txt {
-      margin: 0;
-      padding: 0 20px 0 20px;
-      font-size: 14px;
-      line-height: 20px; 
-      
+    margin: 0;
+    padding: 0 20px 0 20px;
+    font-size: 14px;
+    line-height: 20px;
 
-      @media (max-width: $bp-netbook ) {
-        margin: 10px 0 0 0;
-        font-size: 0.83rem;
-      }
-      
-      //медиа-запрос смартфон маленький экран
-      @media (max-width: $bp-smartphone-sm ) {
-        line-height: 17px;
-        font-size: 5vw;
-      }
+    @media (max-width: $bp-netbook) {
+      margin: 10px 0 0 0;
+      font-size: 0.83rem;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      line-height: 17px;
+      font-size: 5vw;
+    }
   }
 }
-

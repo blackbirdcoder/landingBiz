@@ -1,53 +1,57 @@
-//Большая кнопка для сайта landing-business.hw
+//Big button for the site landing-business.hw
 /*Button-Big*/
-.btn-big{
-    display: inline-block;
-    padding: 0 36px 0 36px; 
-    height: 70px; 
-    line-height: 74px; 
-    border-radius: 7px;
-    text-decoration: none;
-    font-family: $f-safe, sans-serif; 
-    font-weight: 700; 
-    font-size: 24px; 
-    white-space: nowrap; 
-    text-transform: uppercase;
-    color: $c-light;
-   
-    &_theme_bright{
-        background-color: #f8cd53;
-        transition: 0.7s;
-        transition-property:  background-color;
-        
-        &:hover {
-            background-color: $c-accent;
-            //Убираю цвет выделения, который появляется при нажатии 
-            //вокруг кнопки при просмотре сайта через мобильное устройство
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-    }
+.btn-big {
+  display: inline-block;
+  padding: 0 36px 0 36px;
+  height: 70px;
+  line-height: 74px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-family: $f-safe, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: $c-light;
 
-    @media (max-width: $bp-netbook ) { font-size: 1.25rem;}
-       
-    @media (max-width: $bp-smartphone ){
-        padding: 5% 6% 4% 6%;
-        font-size: 1.22rem;
-        height: auto; 
-        line-height: normal; 
+  &_theme_bright {
+    background-color: #f8cd53;
+    transition: 0.7s;
+    transition-property: background-color;
+
+    &:hover {
+      background-color: $c-accent;
+      // I remove the highlight color that appears when I click
+      // around the button when viewing a site through a mobile device
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {font-size: 6vw;}
+  }
+
+  @media (max-width: $bp-netbook) {
+    font-size: 1.25rem;
+  }
+
+  @media (max-width: $bp-smartphone) {
+    padding: 5% 6% 4% 6%;
+    font-size: 1.22rem;
+    height: auto;
+    line-height: normal;
+  }
+  // media request smartphone small screen
+  @media (max-width: $bp-smartphone-sm) {
+    font-size: 6vw;
+  }
 }
 
-//У меня есть небольшое сожаления что я поступил именно так
-//но всё же это решения меня на сегодня устраивает.
-//Кнопка на русском не вмещается. Поэтому я поступил так. 
-//root это html
-.root[lang=ru]{
-    .btn-big {
-        @media (max-width: $bp-smartphone ){
-            white-space: normal;
-            margin: 0 5px 0 5px;
-        }
+// I have a little regret that I did just that
+// but still this solution suits me for today.
+// The button in Russian does not fit. Therefore, I did so.
+// root is html
+.root[lang="ru"] {
+  .btn-big {
+    @media (max-width: $bp-smartphone) {
+      white-space: normal;
+      margin: 0 5px 0 5px;
     }
+  }
 }

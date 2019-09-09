@@ -1,36 +1,43 @@
-//Contact стили для сайта landing-business.hw
+//Contact styles for the site landing-business.hw
 /*----Section Contact----*/
 .contact {
-    background-color: #2a2a2a;
-    &__box-info {
-        padding: 90px 0 85px 0;
-        text-align: center;
-    } 
-   &__heading {
-       @include title;
-       @include bright-txt;
-       font-size: 30px;
+  background-color: #2a2a2a;
+  &__box-info {
+    padding: 90px 0 85px 0;
+    text-align: center;
+  }
+  &__heading {
+    @include title;
+    @include bright-txt;
+    font-size: 30px;
 
-       @media (max-width: $bp-netbook ) {font-size: 1.75rem;}
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {font-size: 9vw;}
-   }
-   &__list-links {
-       margin: 24px 0 0 0; 
-       
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {margin: 5% 0 0 0;}
-   }
-   &__form-subscribe {
-       margin: 35px 0 0 0;
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {margin: 10% 0 0 0;}
-   }
+    @media (max-width: $bp-netbook) {
+      font-size: 1.75rem;
+    }
+
+    // media request smartphone small screen
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 9vw;
+    }
+  }
+  &__list-links {
+    margin: 24px 0 0 0;
+
+    // media request smartphone small screen
+    @media (max-width: $bp-smartphone-sm) {
+      margin: 5% 0 0 0;
+    }
+  }
+  &__form-subscribe {
+    margin: 35px 0 0 0;
+
+    // media request smartphone small screen
+    @media (max-width: $bp-smartphone-sm) {
+      margin: 10% 0 0 0;
+    }
+  }
 }
-    //list-links
+//list-links
 @import "app/sass/blocks/list-links/_list-links.scss";
-    //form-subscribe
-@import "app/sass/blocks/form-subscribe/_form-subscribe.scss";    
+//form-subscribe
+@import "app/sass/blocks/form-subscribe/_form-subscribe.scss";

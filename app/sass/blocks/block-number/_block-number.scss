@@ -1,78 +1,89 @@
-//Блок с большой цифрой. Стили для сайта landing-business.hw
+//Big Digit Block. Styles for the site landing-business.hw
 /*block-number*/
 .block-number {
-    display: inline-block;
-    min-width: 100px;
-    min-height: 100px;
-    padding:0px 31px 11px 30px;
-    background-color: $c-accent;
-    border: 2px solid $c-light;
-    border-radius: 6px;
-    transition: 0.3s;
-    transition-property: background-color;
-    
-    @media (max-width: $bp-smartphone-sm ) {
-        margin: 0 0 23% 0;
-        padding: 0px 3% 7% 3%;
-        min-width: 30vw;
-        min-height: auto;
+  display: inline-block;
+  min-width: 100px;
+  min-height: 100px;
+  padding: 0px 31px 11px 30px;
+  background-color: $c-accent;
+  border: 2px solid $c-light;
+  border-radius: 6px;
+  transition: 0.3s;
+  transition-property: background-color;
+
+  @media (max-width: $bp-smartphone-sm) {
+    margin: 0 0 23% 0;
+    padding: 0px 3% 7% 3%;
+    min-width: 30vw;
+    min-height: auto;
+  }
+
+  &_position_left {
+    position: relative;
+    left: 58px;
+
+    @media (max-width: $bp-netbook) {
+      left: 0;
     }
-    
-    &_position_left {
-        position: relative;
-        left: 58px;
+  }
+  &__num {
+    text-align: center;
+    font-family: $f-num, sans-serif;
+    font-size: 60px;
+    color: $c-light;
 
-        @media (max-width: $bp-netbook ) {left: 0;}
+    @media (max-width: $bp-netbook) {
+      font-size: 3.4rem;
     }
-    &__num {
-        text-align: center;
-        font-family: $f-num, sans-serif;
-        font-size: 60px;
-        color: $c-light;
-        
-        @media (max-width: $bp-netbook ) {font-size: 3.4rem;}
-        
-        @media (max-width: $bp-smartphone-sm ) {font-size: 20vw;}
-    } 
-    &__txt{
-        margin: 0; 
-        text-align: center;
-        font-family: $f-bold, sans-serif;
-        font-size: 20px;
-        color: $c-light;
-        &_position{
-            position: relative;
-            bottom: 8px; 
-        }
-        
-        @media (max-width: $bp-netbook ) {font-size: 1rem;}
-        
 
-        @media (max-width: $bp-smartphone-sm ) {display: none;}
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 20vw;
     }
-    
-
-    @media (max-width: $bp-netbook ) {
-        position: relative;
-        z-index: 1000;
-
-        &_position_bottom {
-            bottom: 55px;
-            margin: 0 0 49px 0;
-
-           //медиа-запрос смартфон маленький экран
-            @media (max-width: $bp-smartphone-sm ) {bottom: 0;}
-            
-        }
-        &_position_top {
-            top: 63px;
-
-            @media (max-width: $bp-smartphone ){top: 67px;}
-             
-            //медиа-запрос смартфон маленький экран
-            @media (max-width: $bp-smartphone-sm ) {top: 20px;}
-           
-        }
-
+  }
+  &__txt {
+    margin: 0;
+    text-align: center;
+    font-family: $f-bold, sans-serif;
+    font-size: 20px;
+    color: $c-light;
+    &_position {
+      position: relative;
+      bottom: 8px;
     }
+
+    @media (max-width: $bp-netbook) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $bp-netbook) {
+    position: relative;
+    z-index: 1000;
+
+    &_position_bottom {
+      bottom: 55px;
+      margin: 0 0 49px 0;
+
+      //media query smartphone small screen
+      @media (max-width: $bp-smartphone-sm) {
+        bottom: 0;
+      }
+    }
+    &_position_top {
+      top: 63px;
+
+      @media (max-width: $bp-smartphone) {
+        top: 67px;
+      }
+
+      //media query smartphone small screen
+      @media (max-width: $bp-smartphone-sm) {
+        top: 20px;
+      }
+    }
+  }
 }

@@ -1,188 +1,190 @@
-//Форма подписки для сайта landing-business.hw
-//form-subscribe присутствует tooltip (окно с подсказкой), но я его не импортирую
-//поскольку оно импортировано выше в application (form),
-// а также чтобы не было переопределения уже заданных стилей в выше стоящей секции.
+// Subscription form for landing-business.hw
+// form-subscribe tooltip is present (tooltip window), but I do not import it
+// since it is imported above in application (form),
+// and also that there is no redefinition of already defined styles in the above standing section.
 /*form-subscribe*/
 .form-subscribe {
-   position: relative;
-   &__txt {
-       margin: 0;
-       color: #cecece ;
-       font-size: 15px;
-       font-family: $f-normal;
+  position: relative;
+  &__txt {
+    margin: 0;
+    color: #cecece;
+    font-size: 15px;
+    font-family: $f-normal;
 
-       @media (max-width: $bp-netbook ) {font-size: 0.87rem;}
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {font-size: 5.2vw;}
-   }
-
-   &__field {
-       margin: 27px 0 0 0;
-       padding: 18px 20px 18px 20px;
-       border: 0;
-       outline: 0;
-       width: 67%; 
-       background-color: #515151;
-       color: $c-light;
-       font-family: $f-safe, sans-serif; 
-       font-size: 17px;
-
-       &::placeholder {
-            color:#cecece;
-            font-size: 14px;
-
-            @media (max-width: $bp-netbook ) {font-size: 0.81rem;}
-
-            @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
-        }
-        //Убирает красные границы вокруг полей
-        // со значением required в браузере Firefox
-        &:-moz-ui-invalid {box-shadow: none;}
-
-        //Взаимодействия пользователя с полям ввода (email)
-        //Показываю и прячу подсказку (tooltip)
-        &_active:focus  {  + .tooltip {display: block;} }
-        &_active:focus:valid  { + .tooltip {display: none;} }
-        &_active:invalid  {color: #ff4545;}
-
-        //Для его величества internet explorer
-        //Чтобы убрать красный цвет текста в поле ввода 
-        //у которого значение required, применил такой вот приём
-        &:-ms-input-placeholder.form-subscribe__field { color: #8b8b8b;}
-        
-        //Убираю в internet explorer "крестик очистки" в поле ввода 
-        &::-ms-clear {display: none;}
-        
-       //медиа-запрос нeтбуки
-       @media (max-width: $bp-netbook ) {
-           padding: 18px 18px 18px 18px;
-           width: 60%;
-           font-size: 0.87rem;
-       }
-       
-       //медиа-запрос смартфон
-       @media (max-width: $bp-smartphone ){
-           padding: 16px 16px 16px 16px;
-           width: 65%;
-       }
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {
-           margin: 10% 0 0 0;
-           padding: 5vw 5vw 5vw 5vw;
-           width: 75%;
-           font-size: 5vw;
-       }
-
-        //Применил Хак для Internet Explorer!
-        //Поскольку в браузере IE при вводе текста в поля ввода 
-        //поля расширяются по высоте, что в других известных браузерах не происходит
-        //поэтому при расширении полей ввода происходит скачок, подёргивания секции в браузере IE
-        //что неприятно при работе с сайтом. Поэтому мной было принято решен поправить 
-        //стили для полей ввода только для браузера IE.
-        //Для этого я применил этот Хак.
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            height: 60px; 
-            padding: 0 20px 0 20px;
-                //Специально для internet explorer. Медиа-запрос нeтбуки
-                @media (max-width: $bp-netbook ) {
-                    height: 50px; 
-                    padding: 0 18px 0 18px !important;
-                }
-                //Специально для internet explorer. Медиа-запрос смартфон
-                @media (max-width: $bp-smartphone ) {
-                    height: 40px;
-                    padding: 0 16px 0 16px !important;
-                }
-        }
-   }
-   
-       //позиционирование подсказки для (email) формы 
-    &__tooltip {
-        position: absolute;
-        bottom: 150px;
-        left: 285px;
-        
-        @media (max-width: $bp-netbook ) {
-            width: 49%;
-            padding: 1%;
-            bottom: 83%;
-            left: 26%;
-            font-size: 0.87rem;
-            }
-
-        @media (max-width: $bp-smartphone)  {
-            font-size: 0.72rem;
-            bottom: 80%;
-        }
-
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {
-            width: 70%;
-            bottom: 75%;
-            left: 14%;
-            font-size: 5vw;
-        }
+    @media (max-width: $bp-netbook) {
+      font-size: 0.87rem;
     }
 
-    &__btn-subscribe {
-    margin: 26px 0 0 0; 
-    padding: 0 34px 0 34px; 
-    height: 53px; 
+    //медиа-запрос смартфон маленький экран
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 5.2vw;
+    }
+  }
+
+  &__field {
+    margin: 27px 0 0 0;
+    padding: 18px 20px 18px 20px;
+    border: 0;
+    outline: 0;
+    width: 67%;
+    background-color: #515151;
+    color: $c-light;
+    font-family: $f-safe, sans-serif;
+    font-size: 17px;
+
+    &::placeholder {
+      color: #cecece;
+      font-size: 14px;
+
+      @media (max-width: $bp-netbook) {
+        font-size: 0.81rem;
+      }
+
+      @media (max-width: $bp-smartphone-sm) {
+        font-size: 5vw;
+      }
+    }
+
+    &:-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+    // User interaction with input fields (email)
+    // Show and hide the tooltip
+    &_active:focus {
+      + .tooltip {
+        display: block;
+      }
+    }
+    &_active:focus:valid {
+      + .tooltip {
+        display: none;
+      }
+    }
+    &_active:invalid {
+      color: #ff4545;
+    }
+
+    &:-ms-input-placeholder.form-subscribe__field {
+      color: #8b8b8b;
+    }
+
+    // I remove the "cleaning cross" in the input field in internet explorer
+    &::-ms-clear {
+      display: none;
+    }
+
+    @media (max-width: $bp-netbook) {
+      padding: 18px 18px 18px 18px;
+      width: 60%;
+      font-size: 0.87rem;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      padding: 16px 16px 16px 16px;
+      width: 65%;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      margin: 10% 0 0 0;
+      padding: 5vw 5vw 5vw 5vw;
+      width: 75%;
+      font-size: 5vw;
+    }
+
+    //Hack Internet Explorer!
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      height: 60px;
+      padding: 0 20px 0 20px;
+      //Специально для internet explorer. Медиа-запрос нeтбуки
+      @media (max-width: $bp-netbook) {
+        height: 50px;
+        padding: 0 18px 0 18px !important;
+      }
+      //Специально для internet explorer. Медиа-запрос смартфон
+      @media (max-width: $bp-smartphone) {
+        height: 40px;
+        padding: 0 16px 0 16px !important;
+      }
+    }
+  }
+
+  // positioning tooltips for (email) form
+  &__tooltip {
+    position: absolute;
+    bottom: 150px;
+    left: 285px;
+
+    @media (max-width: $bp-netbook) {
+      width: 49%;
+      padding: 1%;
+      bottom: 83%;
+      left: 26%;
+      font-size: 0.87rem;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      font-size: 0.72rem;
+      bottom: 80%;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      width: 70%;
+      bottom: 75%;
+      left: 14%;
+      font-size: 5vw;
+    }
+  }
+
+  &__btn-subscribe {
+    margin: 26px 0 0 0;
+    padding: 0 34px 0 34px;
+    height: 53px;
     line-height: 50px;
     font-size: 17px;
     color: $c-light;
     font-family: $f-safe, sans-serif;
-    font-weight: 700; 
+    font-weight: 700;
     letter-spacing: 1px;
     background-color: #2a2a2a;
     border: 2px solid $c-dark;
     border-radius: 4px;
     transition: 0.5s;
-    
+
     &:hover {
-        border: 2px solid $c-accent;
-        //Убираю цвет выделения, который появляется при нажатии 
-        //вокруг кнопки при просмотре сайта через мобильное устройство
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      border: 2px solid $c-accent;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
-    
-    //медиа-запрос нeтбуки
-    @media (max-width: $bp-netbook ) {font-size: 0.93rem;}
-    
-    //медиа-запрос смартфон
-    @media (max-width: $bp-smartphone ){
-        padding: 15px 31px 15px 31px;
-        line-height: normal;
-        height: auto;
+    @media (max-width: $bp-netbook) {
+      font-size: 0.93rem;
     }
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {
-        margin: 10% 0 0 0;
-        padding: 5% 10% 5% 10%;
-        font-size: 5.5vw;
-        
+
+    @media (max-width: $bp-smartphone) {
+      padding: 15px 31px 15px 31px;
+      line-height: normal;
+      height: auto;
     }
-}
-   
+
+    @media (max-width: $bp-smartphone-sm) {
+      margin: 10% 0 0 0;
+      padding: 5% 10% 5% 10%;
+      font-size: 5.5vw;
+    }
+  }
 }
 
-//Хак для Firefox
-//Браузер Firefox немного смещает текст в поле ввода вверх.
-//Поэтому я его немного выравниваю.
-//А также делает слишком серым цвет в placeholder.
-//Меняю цвет на подходящий. 
-//Для этого применяю хак.
+//Hack Firefox
 @-moz-document url-prefix() {
-    .form-subscribe {
-        &__field {
-            padding: 16px 20px 15px 20px;
+  .form-subscribe {
+    &__field {
+      padding: 16px 20px 15px 20px;
 
-            @media (max-width: $bp-smartphone ){ padding: 3% 3% 3% 3%;}
-        }
-       ::placeholder {color: #ffffff;}
+      @media (max-width: $bp-smartphone) {
+        padding: 3% 3% 3% 3%;
+      }
     }
+    ::placeholder {
+      color: #ffffff;
+    }
+  }
 }
-

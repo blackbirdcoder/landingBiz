@@ -1,345 +1,341 @@
-//Форма обратной связи для сайта landing-business.hw
+//Feedback form for the site landing-business.hw
 
-//Специально импортирую tooltip (окно с подсказкой) вверху перед формой
-//для того чтобы можно было беспроблемно переопределять свойства окна tooltip
-    //tooltip
-    @import "app/sass/blocks/tooltip/_tooltip.scss";  
+// Specially import tooltip (tooltip window) at the top in front of the form
+// so that you can easily redefine the properties of the tooltip window
+// tooltip
+@import "app/sass/blocks/tooltip/_tooltip.scss";
 
-/*form*/  
+/*form*/
 .form {
-    margin: 35px 170px 0 170px;
-    padding: 50px 50px 68px 50px; 
-    position: relative;
+  margin: 35px 170px 0 170px;
+  padding: 50px 50px 68px 50px;
+  position: relative;
+  background-color: $c-light;
+  display: none;
+  // Make a triangle (pyramid) through a pseudo-element
+  &::before {
+    content: "";
+    border: 34px solid transparent;
+    border-bottom: 36px solid $c-light;
+    position: absolute;
+    left: 46.5%;
+    margin-left: -11px;
+    top: -67px;
+    width: 0;
+
+    @media (max-width: $bp-netbook) {
+      border: 25px solid transparent;
+      border-bottom: 27px solid $c-light;
+      margin-left: -7px;
+      top: -50px;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      border: 20px solid transparent;
+      border-bottom: 23px solid $c-light;
+      margin: auto;
+      top: -116%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 24px;
+    }
+
+    // media request smartphone small screen
+    @media (max-width: $bp-smartphone-sm) {
+      display: none;
+    }
+  }
+  &__btn-close {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -23px;
+    right: -20px;
+    text-decoration: none;
+    background-color: $c-accent;
+    color: $c-light;
+    border: 2px solid $c-light;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:hover {
+      background-color: darken($c-accent, 9%);
+      // I remove the highlight color that appears when I click
+      // around the button when viewing a site through a mobile device
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    @media (max-width: $bp-netbook) {
+      width: 45px;
+      height: 45px;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      width: 40px;
+      height: 40px;
+      top: -19px;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      border: 2px solid $c-light;
+      width: 32px;
+      height: 32px;
+      top: -4%;
+      right: -5%;
+    }
+
+    @media (max-width: $bp-screen-small) {
+      display: none;
+    }
+  }
+  // Make a cross (as x)
+  &__btn-close-ico {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../img/close.svg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__txt {
+    margin: 0 0 33px 0;
+    font-family: $f-normal, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #5a5a5a;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 0.93rem;
+    }
+
+    // media request smartphone small screen
+    @media (max-width: $bp-smartphone-sm) {
+      margin: 0 0 5vw 0;
+      font-size: 5vw;
+      line-height: 17px;
+    }
+  }
+  &__field:nth-of-type(2) {
+    margin: 8px 0 8px 0;
+
+    // media request smartphone small screen
+    @media (max-width: $bp-smartphone-sm) {
+      margin: 4px 0 4px 0;
+    }
+  }
+  &__field {
+    padding: 17px 25px 17px 25px;
+    width: 76%;
+    outline: 0;
+    font-size: 15px;
+    font-family: $f-safe, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 1px solid #b5b4b4;
+    border-radius: 6px;
     background-color: $c-light;
-    display: none;
-    //Делаю треугольник (пирамиду) через псевдоэлемент 
-    &::before {
-        content: '';
-        border: 34px solid transparent;
-        border-bottom: 36px solid $c-light;
-        position: absolute;
-        left: 46.5%;
-        margin-left: -11px;
-        top:-67px;
-        width: 0;
-
-        @media (max-width: $bp-netbook  ){
-            border: 25px solid transparent;
-            border-bottom: 27px solid $c-light;
-            margin-left: -7px;
-            top: -50px;
-        }
-
-        @media (max-width: $bp-smartphone ){
-            border: 20px solid transparent;
-            border-bottom: 23px solid $c-light;
-            margin: auto;
-            top: -116%;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 24px;
-         }
-
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) { display: none; }
+    // text view placeholder
+    &::placeholder {
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0;
+      // For cross-browser compatibility. Firefox removes red letters
+      // if input is required
+      color: #b5b4b4;
+      @media (max-width: $bp-smartphone-sm) {
+        font-size: 5vw;
+      }
     }
-    &__btn-close {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: -23px;
-        right: -20px;
-        text-decoration: none;
-        background-color: $c-accent;
-        color: $c-light;
-        border: 2px solid $c-light;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: 0.1s;
-        
-        &:hover {
-            background-color: darken($c-accent, 9%);
-            //Убираю цвет выделения, который появляется при нажатии 
-            //вокруг кнопки при просмотре сайта через мобильное устройство
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-        
-       @media (max-width: $bp-netbook ) {
-            width: 45px;
-            height: 45px;
-       }
-       
-       @media (max-width: $bp-smartphone ){
-            width: 40px;
-            height: 40px;
-            top: -19px;
-       }
-       
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {
-            border: 2px solid $c-light;
-            width: 32px; 
-            height: 32px; 
-            top: -4%;
-            right: -5%;
-        }
-
-        @media (max-width: $bp-screen-small ) {
-            display: none;
-        }
-    }
-    //Делаю крестик (виде икса)
-    &__btn-close-ico {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-image: url("../img/close.svg");
-        background-size: 40%;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-    &__txt {
-        margin: 0 0 33px 0;
-        font-family: $f-normal, sans-serif;
-        font-size: 15px; 
-        line-height: 20px; 
-        color: #5a5a5a; 
-
-       @media (max-width: $bp-netbook ) {font-size: 0.93rem;}
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {
-           margin: 0 0 5vw 0;
-           font-size: 5vw;
-           line-height: 17px;
-       }
-    }
-    &__field:nth-of-type(2) {
-        margin: 8px 0 8px 0;
-
-        //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) { margin: 4px 0 4px 0; }
-    } 
-    &__field {
-        padding: 17px 25px 17px 25px;
-        width: 76%; 
-        outline: 0;
-        font-size: 15px; 
-        font-family: $f-safe, sans-serif;
-        font-weight: 700;
-        letter-spacing: 1px;
-        border: 1px solid #b5b4b4;
-        border-radius: 6px;
-        background-color: $c-light;
-        // вид текста placeholder
-        &::placeholder {
-            font-size: 14px;
-            font-weight: 300;
-            letter-spacing: 0;
-            //Для кроссбраузерности. Firefox убирает красный цвет букв
-            //если input стоит required
-            color:#b5b4b4;
-
-            //медиа-запрос смартфон маленький экран
-            @media (max-width: $bp-smartphone-sm ){ font-size: 5vw;}
-        }
-        //Убирает красные границы вокруг полей 
-        //со значением required в браузере Firefox
-        &:-moz-ui-invalid {box-shadow: none;}
-        
-        //Для его величества internet explorer
-        //Чтобы убрать красный цвет текста в поле ввода 
-        //у которого значение required, применил такой вот приём
-        &:-ms-input-placeholder.form__field { color: $c-dark;}
-        
-        //Убираю в internet explorer "крестик очистки" в поле ввода 
-        &::-ms-clear {display: none;}
-        
-        //Взаимодействия пользователя с полями ввода
-        &_active:focus  { 
-            box-shadow: 0px 0px 2px 1px #b5d9eb;
-            border: 1px solid #1287bf;
-            //Применил Хак для Internet Explorer!
-            //internet explorer 11 не очень хорошо отображает тень (box-shadow)
-            //по крайней мере в моём проекте.
-            //В IE 11 я получал тень слабую и неровную, отображение тени в IE 11 очень отличалась
-            //от других браузеров, поэтому я решил тень отключить.
-            //Этот Хак меня выручил. 
-            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                box-shadow: none;
-            }
-            //Применил Хак для Edge!
-            //Поскольку в браузере Edge тень имеет слабую видимость
-            //Мне пришлось добавить больше мощности для тени
-            //Чтобы добиться соответствия  как в макете
-            //В этом мне помог этот Хак
-            @supports (-ms-ime-align:auto){
-                box-shadow: 0px 0px 6px 1px #b5d9eb;
-            }
-
-        //Показываю и прячу подсказку (tooltip)
-            + .tooltip {display: block;} 
-        }
-        &_active:focus:valid  { + .tooltip {display: none;} }
-        &_active:invalid  {color: $c-accent;}
-
-        @media (max-width: $bp-netbook ) {
-            padding: 15px 23px 15px 23px;
-            width: 70%;
-            }
-        
-        @media (max-width: $bp-smartphone ){
-            padding: 12px 21px 12px 21px;
-            width: 75%;
-            }
-            
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {
-            padding: 5vw 5vw 5vw 5vw;
-            font-size: 5vw;
-            }
-        
-        //Применил Хак для Internet Explorer!
-        //Поскольку в браузере IE при вводе текста в поля ввода 
-        //поля расширяются по высоте, что в других известных браузерах не происходит
-        //поэтому при расширении полей ввода происходит скачок, подёргивания секции в браузере IE
-        //что неприятно при работе с сайтом. Поэтому мной было принято решен поправить 
-        //стили для полей ввода только для браузера IE.
-        //Для этого я применил этот Хак.
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            height: 52px; 
-            padding: 0 25px 0 25px;
-                //Специально для internet explorer. Медиа-запрос нeтбуки
-                // @media (max-width: $bp-netbook ) {
-                //     height: 42px; 
-                //     padding: 0 20px 0 20px !important;
-                // }
-                //Специально для internet explorer. Медиа-запрос смартфон
-                // @media (max-width: $bp-smartphone ) {
-                //     height: 35px;
-                //     padding: 0 15px 0 15px !important;
-                // }
-            }
-        }
-
-    //позиционирование подсказки для полей формы
-    &__tooltip {
-        position: absolute;
-        top: 40px;
-        left: 112px;
-        
-       //медиа-запрос нeтбуки
-       @media (max-width: $bp-netbook ) {
-            padding: 2%;
-            width: 70%;
-            top: 10%; 
-            left: 15%;
-            font-size: 0.87rem;
-           }
-        
-        @media (max-width: $bp-smartphone) {
-            top: 20%; //17%
-            font-size: 0.72rem;
-          
-            
-        }
-
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ){ font-size: 5vw;}
+    // Removes red borders around fields
+    // with the required value in Firefox
+    &:-moz-ui-invalid {
+      box-shadow: none;
     }
 
-    &__btn-submit {
-        margin: 35px 0 0 0; 
-        padding: 0 27px 0 27px; 
-        height: 47px; 
-        line-height: 50px; 
-        border: 0;
-        border-radius: 5px;
-        letter-spacing: 0.5px;
-        font-family: $f-safe, sans-serif; 
-        font-size: 15px;
-        font-weight: 700; 
-        text-transform: uppercase;
-        color: $c-light;
-        background-color: $c-accent;
-        transition: 0.5s;
-        
-        &:hover {background-color: #4CAF50}
-        
-       @media (max-width: $bp-netbook ) { font-size: 0.87rem;}
-
-       @media (max-width: $bp-smartphone ){
-            margin: 9% 0 0 0;
-            padding: 16px 25px 13px 25px; 
-            font-size: 0.77rem; 
-            line-height: normal;
-            height: auto; 
-       }
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {
-           padding: 5% 10% 5% 10%;
-           font-size: 4vw;
-       }
+    // For His Majesty internet explorer
+    // To remove the red color of the text in the input field
+    // whose value is required, applied this technique
+    &:-ms-input-placeholder.form__field {
+      color: $c-dark;
     }
 
-
-    @media (max-width: $bp-netbook ) {
-        margin: auto;
-        padding: 3% 3% 4% 3%;
-        width: 500px;
+    // I remove the "cleaning cross" in the input field in internet explorer
+    &::-ms-clear {
+      display: none;
     }
-    
 
-    @media (max-width: $bp-smartphone ){
-        padding: 6.4% 2% 6.4% 2%;
-        width: 80%;
-    }    
+    // User interactions with input fields
+    &_active:focus {
+      box-shadow: 0px 0px 2px 1px #b5d9eb;
+      border: 1px solid #1287bf;
+      // Applied Hack for Internet Explorer!
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        box-shadow: none;
+      }
+      //Hack Edge!
+      @supports (-ms-ime-align: auto) {
+        box-shadow: 0px 0px 6px 1px #b5d9eb;
+      }
+
+      //Show and hide the hint (tooltip)
+      + .tooltip {
+        display: block;
+      }
+    }
+    &_active:focus:valid {
+      + .tooltip {
+        display: none;
+      }
+    }
+    &_active:invalid {
+      color: $c-accent;
+    }
+
+    @media (max-width: $bp-netbook) {
+      padding: 15px 23px 15px 23px;
+      width: 70%;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      padding: 12px 21px 12px 21px;
+      width: 75%;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      padding: 5vw 5vw 5vw 5vw;
+      font-size: 5vw;
+    }
+
+    //Hack Internet Explorer!
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      height: 52px;
+      padding: 0 25px 0 25px;
+    }
+  }
+
+  //tooltip positioning for form fields
+  &__tooltip {
+    position: absolute;
+    top: 40px;
+    left: 112px;
+
+    @media (max-width: $bp-netbook) {
+      padding: 2%;
+      width: 70%;
+      top: 10%;
+      left: 15%;
+      font-size: 0.87rem;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      top: 20%; //17%
+      font-size: 0.72rem;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 5vw;
+    }
+  }
+
+  &__btn-submit {
+    margin: 35px 0 0 0;
+    padding: 0 27px 0 27px;
+    height: 47px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    font-family: $f-safe, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $c-light;
+    background-color: $c-accent;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #4caf50;
+    }
+
+    @media (max-width: $bp-netbook) {
+      font-size: 0.87rem;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      margin: 9% 0 0 0;
+      padding: 16px 25px 13px 25px;
+      font-size: 0.77rem;
+      line-height: normal;
+      height: auto;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      padding: 5% 10% 5% 10%;
+      font-size: 4vw;
+    }
+  }
+
+  @media (max-width: $bp-netbook) {
+    margin: auto;
+    padding: 3% 3% 4% 3%;
+    width: 500px;
+  }
+
+  @media (max-width: $bp-smartphone) {
+    padding: 6.4% 2% 6.4% 2%;
+    width: 80%;
+  }
 }
 
- //Сайт преподносит информацию на английском языке.
- //Если пользователь просматривает сайт с помощью браузера Chrome
- //и захочет перевести содержимое на русский язык при помощи Google Translate
- //то текста в в форме обратной связи станет больше и соответственно tooltip
- //(подсказка) станет отображаться выше что не очень удобно при просмотре с
- //смартфона, поэтому если страница на русском языке я подсказку немного опускаю
- .root[lang=ru] {
-    //медиа-запрос смартфон
-    @media (max-width: $bp-smartphone){
-        .form {
-            &__tooltip { top: 24%; }
-        }
-    }
-}
-
-
-//Если перевести страницу на русский язык
-//треугольник (переамида) немного при адаптивности 
-//отсоединятся от самой формы. Исправляю это. 
-.root[lang=ru] {
-    .form::before {
-        @media (max-width: $bp-smartphone ){top: -114%;}
-    }
-}
-
-//Хак для Firefox
-//Делает слишком светлым цвет в placeholder.
-//Меняю цвет на подходящий. 
-//Для этого применяю хак.
-@-moz-document url-prefix() {
+// The site presents information in English.
+// If the user views the site using the Chrome browser
+// and wants to translate the content into Russian using Google Translate
+// then the text in the feedback form will become larger and, accordingly, tooltip
+// (hint) will be displayed above which is not very convenient when viewing from
+// smartphone, so if the page in Russian, I omit the tip a little
+.root[lang="ru"] {
+  // media request smartphone
+  @media (max-width: $bp-smartphone) {
     .form {
-       ::placeholder {color: #888888;}
+      &__tooltip {
+        top: 24%;
+      }
     }
+  }
 }
 
-//В браузере EDGE при переводе на русский
-//уменьшаю высоту строки.
-.form{
-    &__txt[_msthash] {
-        @media (max-width: $bp-smartphone ){line-height: 15px;}
+// If you translate the page into Russian
+// triangle (transamide) a little with adaptability
+// disconnect from the form itself. I fix it.
+.root[lang="ru"] {
+  .form::before {
+    @media (max-width: $bp-smartphone) {
+      top: -114%;
     }
+  }
+}
+
+//hack Firefox
+@-moz-document url-prefix() {
+  .form {
+    ::placeholder {
+      color: #888888;
+    }
+  }
+}
+
+// In the EDGE browser when translating into Russian
+// reduce the height of the line.
+.form {
+  &__txt[_msthash] {
+    @media (max-width: $bp-smartphone) {
+      line-height: 15px;
+    }
+  }
 }

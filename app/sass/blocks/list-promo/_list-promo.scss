@@ -1,4 +1,4 @@
-//Список промо для сайта landing-business.hw
+//List of promos for the site landing-business.hw
 /*List-promo*/
 .list-promo {
   padding: 0;
@@ -9,21 +9,27 @@
     display: inline-block;
     vertical-align: text-top;
 
-    //Эффекты для List-promo
-    //    &:hover .list-promo__ico {
-    //         text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);
-    //         opacity: 1;
-    //         color: #f7d50b;
-    //     }
-    //     &:hover .list-promo__title {text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);}
-    //     &:hover .list-promo__txt {text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);}
-    //     &:hover .list-promo__pic {filter: saturate(200%);}
+    // Effects for List-promo
+    // &:hover .list-promo__ico {
+    //   text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);
+    //   opacity: 1;
+    //   color: #f7d50b;
+    // }
+    // &:hover .list-promo__title {
+    //   text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);
+    // }
+    // &:hover .list-promo__txt {
+    //   text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);
+    // }
+    // &:hover .list-promo__pic {
+    //   filter: saturate(200%);
+    // }
 
-    //     @media (max-width: $bp-netbook ) {
-    //         display: table-row;
-    //         min-width: 475px;
-    //         box-shadow: 0px 0px 4px 0px #000000;
-    //     }
+    @media (max-width: $bp-netbook) {
+      display: table-row;
+      min-width: 475px;
+      box-shadow: 0px 0px 4px 0px #000000;
+    }
 
     @media (max-width: $bp-smartphone) {
       width: 100%;
@@ -70,7 +76,6 @@
       font-size: 1.8rem;
     }
 
-    //медиа-запрос смартфон маленький экран
     @media (max-width: $bp-smartphone-sm) {
       font-size: 9vw;
       bottom: 6px;
@@ -96,8 +101,6 @@
     color: $c-light;
     transition: 0.5s;
     transition-property: text-shadow;
-    //Добавил межстрочный интервал, тем самым привёл список к хорошему отображению
-    //в разных операционных система и в разных браузерах.
     line-height: 1.1;
 
     @media (max-width: $bp-netbook) {
@@ -108,7 +111,6 @@
       font-size: 1.4rem;
     }
 
-    //медиа-запрос смартфон маленький экран
     @media (max-width: $bp-smartphone-sm) {
       font-size: 7vw;
     }
@@ -120,8 +122,6 @@
     color: $c-light;
     transition: 0.5s;
     transition-property: text-shadow;
-    //Добавил межстрочный интервал, тем самым привёл список к хорошему отображению
-    //в разных операционных система и в разных браузерах. (Windows и Linux)
     line-height: 1.2;
 
     @media (max-width: $bp-netbook) {
@@ -132,7 +132,6 @@
       font-size: 0.84rem;
     }
 
-    //медиа-запрос смартфон маленький экран
     @media (max-width: $bp-smartphone-sm) {
       font-size: 5vw;
     }
@@ -181,10 +180,6 @@
   }
 }
 
-//Если перевести страницу на русский язык
-//то список разваливается на маленьком зуме 33% 25%
-//чтобы этого не происходило убираю кое какой контент
-//и немного правлю высоту.
 .translated-ltr {
   .list-promo {
     &__txt {

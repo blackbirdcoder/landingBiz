@@ -1,4 +1,4 @@
-//Список расширенный для сайта landing-business.hw
+//Extended list for the site landing-business.hw
 /*list-extended*/
 .list-extended {
   padding: 0;
@@ -25,7 +25,6 @@
       width: 100%;
     }
 
-    //медиа-запрос смартфон маленький экран
     @media (max-width: $bp-smartphone-sm) {
       padding: 10% 3% 3% 3%;
     }
@@ -246,13 +245,9 @@
     display: inline-block;
     width: 554px;
     vertical-align: 80px;
-    //add
     margin-top: 73px;
     margin-left: 420px;
     &_position_right {
-      //медиа-запрос для UHD экранов
-      //также позволяет в браузерах Chrome, Opera хорошо отображаться
-      //содержимому списка при зуме 33% , 25% (Ctrl -)
       @media (min-width: $bp-ultra) {
         top: -15px;
       }
@@ -272,9 +267,6 @@
       left: 30px;
       margin-top: 73px;
       margin-left: 10px;
-      //медиа-запрос для UHD экранов
-      //также позволяет в браузерах Chrome, Opera хорошо отображаться
-      //содержимому списка при зуме 33% , 25% (Ctrl -)
       @media (min-width: $bp-ultra) {
         top: -10px;
         margin: 0 0 0 4px;
@@ -289,7 +281,6 @@
     @media (max-width: $bp-netbook) {
       display: block;
       text-align: center;
-      //add
       margin-left: 0;
       margin-top: 0;
       position: relative;
@@ -305,8 +296,6 @@
     margin: 0 16px 0 5px;
     font-family: $f-bold, sans-serif;
     font-size: 18px;
-    //Добавил для кроссбраузерности и кроссплатформенности
-    //что бы Firefox в Linux не делала слишком жирный шрифт
     font-weight: normal;
 
     @media (max-width: $bp-netbook) {
@@ -314,7 +303,6 @@
       font-size: 1.05rem;
     }
 
-    //медиа-запрос смартфон маленький экран
     @media (max-width: $bp-smartphone-sm) {
       font-size: 7vw;
     }
@@ -328,7 +316,6 @@
       font-size: 0.83rem;
     }
 
-    //медиа-запрос смартфон маленький экран
     @media (max-width: $bp-smartphone-sm) {
       line-height: 17px;
       font-size: 5vw;

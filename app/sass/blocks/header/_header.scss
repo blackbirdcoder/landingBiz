@@ -1,129 +1,134 @@
-//Header стили для сайта landing-business.hw
+//Header styles for the site landing-business.hw
 /*----Header----*/
 .header {
-    &__contact-info {
-        /*Если не нужно использовать info-phone_decor-line_vertical*/
-        /*(вертикальную линию возле номера телефона)*/
-        /*Тогда снять комментарий с padding */
-        /*и закомментировать селектор header__info-phone_decor-line_vertical*/
-        //&_decor-line_vertical
-        /*padding: 7px 0 10px 0;*/
-        text-align: right;
-        background-color: #f0f2f4;
-        box-shadow: 0px 2px 4px -2px #b9b9b9;  
-    }
-    &__info-phone { display: inline-block;
+  &__contact-info {
+    //&_decor-line_vertical
+    /*padding: 7px 0 10px 0;*/
+    text-align: right;
+    background-color: #f0f2f4;
+    box-shadow: 0px 2px 4px -2px #b9b9b9;
+  }
+  &__info-phone {
+    display: inline-block;
 
-        @media (max-width: $bp-smartphone ){padding: 0 5% 0 0;}     
-                    
-        &_decor-line_vertical {
-            border-right: 1px solid #d6d6d6;
-            height: 40px;
-            padding: 9px 12px 0 0;
+    @media (max-width: $bp-smartphone) {
+      padding: 0 5% 0 0;
+    }
 
-            @media (max-width: $bp-smartphone ) {
-                padding: 0;
-                border-right: none;
-                height: auto; 
-            }
-        }
+    &_decor-line_vertical {
+      border-right: 1px solid #d6d6d6;
+      height: 40px;
+      padding: 9px 12px 0 0;
+
+      @media (max-width: $bp-smartphone) {
+        padding: 0;
+        border-right: none;
+        height: auto;
+      }
     }
-    
-    &__ico-phone { 
-        vertical-align: -3px;
-        font-size: 24px;
-        margin: 0 5px 0 0;
-        //медиа-запрос для 4k экранов
-        @media (min-width: $bp-4k ) { vertical-align: baseline;}
-        
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {font-size: 8vw;}
+  }
+
+  &__ico-phone {
+    vertical-align: -3px;
+    font-size: 24px;
+    margin: 0 5px 0 0;
+
+    @media (min-width: $bp-4k) {
+      vertical-align: baseline;
     }
-    &__info-email {
-        padding: 0 3px 0 18px;
-        display: inline-block;
-        
-        @media (max-width: $bp-smartphone ){display: none;}  
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 8vw;
     }
-    &__ico-email { font-size: 19px; }
-    &__link {
-        padding: 0 7px 0 7px;
-        text-decoration: none;
-        color: $c-dark;
-        font-size: 15px;
-        font-family:  $f-normal, sans-serif;
-        transition: 0.5s;
-        
-        &:hover {
-            color: $c-accent;
-            //Убираю цвет выделения, который появляется при нажатии 
-            //вокруг кнопки при просмотре сайта через мобильное устройство
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-        //медиа-запрос нетбуки
-        @media (max-width: $bp-netbook ) { font-size: 0.87rem;}
-        
-               
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
+  }
+  &__info-email {
+    padding: 0 3px 0 18px;
+    display: inline-block;
+
+    @media (max-width: $bp-smartphone) {
+      display: none;
     }
-    &__info-social-net {
-        
-        display: inline-block;
-        margin: 0 1px 0 0; 
-        border-radius: 12%;
-        background-color: #1287bf;
-        
-        //медиа-запрос смартфон
-        @media (max-width: $bp-smartphone ){margin: 3% 1% 3% 0;}
-            
+  }
+  &__ico-email {
+    font-size: 19px;
+  }
+  &__link {
+    padding: 0 7px 0 7px;
+    text-decoration: none;
+    color: $c-dark;
+    font-size: 15px;
+    font-family: $f-normal, sans-serif;
+    transition: 0.5s;
+
+    &:hover {
+      color: $c-accent;
+
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
-    &__ico-social-net {font-size: 17px;}     
-    &__link-social-net {
-        display: block;
-        padding: 5px 8px 6px 8px;
-        height: 26px;
-        text-decoration: none;
-        color: $c-light;
-        transition: 0.5s;
-        
-        &:hover {
-            color: lighten(#f8cd53, 15%);
-            //Убираю цвет выделения, который появляется при нажатии 
-            //вокруг кнопки при просмотре сайта через мобильное устройство
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-        
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {display: none;}
-        
+
+    @media (max-width: $bp-netbook) {
+      font-size: 0.87rem;
     }
-    
-    //control
-    &__control{
-        padding: 46px 0 28px 0;
-        //медиа-запрос для 4k экранов
-        //также позволяет в шапке избежать переход логотипа, меню и кнопки на
-        //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-        @media (min-width: $bp-4k ) {text-align: center;}
-        
-        @media (max-width: $bp-tablet ) {padding: 9% 0 10% 0;}
-        
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {padding: 7% 0 12% 0;}
-        
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 5vw;
     }
- 
+  }
+  &__info-social-net {
+    display: inline-block;
+    margin: 0 1px 0 0;
+    border-radius: 12%;
+    background-color: #1287bf;
+
+    @media (max-width: $bp-smartphone) {
+      margin: 3% 1% 3% 0;
+    }
+  }
+  &__ico-social-net {
+    font-size: 17px;
+  }
+  &__link-social-net {
+    display: block;
+    padding: 5px 8px 6px 8px;
+    height: 26px;
+    text-decoration: none;
+    color: $c-light;
+    transition: 0.5s;
+
+    &:hover {
+      color: lighten(#f8cd53, 15%);
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      display: none;
+    }
+  }
+
+  //control
+  &__control {
+    padding: 46px 0 28px 0;
+
+    @media (min-width: $bp-4k) {
+      text-align: center;
+    }
+
+    @media (max-width: $bp-tablet) {
+      padding: 9% 0 10% 0;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      padding: 7% 0 12% 0;
+    }
+  }
 }
-        //logo
-    @import "app/sass/blocks/logo/_logo.scss";
-        //Navigation
-    @import "app/sass/blocks/navigation/_navigation.scss";
-            //Menu
-    @import "app/sass/blocks/menu/_menu.scss";
-        //Box-button
-    @import "app/sass/blocks/box-button/_box-button.scss";
-            //Button
-    @import "app/sass/blocks/btn/_btn.scss";
-            
-    
+//logo
+@import "app/sass/blocks/logo/_logo.scss";
+//Navigation
+@import "app/sass/blocks/navigation/_navigation.scss";
+//Menu
+@import "app/sass/blocks/menu/_menu.scss";
+//Box-button
+@import "app/sass/blocks/box-button/_box-button.scss";
+//Button
+@import "app/sass/blocks/btn/_btn.scss";

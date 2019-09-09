@@ -1,78 +1,80 @@
-//Список ссылок (социальных сетей) для сайта landing-business.hw
+//List of links (social networks) for the site landing-business.hw
 /*List-links*/
 .list-links {
-    padding: 0;
-    &__item {
-       list-style-type: none;
-       display: inline-block;
-       margin: 0 15px 0 0;
-    
-       &:last-child {margin: 0;}
-       
-    @media (max-width: $bp-smartphone ){margin: 0 1.7% 0 0;}  
-    
-    }
-    &__link {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        text-decoration: none;
-        border: 2px solid $c-dark;
-        border-radius: 4px;
-        transition: 0.5s;
-        
-        &:hover {
-            border: 2px solid $c-accent;
-            //Убираю цвет выделения, который появляется при нажатии 
-            //вокруг кнопки при просмотре сайта через мобильное устройство
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  &__item {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 15px 0 0;
 
-            //медиа-запрос смартфон маленький экран
-            @media (max-width: $bp-smartphone-sm ) {border: none;}
-        }
-        
-       @media (max-width: $bp-netbook ) {
-           width: 48px;
-           height: 48px;
-       }
-       
-       @media (max-width: $bp-smartphone ){
-           width: 42px;
-           height: 42px;
-       }
-       
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {
-           width: auto;
-           height: auto;
-           border: none;
-       }
+    &:last-child {
+      margin: 0;
     }
-   
-    &__ico {
-        font-size: 23px;
-        vertical-align: -16px;
-        color: $c-light;
-        
-       @media (max-width: $bp-netbook ) {font-size: 1.31rem;}
-       
-       @media (max-width: $bp-smartphone ){
-           font-size: 1.3rem;
-           vertical-align: -11px;
-       }
-       //медиа-запрос смартфон маленький экран
-       @media (max-width: $bp-smartphone-sm ) {
-           padding: 10% 10% 10% 10%;
-           font-size: 8vw;
-           color: #fb8686;
-           vertical-align: middle;
-           transition: 0.5s;
-           transition-property: color;
-           
-           &:hover {color: $c-accent;}
-       }
-        
+
+    @media (max-width: $bp-smartphone) {
+      margin: 0 1.7% 0 0;
     }
-    
+  }
+  &__link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border: 2px solid $c-dark;
+    border-radius: 4px;
+    transition: 0.5s;
+
+    &:hover {
+      border: 2px solid $c-accent;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+      @media (max-width: $bp-smartphone-sm) {
+        border: none;
+      }
+    }
+
+    @media (max-width: $bp-netbook) {
+      width: 48px;
+      height: 48px;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      width: 42px;
+      height: 42px;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      width: auto;
+      height: auto;
+      border: none;
+    }
+  }
+
+  &__ico {
+    font-size: 23px;
+    vertical-align: -16px;
+    color: $c-light;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 1.31rem;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      font-size: 1.3rem;
+      vertical-align: -11px;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      padding: 10% 10% 10% 10%;
+      font-size: 8vw;
+      color: #fb8686;
+      vertical-align: middle;
+      transition: 0.5s;
+      transition-property: color;
+
+      &:hover {
+        color: $c-accent;
+      }
+    }
+  }
 }
-

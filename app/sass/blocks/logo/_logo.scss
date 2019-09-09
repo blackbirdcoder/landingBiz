@@ -1,98 +1,110 @@
-//Logo для сайта landing-business.hw
+//Logo for site landing-business.hw
 /*logo*/
-//Закомментирован за ненадобностью
-//.container__logo {}
 
 .logo {
-    display: inline-block;
-    width: 24%;
-    //медиа-запрос для 4k экранов
-    //также позволяет в шапке избежать переход логотипа, меню и кнопки на
-    //новую строку при зуме 33% , 25% (Ctrl -) в браузерах Chrome, Opera.
-    @media (min-width: $bp-4k ) {width: 26%;}
-    
-    @media (max-width: $bp-netbook ) {
-        margin: 0;
-        width: 28%;  
-    }
-    
-    @media (max-width: $bp-tablet ) {
-        display: block;
-        margin: 0 auto 3% auto;
-        text-align: center;
-        width: 100%;
-    }
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {margin: 0 auto 10% auto;}
-    
-    &__ico {
-        margin: 0 11px 0 0; 
-        position: relative;
-        left: 2px;
-        bottom: 7px;
-        font-size: 57px; 
-        color: $c-accent;
-        float: left;
-        
-        @media (max-width: $bp-netbook ) {font-size: 3.4rem;}
+  display: inline-block;
+  width: 24%;
 
-        @media (max-width: $bp-tablet ) {
-            float: none;
-            margin: 0;
-            position: static;
-            left: 0;
-        }
-        
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {font-size: 19vw;}
-    }
-    &__heading {
-        margin: 0;
-        position: relative; 
-        bottom: 3px; 
-        font-size: 37px;
-        font-family: $f-bold, sans-serif;
-        //Добавил для кроссбраузерности и кроссплатформенности
-        //что бы Firefox в Linux не делала слишком жирный шрифт
-        font-weight: normal;
-        
-        @media (max-width: $bp-netbook ) {font-size: 2rem;}
-        
-        @media (max-width: $bp-tablet ) {letter-spacing: 2px;}
+  @media (min-width: $bp-4k) {
+    width: 26%;
+  }
 
-        @media (max-width: $bp-smartphone ){letter-spacing: 0;}
-        
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {font-size: 12vw;}
-    }
-    &__txt {
-        margin: 0;
-        padding: 0;
-        position: relative; 
-        bottom: 3px; 
-        left: 3px; 
-        font-size: 15px;
-        font-family: $f-normal, sans-serif;
-        
-        @media (max-width: $bp-netbook ) {font-size: 1rem;}
-        
-        @media (max-width: $bp-tablet ) {
-            letter-spacing: 1px;
-            left: 0;
-        }
+  @media (max-width: $bp-netbook) {
+    margin: 0;
+    width: 28%;
+  }
 
-        @media (max-width: $bp-smartphone ){letter-spacing: 0;}
-        
-        //медиа-запрос смартфон маленький экран
-        @media (max-width: $bp-smartphone-sm ) {font-size: 5vw;}
+  @media (max-width: $bp-tablet) {
+    display: block;
+    margin: 0 auto 3% auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (max-width: $bp-smartphone-sm) {
+    margin: 0 auto 10% auto;
+  }
+
+  &__ico {
+    margin: 0 11px 0 0;
+    position: relative;
+    left: 2px;
+    bottom: 7px;
+    font-size: 57px;
+    color: $c-accent;
+    float: left;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 3.4rem;
     }
+
+    @media (max-width: $bp-tablet) {
+      float: none;
+      margin: 0;
+      position: static;
+      left: 0;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 19vw;
+    }
+  }
+  &__heading {
+    margin: 0;
+    position: relative;
+    bottom: 3px;
+    font-size: 37px;
+    font-family: $f-bold, sans-serif;
+
+    font-weight: normal;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: $bp-tablet) {
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      letter-spacing: 0;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 12vw;
+    }
+  }
+  &__txt {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 3px;
+    left: 3px;
+    font-size: 15px;
+    font-family: $f-normal, sans-serif;
+
+    @media (max-width: $bp-netbook) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: $bp-tablet) {
+      letter-spacing: 1px;
+      left: 0;
+    }
+
+    @media (max-width: $bp-smartphone) {
+      letter-spacing: 0;
+    }
+
+    @media (max-width: $bp-smartphone-sm) {
+      font-size: 5vw;
+    }
+  }
 }
 
-//Хак для Firefox
-//В браузеру Firefox разваливается логотип.
-//Поэтому чтобы логотип не разваливался я дою ему немного больше места. 
-//Для этого применяю хак.
+//Hack Firefox
 @-moz-document url-prefix() {
-    .logo { width: 25%; }
+  .logo {
+    width: 25%;
+  }
 }

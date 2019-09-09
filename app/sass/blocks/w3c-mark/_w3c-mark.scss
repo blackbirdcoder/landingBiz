@@ -1,9 +1,9 @@
-//W3C знак для сайта landing-business.hw
+//W3C sign for the site landing-business.hw
 .w3c-mark {
-    margin: 2.5% 0 0 0;
-    text-align: center;
-    
-    //медиа-запрос смартфон маленький экран
-    @media (max-width: $bp-smartphone-sm ) {display: none;}
-}
+  margin: 2.5% 0 0 0;
+  text-align: center;
 
+  @media (max-width: $bp-smartphone-sm) {
+    display: none;
+  }
+}
