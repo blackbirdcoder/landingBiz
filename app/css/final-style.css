@@ -1763,34 +1763,6 @@
   vertical-align: text-top;
 }
 
-.list-promo__item:hover .list-promo__ico {
-  text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);
-  opacity: 1;
-  color: #f7d50b;
-}
-
-.list-promo__item:hover .list-promo__title {
-  text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);
-}
-
-.list-promo__item:hover .list-promo__txt {
-  text-shadow: 0px 4px 1px rgba(66, 66, 66, 0.85);
-}
-
-.list-promo__item:hover .list-promo__pic {
-  -webkit-filter: saturate(200%);
-          filter: saturate(200%);
-}
-
-@media (max-width: 1045px) {
-  .list-promo__item {
-    display: table-row;
-    min-width: 475px;
-    -webkit-box-shadow: 0px 0px 4px 0px #000000;
-            box-shadow: 0px 0px 4px 0px #000000;
-  }
-}
-
 @media (max-width: 596px) {
   .list-promo__item {
     width: 100%;
@@ -1839,9 +1811,9 @@
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transition-property: text-shadow, color,  opacity;
-  -o-transition-property: text-shadow, color,  opacity;
-  transition-property: text-shadow, color,  opacity;
+  -webkit-transition-property: text-shadow, color, opacity;
+  -o-transition-property: text-shadow, color, opacity;
+  transition-property: text-shadow, color, opacity;
 }
 
 @media (max-width: 1045px) {
